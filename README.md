@@ -92,8 +92,10 @@ Boundary reuse terms: https://gadm.org/license.html
 
 ## Dashboard behavior
 
-Overview includes latest KPIs, labeled state map, ranked STI bar chart, state
-profile and national dual-axis trends. States provides the map/ranking/profile;
+A collapsible hamburger menu opens the five sections and closes on selection,
+Escape, or clicking outside. Overview includes latest visitor/coastal KPIs and
+national dual-axis trends, without the STI score, map or state profile. States
+contains only the map, STI ranking and state profile below the shared filters;
 Forecast compares 2024 actual, 2025 shrunk prediction and 2025 actual; Causal
 shows three finding cards; Methodology explains sources, pipeline and caveats.
 
