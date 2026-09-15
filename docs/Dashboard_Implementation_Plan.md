@@ -304,7 +304,7 @@ export default function StateMap({ scoresByState }) {
   return (
     <ComposableMap
       projection="geoMercator"
-      projectionConfig={{ center: [109.5, 4], scale: 1600 }}
+      projectionConfig={ { center: [109.5, 4], scale: 1600 } }
       className="w-full h-auto"
     >
       <Geographies geography={GEO_URL}>
@@ -322,7 +322,7 @@ export default function StateMap({ scoresByState }) {
                   fill={colorForScore(score, min, max)}
                   stroke="#ffffff"
                   strokeWidth={0.75}
-                  style={{
+                  style={ {
                     default: { outline: "none" },
                     hover: { outline: "none", filter: "brightness(0.92)" },
                     pressed: { outline: "none" },
@@ -333,7 +333,7 @@ export default function StateMap({ scoresByState }) {
                     <text
                       textAnchor="middle"
                       className="fill-slate-900 font-semibold pointer-events-none"
-                      style={{ fontSize: "9px" }}
+                      style={ { fontSize: "9px" } }
                     >
                       {score.toFixed(0)}
                     </text>
