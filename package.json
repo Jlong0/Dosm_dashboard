@@ -7,15 +7,25 @@
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "check:data": "node scripts/check-data.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
-    "react": "latest",
-    "react-dom": "latest",
+    "autoprefixer": "^10.6.1",
+    "d3-geo": "^3.1.1",
+    "postcss": "^8.5.28",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-simple-maps": "^5.0.5",
+    "recharts": "^3.10.1",
+    "tailwindcss": "^3.4.19",
     "vite": "latest"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

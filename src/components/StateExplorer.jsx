@@ -1,0 +1,11 @@
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, CartesianGrid } from 'recharts';
+import StateMap, { colorForScore } from './StateMap';
+import StateDetailPanel from './StateDetailPanel';
+export default function StateExplorer({ data, range, states, selectedState, onSelect }) {
+ const available=data.sustainability_index.filter(r=>r.year>=range[0]&&r.year<=range[1]);
+ const year=available.length?Math.max(...available.map(r=>r.year)):null;
+ const scores=available.filter(r=>r.year===year&&states.includes(r.state)).sort((a,b)=>b.stiScore-a.stiScore);
+ const lookup=Object.fromEntries(scores.map(r=>[r.state,r.stiScore]));
+ const detail=data.state_year.filter(r=>r.state===selectedState&&r.year>=range[0]&&r.year<=range[1]).sort((a,b)=>a.year-b.year);
+ return <><section className="panel"><div className="section-heading"><div><span className="eyebrow">GEOGRAPHY OF SUSTAINABILITY</span><h2>A state-by-state perspective</h2></div><span className="badge">{year?`Latest in range · ${year}`:'No index year in range'}</span></div><p className="muted">Select a state to explore its tourism and coastal trends. Scores use the notebook’s PCA index.</p><StateMap geography={data.geography} scoresByState={lookup} selectedState={selectedState} onSelect={onSelect} states={states}/><div className="ranking"><h3>Sustainable Tourism Index <span className="muted">/ 100</span></h3>{scores.length?<ResponsiveContainer width="100%" height={Math.max(260,scores.length*32)}><BarChart data={scores} layout="vertical" margin={{left:5,right:40,top:10,bottom:5}}><CartesianGrid horizontal={false} stroke="#edf0ec"/><XAxis type="number" domain={[0,100]} tick={{fontSize:11}}/><YAxis type="category" dataKey="state" width={135} tick={{fontSize:11}}/><Tooltip formatter={v=>[Number(v).toFixed(2),'STI score']}/><Bar dataKey="stiScore" radius={[0,4,4,0]} barSize={17} isAnimationActive={false} onClick={r=>onSelect(r.state)} label={{position:'right',fontSize:11,formatter:v=>Number(v).toFixed(1)}}>{scores.map(r=><Cell key={r.state} fill={colorForScore(r.stiScore)} cursor="pointer"/>)}</Bar></BarChart></ResponsiveContainer>:<div className="empty">No index observations match your filters. The index covers 2020–2024.</div>}</div></section><StateDetailPanel state={selectedState} rows={detail}/></>;
+}

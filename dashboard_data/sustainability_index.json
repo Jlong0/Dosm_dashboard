@@ -1,0 +1,522 @@
+[
+  {
+    "state": "Johor",
+    "year": 2020,
+    "stiScore": 32.018267,
+    "PC1_Standardized": -0.089398,
+    "PC2_Standardized": -0.020943,
+    "PC3_Standardized": -1.437668
+  },
+  {
+    "state": "Johor",
+    "year": 2021,
+    "stiScore": 32.430146,
+    "PC1_Standardized": -0.092562,
+    "PC2_Standardized": -0.1812,
+    "PC3_Standardized": -1.207104
+  },
+  {
+    "state": "Johor",
+    "year": 2022,
+    "stiScore": 47.576374,
+    "PC1_Standardized": 0.216858,
+    "PC2_Standardized": 0.330188,
+    "PC3_Standardized": -0.496307
+  },
+  {
+    "state": "Johor",
+    "year": 2023,
+    "stiScore": 51.892106,
+    "PC1_Standardized": 0.394428,
+    "PC2_Standardized": 0.666159,
+    "PC3_Standardized": -0.662482
+  },
+  {
+    "state": "Johor",
+    "year": 2024,
+    "stiScore": 58.521657,
+    "PC1_Standardized": 0.354272,
+    "PC2_Standardized": 0.8848,
+    "PC3_Standardized": -0.030099
+  },
+  {
+    "state": "Kedah",
+    "year": 2020,
+    "stiScore": 34.128609,
+    "PC1_Standardized": 0.339877,
+    "PC2_Standardized": -0.997891,
+    "PC3_Standardized": -0.886597
+  },
+  {
+    "state": "Kedah",
+    "year": 2021,
+    "stiScore": 32.451871,
+    "PC1_Standardized": 0.386024,
+    "PC2_Standardized": -0.963844,
+    "PC3_Standardized": -1.208911
+  },
+  {
+    "state": "Kedah",
+    "year": 2022,
+    "stiScore": 46.540754,
+    "PC1_Standardized": 0.642462,
+    "PC2_Standardized": -0.378883,
+    "PC3_Standardized": -0.61081
+  },
+  {
+    "state": "Kedah",
+    "year": 2023,
+    "stiScore": 52.914355,
+    "PC1_Standardized": 0.91594,
+    "PC2_Standardized": -0.069337,
+    "PC3_Standardized": -0.672366
+  },
+  {
+    "state": "Kedah",
+    "year": 2024,
+    "stiScore": 60.440845,
+    "PC1_Standardized": 0.683988,
+    "PC2_Standardized": -0.063849,
+    "PC3_Standardized": 0.645921
+  },
+  {
+    "state": "Kelantan",
+    "year": 2020,
+    "stiScore": 26.343119,
+    "PC1_Standardized": 0.380115,
+    "PC2_Standardized": -1.8993,
+    "PC3_Standardized": -0.911965
+  },
+  {
+    "state": "Kelantan",
+    "year": 2021,
+    "stiScore": 30.421443,
+    "PC1_Standardized": -0.107429,
+    "PC2_Standardized": -2.368373,
+    "PC3_Standardized": 0.968852
+  },
+  {
+    "state": "Kelantan",
+    "year": 2022,
+    "stiScore": 46.34825,
+    "PC1_Standardized": 0.221471,
+    "PC2_Standardized": -1.406562,
+    "PC3_Standardized": 1.246263
+  },
+  {
+    "state": "Kelantan",
+    "year": 2023,
+    "stiScore": 47.737632,
+    "PC1_Standardized": 0.270815,
+    "PC2_Standardized": -1.293434,
+    "PC3_Standardized": 1.201392
+  },
+  {
+    "state": "Kelantan",
+    "year": 2024,
+    "stiScore": 50.566644,
+    "PC1_Standardized": 0.53281,
+    "PC2_Standardized": -1.596104,
+    "PC3_Standardized": 1.402517
+  },
+  {
+    "state": "Melaka",
+    "year": 2020,
+    "stiScore": 50.464594,
+    "PC1_Standardized": 0.536859,
+    "PC2_Standardized": 0.462093,
+    "PC3_Standardized": -0.867452
+  },
+  {
+    "state": "Melaka",
+    "year": 2021,
+    "stiScore": 36.05367,
+    "PC1_Standardized": 0.008314,
+    "PC2_Standardized": 0.096107,
+    "PC3_Standardized": -1.254751
+  },
+  {
+    "state": "Melaka",
+    "year": 2022,
+    "stiScore": 72.366829,
+    "PC1_Standardized": 0.965215,
+    "PC2_Standardized": 0.949129,
+    "PC3_Standardized": 0.470724
+  },
+  {
+    "state": "Melaka",
+    "year": 2023,
+    "stiScore": 83.862949,
+    "PC1_Standardized": 1.272288,
+    "PC2_Standardized": 1.063821,
+    "PC3_Standardized": 1.179415
+  },
+  {
+    "state": "Melaka",
+    "year": 2024,
+    "stiScore": 100.0,
+    "PC1_Standardized": 1.683971,
+    "PC2_Standardized": 2.027899,
+    "PC3_Standardized": 1.330911
+  },
+  {
+    "state": "Negeri Sembilan",
+    "year": 2020,
+    "stiScore": 41.882923,
+    "PC1_Standardized": 0.528105,
+    "PC2_Standardized": -0.557593,
+    "PC3_Standardized": -0.771437
+  },
+  {
+    "state": "Negeri Sembilan",
+    "year": 2021,
+    "stiScore": 35.375886,
+    "PC1_Standardized": 0.475641,
+    "PC2_Standardized": -0.627194,
+    "PC3_Standardized": -1.38554
+  },
+  {
+    "state": "Negeri Sembilan",
+    "year": 2022,
+    "stiScore": 61.120101,
+    "PC1_Standardized": 0.818381,
+    "PC2_Standardized": -0.062619,
+    "PC3_Standardized": 0.484926
+  },
+  {
+    "state": "Negeri Sembilan",
+    "year": 2023,
+    "stiScore": 71.640166,
+    "PC1_Standardized": 1.126363,
+    "PC2_Standardized": 0.462077,
+    "PC3_Standardized": 0.626019
+  },
+  {
+    "state": "Negeri Sembilan",
+    "year": 2024,
+    "stiScore": 74.396753,
+    "PC1_Standardized": 1.214904,
+    "PC2_Standardized": 0.602684,
+    "PC3_Standardized": 0.645489
+  },
+  {
+    "state": "Pahang",
+    "year": 2020,
+    "stiScore": 43.232861,
+    "PC1_Standardized": 0.336757,
+    "PC2_Standardized": -0.039091,
+    "PC3_Standardized": -0.831698
+  },
+  {
+    "state": "Pahang",
+    "year": 2021,
+    "stiScore": 33.158548,
+    "PC1_Standardized": 0.314143,
+    "PC2_Standardized": -0.768843,
+    "PC3_Standardized": -1.207734
+  },
+  {
+    "state": "Pahang",
+    "year": 2022,
+    "stiScore": 60.820123,
+    "PC1_Standardized": 1.012666,
+    "PC2_Standardized": 0.019756,
+    "PC3_Standardized": 0.009509
+  },
+  {
+    "state": "Pahang",
+    "year": 2023,
+    "stiScore": 68.579267,
+    "PC1_Standardized": 1.253686,
+    "PC2_Standardized": 0.220026,
+    "PC3_Standardized": 0.292811
+  },
+  {
+    "state": "Pahang",
+    "year": 2024,
+    "stiScore": 78.920093,
+    "PC1_Standardized": 1.57335,
+    "PC2_Standardized": 0.391699,
+    "PC3_Standardized": 0.777287
+  },
+  {
+    "state": "Pulau Pinang",
+    "year": 2020,
+    "stiScore": 37.519677,
+    "PC1_Standardized": -0.299072,
+    "PC2_Standardized": 0.383808,
+    "PC3_Standardized": -0.840113
+  },
+  {
+    "state": "Pulau Pinang",
+    "year": 2021,
+    "stiScore": 35.636674,
+    "PC1_Standardized": -0.521771,
+    "PC2_Standardized": 0.746086,
+    "PC3_Standardized": -1.062984
+  },
+  {
+    "state": "Pulau Pinang",
+    "year": 2022,
+    "stiScore": 54.93332,
+    "PC1_Standardized": -0.061039,
+    "PC2_Standardized": 0.996405,
+    "PC3_Standardized": 0.16169
+  },
+  {
+    "state": "Pulau Pinang",
+    "year": 2023,
+    "stiScore": 67.288622,
+    "PC1_Standardized": 0.430617,
+    "PC2_Standardized": 1.512392,
+    "PC3_Standardized": 0.203451
+  },
+  {
+    "state": "Pulau Pinang",
+    "year": 2024,
+    "stiScore": 77.081011,
+    "PC1_Standardized": 0.753775,
+    "PC2_Standardized": 1.53175,
+    "PC3_Standardized": 0.782065
+  },
+  {
+    "state": "Perak",
+    "year": 2020,
+    "stiScore": 33.204806,
+    "PC1_Standardized": 0.335865,
+    "PC2_Standardized": -0.964167,
+    "PC3_Standardized": -1.027635
+  },
+  {
+    "state": "Perak",
+    "year": 2021,
+    "stiScore": 30.263145,
+    "PC1_Standardized": -0.068866,
+    "PC2_Standardized": -0.99517,
+    "PC3_Standardized": -0.620971
+  },
+  {
+    "state": "Perak",
+    "year": 2022,
+    "stiScore": 49.942822,
+    "PC1_Standardized": 0.548878,
+    "PC2_Standardized": -0.399889,
+    "PC3_Standardized": -0.009486
+  },
+  {
+    "state": "Perak",
+    "year": 2023,
+    "stiScore": 52.280618,
+    "PC1_Standardized": 0.699666,
+    "PC2_Standardized": -0.433766,
+    "PC3_Standardized": 0.038393
+  },
+  {
+    "state": "Perak",
+    "year": 2024,
+    "stiScore": 59.296101,
+    "PC1_Standardized": 0.697828,
+    "PC2_Standardized": 0.285977,
+    "PC3_Standardized": 0.100542
+  },
+  {
+    "state": "Selangor",
+    "year": 2020,
+    "stiScore": 32.303707,
+    "PC1_Standardized": -0.824658,
+    "PC2_Standardized": 1.634186,
+    "PC3_Standardized": -1.891469
+  },
+  {
+    "state": "Selangor",
+    "year": 2021,
+    "stiScore": 33.998817,
+    "PC1_Standardized": -0.532166,
+    "PC2_Standardized": 1.262477,
+    "PC3_Standardized": -1.806375
+  },
+  {
+    "state": "Selangor",
+    "year": 2022,
+    "stiScore": 47.722864,
+    "PC1_Standardized": -0.359805,
+    "PC2_Standardized": 1.52287,
+    "PC3_Standardized": -0.746273
+  },
+  {
+    "state": "Selangor",
+    "year": 2023,
+    "stiScore": 57.102774,
+    "PC1_Standardized": 0.255212,
+    "PC2_Standardized": 1.65521,
+    "PC3_Standardized": -0.865472
+  },
+  {
+    "state": "Selangor",
+    "year": 2024,
+    "stiScore": 58.230617,
+    "PC1_Standardized": 0.101276,
+    "PC2_Standardized": 1.902472,
+    "PC3_Standardized": -0.723182
+  },
+  {
+    "state": "Terengganu",
+    "year": 2020,
+    "stiScore": 40.773794,
+    "PC1_Standardized": 0.735311,
+    "PC2_Standardized": -1.480169,
+    "PC3_Standardized": -0.268835
+  },
+  {
+    "state": "Terengganu",
+    "year": 2021,
+    "stiScore": 31.049566,
+    "PC1_Standardized": 0.513955,
+    "PC2_Standardized": -2.097894,
+    "PC3_Standardized": -0.367957
+  },
+  {
+    "state": "Terengganu",
+    "year": 2022,
+    "stiScore": 49.478663,
+    "PC1_Standardized": 0.584617,
+    "PC2_Standardized": -1.502543,
+    "PC3_Standardized": 1.075938
+  },
+  {
+    "state": "Terengganu",
+    "year": 2023,
+    "stiScore": 54.083219,
+    "PC1_Standardized": 0.688376,
+    "PC2_Standardized": -1.176591,
+    "PC3_Standardized": 1.088197
+  },
+  {
+    "state": "Terengganu",
+    "year": 2024,
+    "stiScore": 64.795617,
+    "PC1_Standardized": 1.083607,
+    "PC2_Standardized": -0.691914,
+    "PC3_Standardized": 1.139423
+  },
+  {
+    "state": "Sabah",
+    "year": 2020,
+    "stiScore": 5.675759,
+    "PC1_Standardized": -2.069741,
+    "PC2_Standardized": 0.025177,
+    "PC3_Standardized": -1.104755
+  },
+  {
+    "state": "Sabah",
+    "year": 2021,
+    "stiScore": 0.0,
+    "PC1_Standardized": -2.20511,
+    "PC2_Standardized": -0.87859,
+    "PC3_Standardized": -0.557577
+  },
+  {
+    "state": "Sabah",
+    "year": 2022,
+    "stiScore": 16.867284,
+    "PC1_Standardized": -2.280976,
+    "PC2_Standardized": -0.294654,
+    "PC3_Standardized": 0.973858
+  },
+  {
+    "state": "Sabah",
+    "year": 2023,
+    "stiScore": 23.015929,
+    "PC1_Standardized": -1.97248,
+    "PC2_Standardized": 0.402905,
+    "PC3_Standardized": 0.397999
+  },
+  {
+    "state": "Sabah",
+    "year": 2024,
+    "stiScore": 30.411288,
+    "PC1_Standardized": -1.845748,
+    "PC2_Standardized": 0.368289,
+    "PC3_Standardized": 1.099667
+  },
+  {
+    "state": "Sarawak",
+    "year": 2020,
+    "stiScore": 33.906969,
+    "PC1_Standardized": -0.944555,
+    "PC2_Standardized": 0.203155,
+    "PC3_Standardized": 0.08197
+  },
+  {
+    "state": "Sarawak",
+    "year": 2021,
+    "stiScore": 40.002074,
+    "PC1_Standardized": -0.614318,
+    "PC2_Standardized": -0.075839,
+    "PC3_Standardized": 0.528322
+  },
+  {
+    "state": "Sarawak",
+    "year": 2022,
+    "stiScore": 59.317342,
+    "PC1_Standardized": -0.505722,
+    "PC2_Standardized": 0.737579,
+    "PC3_Standardized": 1.772449
+  },
+  {
+    "state": "Sarawak",
+    "year": 2023,
+    "stiScore": 56.479862,
+    "PC1_Standardized": -1.037437,
+    "PC2_Standardized": 1.114001,
+    "PC3_Standardized": 1.974428
+  },
+  {
+    "state": "Sarawak",
+    "year": 2024,
+    "stiScore": 57.416425,
+    "PC1_Standardized": -0.767132,
+    "PC2_Standardized": 1.227646,
+    "PC3_Standardized": 1.47727
+  },
+  {
+    "state": "W.P. Labuan",
+    "year": 2020,
+    "stiScore": 10.391448,
+    "PC1_Standardized": -1.134218,
+    "PC2_Standardized": -0.529642,
+    "PC3_Standardized": -1.610995
+  },
+  {
+    "state": "W.P. Labuan",
+    "year": 2021,
+    "stiScore": 2.824463,
+    "PC1_Standardized": -2.311701,
+    "PC2_Standardized": -0.699111,
+    "PC3_Standardized": -0.22172
+  },
+  {
+    "state": "W.P. Labuan",
+    "year": 2022,
+    "stiScore": 30.251197,
+    "PC1_Standardized": -2.013835,
+    "PC2_Standardized": -0.18834,
+    "PC3_Standardized": 1.991074
+  },
+  {
+    "state": "W.P. Labuan",
+    "year": 2023,
+    "stiScore": 26.405154,
+    "PC1_Standardized": -1.707754,
+    "PC2_Standardized": -0.156804,
+    "PC3_Standardized": 0.942795
+  },
+  {
+    "state": "W.P. Labuan",
+    "year": 2024,
+    "stiScore": 33.110725,
+    "PC1_Standardized": -1.521189,
+    "PC2_Standardized": 0.171321,
+    "PC3_Standardized": 1.057153
+  }
+]

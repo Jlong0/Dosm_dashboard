@@ -1,0 +1,146 @@
+[
+  {
+    "state": "Johor",
+    "actual2024": 17138.338,
+    "rawForecast2025": 21805.0,
+    "shrunkForecast2025": 19471.0,
+    "actual2025": 18196.973,
+    "Raw_Error_%": 19.8,
+    "errorPct": 7.0
+  },
+  {
+    "state": "Pulau Pinang",
+    "actual2024": 16604.803,
+    "rawForecast2025": 21178.0,
+    "shrunkForecast2025": 18891.0,
+    "actual2025": 17717.979,
+    "Raw_Error_%": 19.5,
+    "errorPct": 6.6
+  },
+  {
+    "state": "Selangor",
+    "actual2024": 34460.828046,
+    "rawForecast2025": 42467.0,
+    "shrunkForecast2025": 38464.0,
+    "actual2025": 36376.442,
+    "Raw_Error_%": 16.7,
+    "errorPct": 5.7
+  },
+  {
+    "state": "Sabah",
+    "actual2024": 20591.813,
+    "rawForecast2025": 26381.0,
+    "shrunkForecast2025": 23486.0,
+    "actual2025": 22361.168,
+    "Raw_Error_%": 18.0,
+    "errorPct": 5.0
+  },
+  {
+    "state": "Perlis",
+    "actual2024": 3225.428,
+    "rawForecast2025": 4638.0,
+    "shrunkForecast2025": 3932.0,
+    "actual2025": 3755.682,
+    "Raw_Error_%": 23.5,
+    "errorPct": 4.7
+  },
+  {
+    "state": "Terengganu",
+    "actual2024": 14460.728,
+    "rawForecast2025": 17634.0,
+    "shrunkForecast2025": 16047.0,
+    "actual2025": 15462.278,
+    "Raw_Error_%": 14.0,
+    "errorPct": 3.8
+  },
+  {
+    "state": "Melaka",
+    "actual2024": 19128.405,
+    "rawForecast2025": 23935.0,
+    "shrunkForecast2025": 21532.0,
+    "actual2025": 20832.20153,
+    "Raw_Error_%": 14.9,
+    "errorPct": 3.4
+  },
+  {
+    "state": "Kedah",
+    "actual2024": 14651.487954,
+    "rawForecast2025": 17526.0,
+    "shrunkForecast2025": 16089.0,
+    "actual2025": 15607.884,
+    "Raw_Error_%": 12.3,
+    "errorPct": 3.1
+  },
+  {
+    "state": "Perak",
+    "actual2024": 21776.217,
+    "rawForecast2025": 26414.0,
+    "shrunkForecast2025": 24095.0,
+    "actual2025": 23642.055,
+    "Raw_Error_%": 11.7,
+    "errorPct": 1.9
+  },
+  {
+    "state": "Negeri Sembilan",
+    "actual2024": 17784.532,
+    "rawForecast2025": 21566.0,
+    "shrunkForecast2025": 19675.0,
+    "actual2025": 19356.545,
+    "Raw_Error_%": 11.4,
+    "errorPct": 1.6
+  },
+  {
+    "state": "W.P. Putrajaya",
+    "actual2024": 2556.836,
+    "rawForecast2025": 3775.0,
+    "shrunkForecast2025": 3166.0,
+    "actual2025": 3146.484,
+    "Raw_Error_%": 20.0,
+    "errorPct": 0.6
+  },
+  {
+    "state": "Kelantan",
+    "actual2024": 10514.411,
+    "rawForecast2025": 13473.0,
+    "shrunkForecast2025": 11994.0,
+    "actual2025": 12062.016,
+    "Raw_Error_%": 11.7,
+    "errorPct": -0.6
+  },
+  {
+    "state": "Pahang",
+    "actual2024": 20173.876,
+    "rawForecast2025": 25512.0,
+    "shrunkForecast2025": 22843.0,
+    "actual2025": 23161.166,
+    "Raw_Error_%": 10.1,
+    "errorPct": -1.4
+  },
+  {
+    "state": "W.P. Labuan",
+    "actual2024": 449.63,
+    "rawForecast2025": 719.0,
+    "shrunkForecast2025": 585.0,
+    "actual2025": 604.37,
+    "Raw_Error_%": 19.0,
+    "errorPct": -3.2
+  },
+  {
+    "state": "Sarawak",
+    "actual2024": 19625.552,
+    "rawForecast2025": 23527.0,
+    "shrunkForecast2025": 21576.0,
+    "actual2025": 22721.527,
+    "Raw_Error_%": 3.5,
+    "errorPct": -5.0
+  },
+  {
+    "state": "W.P. Kuala Lumpur",
+    "actual2024": 26982.957,
+    "rawForecast2025": 33470.0,
+    "shrunkForecast2025": 30227.0,
+    "actual2025": 35059.933182,
+    "Raw_Error_%": -4.5,
+    "errorPct": -13.8
+  }
+]

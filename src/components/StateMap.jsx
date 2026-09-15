@@ -1,34 +1,16 @@
-import bordersText from "../../malaysia.geojson?raw";
-import { stateLabels } from "../data/stateLabels";
-
-const borders = JSON.parse(bordersText);
-
-const scoreColour = (score) => {
-  if (score == null) return "#d8e3e5";
-  const t = Math.max(0, Math.min(1, (score - 45) / 40));
-  const r = Math.round(222 - 196 * t); const g = Math.round(142 - 24 * t); const b = Math.round(72 + 48 * t);
-  return `rgb(${r}, ${g}, ${b})`;
-};
-const linePath = (coords, box) => coords.map(([lon, lat], i) => {
-  const x = 12 + (lon - box.minLon) / (box.maxLon - box.minLon) * 276;
-  const y = 12 + (box.maxLat - lat) / (box.maxLat - box.minLat) * 176;
-  return `${i ? "L" : "M"}${x.toFixed(1)},${y.toFixed(1)}`;
-}).join(" ");
-const peninsula = { minLon: 99.8, maxLon: 104.1, minLat: 1.1, maxLat: 7.15 };
-const borneo = { minLon: 109.5, maxLon: 119.1, minLat: .7, maxLat: 7.5 };
-
-function BoundaryPane({ eastern, scores, selectedState, onSelect }) {
-  const box = eastern ? borneo : peninsula;
-  const lines = borders.features.filter((feature) => eastern ? /^(sbh|srw|lbn)/.test(feature.properties.name) : !/^(sbh|srw|lbn)/.test(feature.properties.name));
-  const labelEntries = Object.entries(stateLabels).filter(([, [lon]]) => eastern ? lon > 109 : lon < 109);
-  const point = ([lon, lat]) => [12 + (lon - box.minLon) / (box.maxLon - box.minLon) * 276, 12 + (box.maxLat - lat) / (box.maxLat - box.minLat) * 176];
-  return <svg viewBox="0 0 300 200" className="map-pane" aria-label={eastern ? "East Malaysia state boundaries" : "Peninsular Malaysia state boundaries"}>
-    <rect x="0" y="0" width="300" height="200" rx="12" fill="#dff2f3" />
-    {lines.map((feature) => <path key={feature.properties.name} d={linePath(feature.geometry.coordinates, box)} className="boundary-line" />)}
-    {labelEntries.map(([state, coords]) => { const [x, y] = point(coords); const score = scores[state]; const active = selectedState === state; return <g key={state} className="map-marker" onClick={() => onSelect(state)} transform={`translate(${x},${y})`}><title>{`${state}: ${score == null ? "Not monitored" : `STI ${score}`}`}</title><circle r={active ? 12 : 10} fill={scoreColour(score)} stroke={active ? "#073b4c" : "#fff"} strokeWidth={active ? 3 : 1.5} /><text y="3" textAnchor="middle">{score == null ? "–" : score}</text></g>; })}
-  </svg>;
+import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
+import { geoCentroid } from 'd3-geo';
+import { geoState } from '../data/geoNameMap';
+export function colorForScore(value) {
+ if (value == null) return '#dce4e2';
+ const t = Math.max(0, Math.min(1, value / 100));
+ const from = t < .5 ? [199,100,81] : [228,198,117], to = t < .5 ? [228,198,117] : [22,112,91], u=t<.5?t*2:(t-.5)*2;
+ return `rgb(${from.map((v,i)=>Math.round(v+(to[i]-v)*u)).join(',')})`;
 }
-
-export default function StateMap({ scores, selectedState, onSelect }) {
-  return <div className="map-wrap"><BoundaryPane scores={scores} selectedState={selectedState} onSelect={onSelect} /><BoundaryPane eastern scores={scores} selectedState={selectedState} onSelect={onSelect} /><div className="map-key"><span>STI score</span><i style={{ background: "#de8e48" }} />45 <i style={{ background: "#0a766d" }} />85 <em>– not monitored</em></div></div>;
+export default function StateMap({ geography, scoresByState, selectedState, onSelect, states }) {
+ return <div className="map-wrap"><ComposableMap width={900} height={345} projection="geoMercator" projectionConfig={{center:[109.5,4.1],scale:2450}} aria-label="Malaysia sustainable tourism index by state">
+ <Geographies geography={geography}>{({geographies})=>geographies.map(geo=>{
+ const name=geoState(geo), active=states.includes(name), score=active?scoresByState[name]:null;
+ return <g key={geo.rsmKey}><Geography geography={geo} fill={colorForScore(score)} stroke={selectedState===name?'#142f29':'#fff'} strokeWidth={selectedState===name?2:0.7} tabIndex={active?0:-1} role="button" aria-label={`${name}: ${score == null?'No index data':score.toFixed(1)}`} onClick={()=>active&&onSelect(name)} onKeyDown={e=>{if(active&&(e.key==='Enter'||e.key===' ')){e.preventDefault();onSelect(name);}}} style={{default:{outline:'none',opacity:active?1:.35},hover:{outline:'none',fill:'#9ab6a6',cursor:active?'pointer':'default'},pressed:{outline:'none'}}}><title>{name}: {score==null?'No index data':score.toFixed(1)}</title></Geography>{score!=null&&<Marker coordinates={geoCentroid(geo)}><text textAnchor="middle" className="map-score" pointerEvents="none">{score.toFixed(0)}</text></Marker>}</g>;
+ })}</Geographies></ComposableMap><div className="map-label west">PENINSULAR MALAYSIA</div><div className="map-label east">EAST MALAYSIA</div><div className="map-legend"><span>0</span><i/><span>100</span><span className="no-data-key"/> No data</div></div>;
 }
