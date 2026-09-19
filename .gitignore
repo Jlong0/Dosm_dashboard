@@ -33,3 +33,7 @@ coverage/
 !.vscode/extensions.json
 .venv/
 __pycache__/
+
+dashboard_exports/*
+
+dashboard_exports_other/*
