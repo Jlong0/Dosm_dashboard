@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { parseCsv } from '../data/csv';
-const FILES = ['state_year', 'sustainability_index', 'national_year', 'metadata', 'map_scores'];
+const FILES = ['metadata'];
 export function useDashboardData() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -8,6 +8,8 @@ export function useDashboardData() {
     const controller = new AbortController();
     const requests = [
       ...FILES.map(name => [name, `${name}.json`, 'json']),
+      ['state_year', 'state_year_dashboard.json', 'json'],
+      ['national_year', 'national_year_dashboard.json', 'json'],
       ['geography', 'malaysia-states.geojson', 'json'],
       ['sti_details', 'agg_states_detail.csv', 'csv'],
       ['sti_fallbacks', 'agg_states_fallback.csv', 'csv'],

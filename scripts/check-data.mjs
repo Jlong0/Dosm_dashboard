@@ -8,14 +8,17 @@ import { getYoyReport } from '../src/data/yoyReport.js';
 import { getRecoveryInsights } from '../src/data/recoveryInsights.js';
 import { destinationSentiment, quarterlySentiment, sentimentMetrics, topNegativeAspects } from '../src/data/sentiment.js';
 const read=name=>JSON.parse(fs.readFileSync(`public/data/${name}.json`,'utf8'));
-const state=read('state_year'), sti=read('sustainability_index'), national=read('national_year');
-assert.equal(state.length,176);assert.equal(sti.length,65);assert.equal(national.length,14);
-for(const rows of [state,sti,national])assert.equal(new Set(rows.map(r=>`${r.state??'national'}:${r.year}`)).size,rows.length);
+for(const file of ['metadata.json','malaysia-states.geojson','state_year_dashboard.json','national_year_dashboard.json','agg_states_detail.csv','agg_states_fallback.csv','agg_states_yoy_values.csv','agg_states_recovery.csv','agg_overview.json','agg_sentiment_overall.csv','agg_sentiment_dimension.csv','agg_sentiment_stakeholder.csv','agg_sentiment_quarterly.csv','agg_sentiment_destination_dimension.csv','agg_sentiment_aspect.csv','agg_forecast_national_dashboard.csv','agg_forecast_states_visitors_dashboard.csv','agg_causal.json','agg_methodology.json','Data.csv'])assert(fs.existsSync(`public/data/${file}`),`Missing public/data/${file}`);
+assert(!fs.existsSync('public/data/comments_scored.csv'),'Raw comments must not be shipped in the normal dashboard data directory');
+const state=read('state_year_dashboard'), national=read('national_year_dashboard');
+assert.equal(state.length,176);assert.equal(national.length,14);
+for(const rows of [state,national])assert.equal(new Set(rows.map(r=>`${r.state??'national'}:${r.year}`)).size,rows.length);
 const names=new Set(state.map(r=>r.state));assert.equal(names.size,16);
-for(const rows of [state,sti,national])for(const row of rows)for(const value of Object.values(row))if(typeof value==='number')assert(Number.isFinite(value));
+for(const rows of [state,national])for(const row of rows)for(const value of Object.values(row))if(typeof value==='number')assert(Number.isFinite(value));
 for(const row of state.filter(r=>r.year===2025))assert.equal(row.coastalGoodExcellentPct,null);
-for(const row of sti){assert(row.stiScore>=0&&row.stiScore<=100);assert.equal(typeof row.PC3_Standardized,'number');}
-for(const [state,score] of Object.entries(read('map_scores')))assert.equal(Math.round(sti.find(r=>r.year===2024&&r.state===state).stiScore),score);
+assert.deepEqual(JSON.parse(fs.readFileSync('dashboard_exports_other/state_year_dashboard.json','utf8')),state);
+assert.deepEqual(JSON.parse(fs.readFileSync('dashboard_exports_other/national_year_dashboard.json','utf8')),national);
+assert.equal(fs.readFileSync('dashboard_exports_other/Data_v5.csv','utf8'),fs.readFileSync('public/data/Data.csv','utf8'));
 const geo=JSON.parse(fs.readFileSync('public/data/malaysia-states.geojson'));
 assert.equal(geo.features.length,16);assert.deepEqual(new Set(geo.features.map(geoState)),names);
 const causal=read('agg_causal'), causalEstimate=causal.tourism_receipts_lag1;
@@ -60,7 +63,19 @@ assert.deepEqual(ranking2024.slice(0,2).map(row=>row.state),['Melaka','Pulau Pin
 assert.equal(ranking2024.at(-1).state,'W.P. Labuan');
 for(const name of ['Johor','Selangor','Sabah','Sarawak'])assert.equal(ranking2024.find(row=>row.state===name).value,details.find(row=>row.State===name&&row.Year===2024).STI);
 for(const name of ['Perlis','W.P. Kuala Lumpur','W.P. Putrajaya'])assert.notEqual(getStiAvailability(details,fallbacks,name,2024).status,'full');
+for(const year of [2017,2018,2019,2020,2021,2022,2023,2024]){
+ const ranking=getStiSnapshot(details,fallbacks,canonicalStates,year).filter(row=>row.status==='full').sort((a,b)=>b.value-a.value);
+ assert.equal(ranking.length,13);assert.equal(new Set(ranking.map(row=>row.state)).size,13);
+ for(let index=1;index<ranking.length;index++)assert(ranking[index-1].value>=ranking[index].value);
+}
 for(const year of [2015,2016,2025])assert.equal(getStiSnapshot(details,fallbacks,canonicalStates,year).filter(row=>row.status==='full').length,0);
+assert(!fallbacks.some(row=>row.Year===2015||row.Year===2016),'Fallback export must not contain 2015–2016 rows');
+for(const name of ['Perlis','W.P. Kuala Lumpur','W.P. Putrajaya']){
+ const result=getPillarBreakdown(details,fallbacks,name,2024);
+ assert.equal(result.status,'fallback');assert.deepEqual(result.pillars,{economic:null,social:null,environmental:null});
+}
+for(const year of [2015,2016])assert.equal(getStiAvailability(details,fallbacks,'Johor',year).status,'unavailable');
+assert.equal(getStiAvailability(details,fallbacks,'Johor',2025).status,'fallback');
 assert.equal(new Set(details.map(row=>`${row.State}:${row.Year}`)).size,details.length);
 for(const row of details)for(const key of ['Economic_0_100','Social_0_100','Environmental_0_100'])assert(Number.isFinite(row[key])&&row[key]>=0&&row[key]<=100);
 for(const name of ['Johor','Selangor','Sabah','Sarawak'])assert(Object.values(getPillarBreakdown(details,fallbacks,name,2024).pillars).every(Number.isFinite));
@@ -79,6 +94,13 @@ assert.equal(johor2024.find(row=>row.indicator==='Unemployment Rate (%)').status
 assert.equal(johor2024.find(row=>row.indicator==='Non-Domestic Water Share (%)').status,'Concern');
 assert(getYoyReport(yoy,'Perlis',2024).some(row=>row.partOfSti&&row.currentValue!=null));
 assert.equal(getYoyReport(yoy,'Johor',2015).filter(row=>row.change!=null).length,0);
+const stateFields={'Tourism Receipts per Resident (RM)':'receiptsPerResidentRm','Avg Length of Stay (nights)':'avgStayNights','Labour Force Participation Rate (%)':'lfprPct','Unemployment Rate (%)':'unemploymentPct','Coastal Good+Excellent (%)':'coastalGoodExcellentPct','Coastal Poor (%)':'coastalPoorPct','Municipal Waste Facility Tonnes/Day':'wasteTonnesPerDay','Mangrove Area (ha)':'mangroveHa','Visitors per Resident':'visitorsPerResident'};
+for(const row of yoy){
+ const field=stateFields[row.indicator];if(!field)continue;
+ const value=state.find(item=>item.state===row.State&&item.year===row.Year)?.[field];
+ assert.equal(value==null,row.value==null,`${row.State} ${row.Year} ${row.indicator} missingness disagrees with v5 state panel`);
+ if(value!=null)assert(Math.abs(value-row.value)<1e-5,`${row.State} ${row.Year} ${row.indicator} disagrees with v5 state panel`);
+}
 assert.equal(fs.readFileSync('dashboard_exports_other/agg_states_yoy_values.csv','utf8'),fs.readFileSync('public/data/agg_states_yoy_values.csv','utf8'));
 const recovery=parseCsv(fs.readFileSync('public/data/agg_states_recovery.csv','utf8'));
 const quadrants=new Set(['Sustainable improvement','Growth under environmental stress','Environmental recovery, tourism weakness','Overall deterioration']);

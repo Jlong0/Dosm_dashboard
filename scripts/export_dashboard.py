@@ -1,10 +1,15 @@
-"""Offline export from the notebook's saved workbook and persisted outputs."""
+"""Historical v2 exporter; not used by the current dashboard runtime."""
 from pathlib import Path
 import hashlib
 import io
 import json
 import re
 import shutil
+import sys
+
+if __name__ == '__main__' and '--allow-legacy-overwrite' not in sys.argv:
+ raise SystemExit('Legacy v2 exporter blocked. Use scripts/export_v5_forecast_dashboard.py for current dashboard data.')
+
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -87,4 +92,5 @@ def main():
   findings.append({'id':id,'title':title,'result':result,'detail':' • '.join(lines),'n':n,'caveat':'Small observational panel with state and year fixed effects; not proof of causation.'})
  export_frames(extended,sti,national,results,findings,{'mode':'Notebook-exported workbook; PCA recomputed using cell 88 and checked against all 13 saved 2024 scores; forecasts and regression coefficients extracted from saved outputs.','workbook':'pipeline/source/Combined_dataset_updated.xlsx','workbookSha256':hashlib.sha256(book.read_bytes()).hexdigest(),'cells':[11,60,84,88,92,100,107,110,113]})
 
-if __name__=='__main__': main()
+if __name__=='__main__':
+ main()

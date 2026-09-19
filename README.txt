@@ -1,23 +1,21 @@
-SUSTAINABLE TOURISM DASHBOARD — DOSM Datathon 2026
+MALAYSIA SUSTAINABLE TOURISM ANALYTICS DASHBOARD
 
-Requirements: Node.js 22.12+; npm. No backend required.
+Requirements: Node.js 22.12+ and npm. No backend is required.
+
 1. npm ci
-2. npm run dev
-3. Open http://localhost:5173/
+2. npm run check:data
+3. npm run dev
+4. Open http://localhost:5173/
+
 Production build: npm run build
-Local production preview: npm run preview (http://localhost:4173/)
-Deployment is handled by the project owner.
+Production preview: npm run preview (http://localhost:4173/)
 
-Data: Data_Cleaning_v2.ipynb and its saved exported workbook. State visitors
-cover 2015–2025, national indicators 2012–2025 and coastal STI 2020–2024.
-The 65 PCA scores are recomputed using the notebook's own PCA cell and checked
-against its saved 2024 results. No synthetic records or interpolated values.
+Current analytical source: Data_Cleaning_v5.ipynb.
+Current sentiment source: Comment_Sentiment_Pipeline_v2.ipynb.
+Data_Cleaning_v2.ipynb is historical and is not used by the dashboard.
 
-Limitations: Missing environmental observations remain blank. STI covers 13
-monitored states. The forecast uses 50% shrinkage and is a prototype. Causal
-findings are observational associations from a small panel.
+Missing STI values remain unavailable; they are never interpolated or replaced
+with zero. Sentiment is separate from STI. Environmental forecast actuals are
+shown as not yet published. Causal findings are observational associations.
 
-See README.md for offline data regeneration and provenance.
-Run npm run check:data for export integrity checks.
-Browser review and Dashboard.pdf export remain manual: Chrome launch permission
-was declined during implementation. Print the local site using Save as PDF.
+See README.md for provenance, regeneration, behavior and limitations.

@@ -22,7 +22,7 @@ export default function Methodology({ methodology, causal, forecasts, sentimentO
         <p>The production STI uses a complete fixed panel of 13 states from {index.panel_years[0]}–{index.panel_years[1]}. Each indicator is converted to a directional Z-score; “lower is favourable” indicators are sign-reversed. The two indicators within each pillar are averaged, the Economic, Social, and Environmental pillars receive equal 33.3% weight, and the composite is rescaled to 0–100 over all 104 state-years.</p>
         <div className="indicator-grid">{['Economic', 'Social', 'Environmental'].map(pillar => <article key={pillar}><h3>{pillar}</h3>{Object.entries(index.indicators).filter(([, value]) => value === pillar).map(([name]) => <p key={name}><strong>{name}</strong><small>{DIRECTIONS[name]}</small></p>)}</article>)}</div>
         <p>To reduce double-counting, <strong>Visitors per Resident</strong> was removed in favour of receipts per resident (r={index.dropped_indicators[0].correlation}), and <strong>Coastal MWQI Proxy</strong> was removed in favour of coastal good/excellent share (r={index.dropped_indicators[1].correlation}). Correlation indicates redundancy here; it does not make either candidate intrinsically invalid.</p>
-        <div className="method-note"><strong>Coverage and missing data</strong><p>{index.excluded_states.join(', ')} have no coastal water-quality monitoring stations, so a comparable Environmental pillar cannot be built. Full STI is unavailable in 2015–2016 because receipts and length-of-stay inputs are unavailable, and in 2025 because environmental observations are not published. Where inputs permit, <code>Economic_Social_0_100</code> is shown as a partial fallback—not as STI. The dashboard does not interpolate, substitute zero, fabricate STI, or silently relabel a fallback.</p></div>
+        <div className="method-note"><strong>Coverage and missing data</strong><p>{index.excluded_states.join(', ')} have no coastal water-quality monitoring stations, so a comparable Environmental pillar cannot be built. Full STI is unavailable in 2015–2016 because receipts and length-of-stay inputs are unavailable; the fallback export also has no rows for those years. In 2025, environmental observations are not published, so states with the necessary Economic and Social inputs can have an exported <code>Economic_Social_0_100</code> partial fallback—not STI. The dashboard does not interpolate, substitute zero, fabricate STI, or silently relabel a fallback.</p></div>
       </div></details>
 
       <details open><summary>02 / Robustness and ranking sensitivity</summary><div className="method-body">
@@ -64,6 +64,6 @@ export default function Methodology({ methodology, causal, forecasts, sentimentO
         <p>Legacy notebook versions are not current analytical sources. The generated <code>skyfinal.xlsx</code> workbook is the core processed source described by v5, although it is not checked into this repository.</p>
       </div></details>
     </div>
-    <a className="button" href={`${import.meta.env.BASE_URL}data/Data.csv`} download>Download full Data.csv ↗</a>
+    <a className="button" href={`${import.meta.env.BASE_URL}data/Processed_Data.xlsx`} download>Download full Data.csv ↗</a>
   </section>;
 }
