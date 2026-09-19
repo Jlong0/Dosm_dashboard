@@ -1,0 +1,7 @@
+metric,value
+analyzed_comments,4755.0
+positive_pct,44.5
+neutral_pct,21.6
+negative_pct,33.9
+net_sentiment,10.6
+weighted_net_sentiment,19.5

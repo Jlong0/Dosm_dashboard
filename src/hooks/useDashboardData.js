@@ -14,6 +14,12 @@ export function useDashboardData() {
       ['overview', 'agg_overview.json', 'json'],
       ['yoy_values', 'agg_states_yoy_values.csv', 'csv'],
       ['recovery', 'agg_states_recovery.csv', 'csv'],
+      ['sentiment_overall', 'agg_sentiment_overall.csv', 'csv'],
+      ['sentiment_dimensions', 'agg_sentiment_dimension.csv', 'csv'],
+      ['sentiment_stakeholders', 'agg_sentiment_stakeholder.csv', 'csv'],
+      ['sentiment_quarterly', 'agg_sentiment_quarterly.csv', 'csv'],
+      ['sentiment_destination_dimensions', 'agg_sentiment_destination_dimension.csv', 'csv'],
+      ['sentiment_aspects', 'agg_sentiment_aspect.csv', 'csv'],
     ];
     Promise.all(requests.map(async ([name, file, type]) => {
       const response = await fetch(`${import.meta.env.BASE_URL}data/${file}`, { signal: controller.signal });

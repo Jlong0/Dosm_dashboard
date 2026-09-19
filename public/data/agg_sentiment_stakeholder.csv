@@ -1,0 +1,5 @@
+stakeholder,n,positive_pct,neutral_pct,negative_pct,net_sentiment,low_sample_warning
+local,168.0,35.1,6.0,58.9,-23.8,False
+potential_visitor,28.0,82.1,17.9,0.0,82.1,True
+unknown,4541.0,44.5,22.3,33.3,11.2,False
+visitor,18.0,77.8,11.1,11.1,66.7,True

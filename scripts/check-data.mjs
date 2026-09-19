@@ -6,6 +6,7 @@ import { getPillarBreakdown, getStiAvailability, getStiSnapshot } from '../src/d
 import { getOverviewKpis } from '../src/data/overviewKpis.js';
 import { getYoyReport } from '../src/data/yoyReport.js';
 import { getRecoveryInsights } from '../src/data/recoveryInsights.js';
+import { destinationSentiment, quarterlySentiment, sentimentMetrics, topNegativeAspects } from '../src/data/sentiment.js';
 const read=name=>JSON.parse(fs.readFileSync(`public/data/${name}.json`,'utf8'));
 const state=read('state_year'), sti=read('sustainability_index'), national=read('national_year'), forecast=read('forecast');
 assert.equal(state.length,176);assert.equal(sti.length,65);assert.equal(national.length,14);assert.equal(forecast.length,16);
@@ -71,4 +72,30 @@ assert(details.every(row=>Number.isFinite(row.STI_Stability_Score_0_100)&&row.ST
 assert.deepEqual(getRecoveryInsights(details,recovery,'Johor'),{quadrant:'Environmental recovery, tourism weakness',deltaEconomic:-5,deltaEnvironmental:6.5,stability:83.5});
 for(const name of ['Perlis','W.P. Kuala Lumpur','W.P. Putrajaya'])assert.deepEqual(getRecoveryInsights(details,recovery,name),{quadrant:null,deltaEconomic:null,deltaEnvironmental:null,stability:null});
 assert.equal(fs.readFileSync('dashboard_exports_other/agg_states_recovery.csv','utf8'),fs.readFileSync('public/data/agg_states_recovery.csv','utf8'));
+const sentimentOverall=parseCsv(fs.readFileSync('public/data/agg_sentiment_overall.csv','utf8'));
+const sentimentDimensions=parseCsv(fs.readFileSync('public/data/agg_sentiment_dimension.csv','utf8'));
+const sentimentStakeholders=parseCsv(fs.readFileSync('public/data/agg_sentiment_stakeholder.csv','utf8'));
+const sentimentQuarterly=parseCsv(fs.readFileSync('public/data/agg_sentiment_quarterly.csv','utf8'));
+const sentiment=sentimentMetrics(sentimentOverall), quarterly=quarterlySentiment(sentimentQuarterly);
+assert.equal(sentiment.analyzed_comments,4755);
+assert(Math.abs(sentiment.positive_pct+sentiment.neutral_pct+sentiment.negative_pct-100)<0.11);
+for(const row of sentimentDimensions){assert(row.sustainability_dimension);assert(row.n>=0);assert(Math.abs(row.positive_pct+row.neutral_pct+row.negative_pct-100)<0.11);assert(row.net_sentiment>=-100&&row.net_sentiment<=100);}
+for(const row of sentimentStakeholders){assert(row.stakeholder);assert(row.n>=0);assert(Math.abs(row.positive_pct+row.neutral_pct+row.negative_pct-100)<0.11);assert(row.net_sentiment>=-100&&row.net_sentiment<=100);}
+assert.equal(quarterly[0].period,'2020Q4');assert.equal(quarterly.at(-1).period,'2026Q3');
+assert(!quarterly.some(row=>row.period==='NaT'));
+for(const [source,target] of [['agg_overall.csv','agg_sentiment_overall.csv'],['agg_dimension.csv','agg_sentiment_dimension.csv'],['agg_stakeholder.csv','agg_sentiment_stakeholder.csv'],['agg_timeseries_quarterly.csv','agg_sentiment_quarterly.csv']])assert.equal(fs.readFileSync(`dashboard_exports/${source}`,'utf8'),fs.readFileSync(`public/data/${target}`,'utf8'));
+const destinationDimensions=parseCsv(fs.readFileSync('public/data/agg_sentiment_destination_dimension.csv','utf8'));
+const sentimentAspects=parseCsv(fs.readFileSync('public/data/agg_sentiment_aspect.csv','utf8'));
+assert.equal(destinationDimensions.length,48);
+assert.equal(new Set(destinationDimensions.map(row=>`${row.destination}:${row.sustainability_dimension}`)).size,destinationDimensions.length);
+assert(destinationDimensions.every(row=>row.destination&&row.sustainability_dimension&&row.n>=0&&row.net_sentiment>=-100&&row.net_sentiment<=100));
+assert.equal(destinationSentiment(destinationDimensions,'Pulau Pinang').destination,'Penang');
+assert.equal(destinationSentiment(destinationDimensions,'W.P. Kuala Lumpur').destination,'Kuala Lumpur');
+assert.equal(destinationSentiment(destinationDimensions,'W.P. Putrajaya').destination,'Putrajaya');
+assert.equal(destinationSentiment(destinationDimensions,'Kedah').destination,'Langkawi');
+assert.equal(destinationSentiment(destinationDimensions,'Selangor').rows.length,0);
+assert(sentimentAspects.every(row=>row.tourism_aspect&&row.n>=0&&row.net_sentiment>=-100&&row.net_sentiment<=100));
+assert.deepEqual(topNegativeAspects(sentimentAspects).map(row=>row.tourism_aspect),['cleanliness','facilities','safety','accessibility','hospitality']);
+assert(!topNegativeAspects(sentimentAspects,16).some(row=>row.low_sample_warning==='True'));
+for(const [source,target] of [['agg_destination_dimension.csv','agg_sentiment_destination_dimension.csv'],['agg_aspect.csv','agg_sentiment_aspect.csv']])assert.equal(fs.readFileSync(`dashboard_exports/${source}`,'utf8'),fs.readFileSync(`public/data/${target}`,'utf8'));
 console.log('PASS: export counts, keys, nulls, forecast actuals/errors, STI fallback states, all 16 boundaries and static file hand-off.');
