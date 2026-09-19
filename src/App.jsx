@@ -28,7 +28,7 @@ export default function App() {
       {tab === 'States' && <StateExplorer data={data} range={range} states={states} selectedState={selectedState} onSelect={setSelectedState}/ >}
       {tab === 'Overview' && <><NationalTrends data={data} range={range} states={states}/><OverviewSentiment overall={data.sentiment_overall} dimensions={data.sentiment_dimensions} stakeholders={data.sentiment_stakeholders} quarterly={data.sentiment_quarterly}/></>}
       {tab === 'Forecast' && <ForecastPanel tasks={data.forecast_tasks} visitorRows={data.forecast_state_visitors.filter(row => states.includes(row.state))}/ >}
-      {tab === 'Causal' && <CausalInsights findings={data.causal_findings}/ >}{tab === 'Methodology' && <Methodology metadata={data.metadata}/ >}
+      {tab === 'Causal' && <CausalInsights causal={data.causal}/ >}{tab === 'Methodology' && <Methodology methodology={data.methodology} causal={data.causal} forecasts={data.forecast_tasks} sentimentOverall={data.sentiment_overall} sentimentQuarterly={data.sentiment_quarterly}/ >}
     </div><footer><span>TOURISM / MALAYSIA <small>DOSM Datathon 2026</small></span><span>Data vintage: {data.metadata.dataVintage}</span><button onClick={() => window.print()}>Print this view ↗</button></footer>
   </main></>;
 }

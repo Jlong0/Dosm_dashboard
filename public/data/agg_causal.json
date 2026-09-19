@@ -1,0 +1,30 @@
+{
+  "panel_n": 91,
+  "panel_states": 13,
+  "panel_years": [2018, 2019, 2020, 2021, 2022, 2023, 2024],
+  "r_squared": 0.69,
+  "tourism_receipts_lag1": {
+    "coefficient": 0.001,
+    "se": 0.0044,
+    "p_value": 0.816,
+    "ci_95": [-0.0077, 0.0098]
+  },
+  "fixed_effects": ["State", "Year"],
+  "finding": "No statistically significant forward effect of lagged tourism intensity on coastal water quality.",
+  "coastal_station_caveat": {
+    "W.P. Labuan": 5.0,
+    "Kelantan": 6.0,
+    "Selangor": 6.0,
+    "Perak": 8.0,
+    "Melaka": 9.0,
+    "Kedah": 9.0,
+    "Negeri Sembilan": 14.0,
+    "Terengganu": 16.0,
+    "Pulau Pinang": 17.0,
+    "Pahang": 22.0,
+    "Sarawak": 23.0,
+    "Sabah": 24.0,
+    "Johor": 29.0
+  },
+  "data_source": "final_df (rebuilt from combined_master_df for consistency with the STI panel)"
+}

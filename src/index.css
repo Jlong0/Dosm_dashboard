@@ -153,3 +153,49 @@
 .forecast-notes p { padding: 13px; border-radius: 6px; background: #f7f5ed; color: #7a786b; font-size: 10px; line-height: 1.7; }
 @media (max-width: 1000px) { .forecast-task-grid { grid-template-columns: 1fr; } }
 @media (max-width: 700px) { .forecast-notes { grid-template-columns: 1fr; } }
+.causal-analysis { border-top: 3px solid #537b71; }
+.causal-estimate { display: grid; grid-template-columns: 1.1fr 1fr; gap: 32px; margin: 24px 0; padding: 22px; border: 1px solid #dfe7e2; border-radius: 9px; background: #f7faf7; }
+.causal-estimate h3 { margin: 9px 0 12px; font-size: 16px; }
+.causal-estimate > div > strong { color: #285f4d; font-family: Georgia, serif; font-size: 38px; font-weight: 400; }
+.causal-estimate dl { margin: 0; }
+.causal-estimate dl div { display: flex; justify-content: space-between; gap: 20px; padding: 9px 0; border-bottom: 1px solid #e0e8e2; font-size: 11px; }
+.causal-estimate dt { color: #718074; }
+.causal-estimate dd { margin: 0; font-weight: 600; }
+.causal-interpretation { padding: 15px 17px; border-left: 3px solid #749486; background: #f1f5ef; color: #53675b; font-size: 12px; line-height: 1.8; }
+.causal-context { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 22px; }
+.causal-context article { padding: 19px; border: 1px solid #e3e8df; border-radius: 8px; }
+.causal-context h3 { margin: 9px 0; font-size: 16px; }
+.causal-context p { color: #647367; font-size: 11px; line-height: 1.75; }
+.causal-context small { display: block; margin-top: 12px; color: #858e84; font-size: 9px; line-height: 1.6; }
+.coverage-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 14px 0; }
+.coverage-values strong { font-size: 20px; font-weight: 500; }
+.coverage-values small { display: block; margin-top: 4px; font-size: 8px; font-weight: 400; text-transform: uppercase; }
+.causal-limitations { margin-top: 22px; padding: 18px; border-radius: 8px; background: #f7f5ed; }
+.causal-limitations ul { margin: 11px 0 0; padding-left: 18px; color: #716f64; font-size: 10px; line-height: 1.8; }
+@media (max-width: 700px) { .causal-estimate, .causal-context { grid-template-columns: 1fr; } }
+.method-intro { max-width: 850px; }
+.method-sections { margin-top: 24px; border-top: 1px solid #e3e8df; }
+.method-sections > details { border-bottom: 1px solid #e3e8df; }
+.method-sections > details > summary { padding: 17px 4px; color: #315e49; font-weight: 600; }
+.method-body { padding: 0 4px 20px; }
+.method-body > p + p { margin-top: 12px; }
+.indicator-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 18px 0; }
+.indicator-grid article { padding: 15px; border: 1px solid #e3e8df; border-radius: 8px; background: #fafbf8; }
+.indicator-grid h3 { margin: 0 0 10px; }
+.indicator-grid p + p { margin-top: 10px; }
+.indicator-grid strong, .indicator-grid small { display: block; }
+.indicator-grid strong { font-size: 10px; line-height: 1.5; }
+.indicator-grid small { margin-top: 3px; color: #7d887c; font-size: 9px; }
+.method-note { margin-top: 16px; padding: 14px; border-radius: 7px; background: #f7f5ed; }
+.method-note p { margin-top: 6px; }
+.method-stats { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin-bottom: 17px; }
+.method-stats strong { padding: 13px; border: 1px solid #e1e7dd; border-radius: 7px; font-size: 19px; font-weight: 500; }
+.method-stats small { display: block; margin-top: 5px; color: #7e897d; font-size: 8px; font-weight: 400; text-transform: uppercase; }
+.method-body table { margin: 15px 0; }
+.method-body th small { display: block; margin-top: 5px; color: #899288; font-size: 8px; font-weight: 400; }
+.method-body code { padding: 2px 4px; border-radius: 3px; background: #edf1eb; font-size: 11px; }
+.provenance-list p { display: grid; grid-template-columns: 190px 1fr; gap: 16px; }
+.provenance-list p + p { margin-top: 9px; }
+.provenance-list span { overflow-wrap: anywhere; }
+@media (max-width: 800px) { .indicator-grid { grid-template-columns: 1fr; } .method-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .provenance-list p { grid-template-columns: 1fr; gap: 2px; } }
