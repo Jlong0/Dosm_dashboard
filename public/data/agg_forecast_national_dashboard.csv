@@ -1,0 +1,4 @@
+task,unit,actual_2024,naive_forecast_2025,model_forecast_2025,actual_2025,naive_error,naive_error_metric,model_error,model_error_metric,model_name,beats_baseline,recommended_forecast_2025
+domestic_visitors,"'000 visitors, national total",260126.0,260126.0,279908.0,290064.0,15.7,MAPE_%,10.6,MAPE_%,Random Forest (trained excl. COVID-shock years),True,279908.0
+water_pressure,"% non-domestic water share, 13-state avg",41.25,41.25,41.45,,2.46,MAE_pts,2.51,MAE_pts,Ridge (alpha=10),False,41.25
+coastal_quality,"% good+excellent stations, 13-state avg",70.21,70.21,54.11,,5.95,MAE_pts,28.2,MAE_pts,Random Forest (shown for transparency only - do not use),False,70.21

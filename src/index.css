@@ -132,3 +132,24 @@
 .aspect-list > li > span { color: #8a503f; text-align: right; font-size: 10px; font-weight: 600; }
 @media (max-width: 900px) { .state-sentiment-grid { grid-template-columns: 1fr; } }
 @media (max-width: 500px) { .dimension-comparison { grid-template-columns: 1fr; } }
+.forecast-task-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 24px 0; }
+.forecast-task { display: flex; flex-direction: column; padding: 18px; border: 1px solid #e3e8df; border-top: 3px solid #b56f5b; border-radius: 8px; background: #fafbf8; }
+.forecast-task.passes { border-top-color: #497c66; }
+.forecast-task h3 { min-height: 42px; margin-top: 8px; line-height: 1.45; }
+.forecast-task dl { margin: 14px 0; }
+.forecast-task dl div { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid #e7ebe4; font-size: 10px; }
+.forecast-task dt { color: #718074; }
+.forecast-task dd { margin: 0; text-align: right; font-weight: 600; }
+.forecast-task > p { display: flex; gap: 8px; }
+.forecast-task > p span { flex: 1; padding: 7px; border-radius: 5px; background: #eef2ec; font-size: 9px; text-align: center; }
+.baseline-result { margin: 13px 0 8px; color: #3e684d; font-size: 11px; }
+.forecast-task.fails .baseline-result { color: #8a503f; }
+.forecast-task > small { margin-top: auto; color: #7b867a; font-size: 9px; line-height: 1.6; }
+.forecast-table { margin: 8px 0 28px; }
+.forecast-table th small { display: block; margin-top: 5px; color: #899288; font-size: 8px; font-weight: 400; }
+.forecast-chart { padding-top: 24px; border-top: 1px solid #edf0e9; }
+.forecast-chart h3 { margin-bottom: 12px; font-size: 15px; }
+.forecast-notes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 20px; }
+.forecast-notes p { padding: 13px; border-radius: 6px; background: #f7f5ed; color: #7a786b; font-size: 10px; line-height: 1.7; }
+@media (max-width: 1000px) { .forecast-task-grid { grid-template-columns: 1fr; } }
+@media (max-width: 700px) { .forecast-notes { grid-template-columns: 1fr; } }

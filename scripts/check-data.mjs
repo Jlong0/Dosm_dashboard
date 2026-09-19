@@ -8,17 +8,13 @@ import { getYoyReport } from '../src/data/yoyReport.js';
 import { getRecoveryInsights } from '../src/data/recoveryInsights.js';
 import { destinationSentiment, quarterlySentiment, sentimentMetrics, topNegativeAspects } from '../src/data/sentiment.js';
 const read=name=>JSON.parse(fs.readFileSync(`public/data/${name}.json`,'utf8'));
-const state=read('state_year'), sti=read('sustainability_index'), national=read('national_year'), forecast=read('forecast');
-assert.equal(state.length,176);assert.equal(sti.length,65);assert.equal(national.length,14);assert.equal(forecast.length,16);
+const state=read('state_year'), sti=read('sustainability_index'), national=read('national_year');
+assert.equal(state.length,176);assert.equal(sti.length,65);assert.equal(national.length,14);
 for(const rows of [state,sti,national])assert.equal(new Set(rows.map(r=>`${r.state??'national'}:${r.year}`)).size,rows.length);
 const names=new Set(state.map(r=>r.state));assert.equal(names.size,16);
-for(const rows of [state,sti,national,forecast])for(const row of rows)for(const value of Object.values(row))if(typeof value==='number')assert(Number.isFinite(value));
+for(const rows of [state,sti,national])for(const row of rows)for(const value of Object.values(row))if(typeof value==='number')assert(Number.isFinite(value));
 for(const row of state.filter(r=>r.year===2025))assert.equal(row.coastalGoodExcellentPct,null);
 for(const row of sti){assert(row.stiScore>=0&&row.stiScore<=100);assert.equal(typeof row.PC3_Standardized,'number');}
-for(const r of forecast){
- for(const year of [2024,2025])assert(Math.abs(state.find(s=>s.state===r.state&&s.year===year).visitors000-r[`actual${year}`])<0.00001);
- assert(Math.abs((r.shrunkForecast2025/r.actual2025-1)*100-r.errorPct)<0.051);
-}
 for(const [state,score] of Object.entries(read('map_scores')))assert.equal(Math.round(sti.find(r=>r.year===2024&&r.state===state).stiScore),score);
 const geo=JSON.parse(fs.readFileSync('public/data/malaysia-states.geojson'));
 assert.equal(geo.features.length,16);assert.deepEqual(new Set(geo.features.map(geoState)),names);
@@ -98,4 +94,20 @@ assert(sentimentAspects.every(row=>row.tourism_aspect&&row.n>=0&&row.net_sentime
 assert.deepEqual(topNegativeAspects(sentimentAspects).map(row=>row.tourism_aspect),['cleanliness','facilities','safety','accessibility','hospitality']);
 assert(!topNegativeAspects(sentimentAspects,16).some(row=>row.low_sample_warning==='True'));
 for(const [source,target] of [['agg_destination_dimension.csv','agg_sentiment_destination_dimension.csv'],['agg_aspect.csv','agg_sentiment_aspect.csv']])assert.equal(fs.readFileSync(`dashboard_exports/${source}`,'utf8'),fs.readFileSync(`public/data/${target}`,'utf8'));
-console.log('PASS: export counts, keys, nulls, forecast actuals/errors, STI fallback states, all 16 boundaries and static file hand-off.');
+const forecastTasks=parseCsv(fs.readFileSync('public/data/agg_forecast_national_dashboard.csv','utf8'));
+const forecastVisitors=parseCsv(fs.readFileSync('public/data/agg_forecast_states_visitors_dashboard.csv','utf8'));
+assert.deepEqual(forecastTasks.map(row=>row.task),['domestic_visitors','water_pressure','coastal_quality']);
+assert.equal(forecastVisitors.length,16);
+assert.equal(new Set(forecastVisitors.map(row=>row.state)).size,16);
+assert(forecastVisitors.every(row=>Number.isFinite(row.actual_2024)&&Number.isFinite(row.model_forecast_2025)&&Number.isFinite(row.actual_2025)));
+for(const row of forecastTasks){
+ assert(Number.isFinite(row.actual_2024)&&Number.isFinite(row.model_forecast_2025)&&Number.isFinite(row.naive_error)&&Number.isFinite(row.model_error));
+ assert.equal(row.beats_baseline==='True',row.model_error<row.naive_error);
+}
+const visitorForecast=forecastTasks.find(row=>row.task==='domestic_visitors');
+assert.equal(visitorForecast.actual_2025,forecastVisitors.reduce((sum,row)=>sum+row.actual_2025,0));
+assert.deepEqual([visitorForecast.naive_error_metric,visitorForecast.naive_error,visitorForecast.model_error_metric,visitorForecast.model_error],['MAPE_%',15.7,'MAPE_%',10.6]);
+for(const task of ['water_pressure','coastal_quality'])assert.equal(forecastTasks.find(row=>row.task===task).actual_2025,null);
+assert.equal(fs.readFileSync('dashboard_exports_other/agg_forecast_national_dashboard.csv','utf8'),fs.readFileSync('public/data/agg_forecast_national_dashboard.csv','utf8'));
+assert.equal(fs.readFileSync('dashboard_exports_other/agg_forecast_states_visitors_dashboard.csv','utf8'),fs.readFileSync('public/data/agg_forecast_states_visitors_dashboard.csv','utf8'));
+console.log('PASS: export counts, keys, nulls, v5 forecast tasks, STI fallback states, all 16 boundaries and static file hand-off.');

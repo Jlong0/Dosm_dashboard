@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { parseCsv } from '../data/csv';
-const FILES = ['state_year', 'sustainability_index', 'national_year', 'forecast', 'causal_findings', 'metadata', 'map_scores'];
+const FILES = ['state_year', 'sustainability_index', 'national_year', 'causal_findings', 'metadata', 'map_scores'];
 export function useDashboardData() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -20,6 +20,8 @@ export function useDashboardData() {
       ['sentiment_quarterly', 'agg_sentiment_quarterly.csv', 'csv'],
       ['sentiment_destination_dimensions', 'agg_sentiment_destination_dimension.csv', 'csv'],
       ['sentiment_aspects', 'agg_sentiment_aspect.csv', 'csv'],
+      ['forecast_tasks', 'agg_forecast_national_dashboard.csv', 'csv'],
+      ['forecast_state_visitors', 'agg_forecast_states_visitors_dashboard.csv', 'csv'],
     ];
     Promise.all(requests.map(async ([name, file, type]) => {
       const response = await fetch(`${import.meta.env.BASE_URL}data/${file}`, { signal: controller.signal });
