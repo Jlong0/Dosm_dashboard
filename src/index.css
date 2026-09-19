@@ -89,3 +89,9 @@
 .report-status.diagnostic { background: #edf0f2; color: #566b73; }
 .report-status.unavailable { color: #7f877e; }
 @media (max-width: 700px) { .report-row { grid-template-columns: 1fr auto; gap: 8px 14px; } .report-status { grid-column: 2; grid-row: 1 / span 2; } .movement { grid-column: 1; } }
+.insight-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+.insight-card { min-height: 150px; padding: 19px; border: 1px solid #e3e8df; border-radius: 8px; background: #f9faf7; }
+.insight-card h3 { margin: 10px 0; font-size: 18px; line-height: 1.4; }
+.insight-card p { color: #5f7063; font-size: 12px; line-height: 1.7; }
+.insight-card small { display: block; margin-top: 14px; color: #899288; font-size: 9px; line-height: 1.5; }
+@media (max-width: 700px) { .insight-grid { grid-template-columns: 1fr; } }

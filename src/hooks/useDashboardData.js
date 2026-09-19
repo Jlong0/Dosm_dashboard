@@ -13,6 +13,7 @@ export function useDashboardData() {
       ['sti_fallbacks', 'agg_states_fallback.csv', 'csv'],
       ['overview', 'agg_overview.json', 'json'],
       ['yoy_values', 'agg_states_yoy_values.csv', 'csv'],
+      ['recovery', 'agg_states_recovery.csv', 'csv'],
     ];
     Promise.all(requests.map(async ([name, file, type]) => {
       const response = await fetch(`${import.meta.env.BASE_URL}data/${file}`, { signal: controller.signal });
