@@ -947,6 +947,7 @@
 .priority-method-note strong {
   display: block;
   margin-bottom: 0.2rem;
+}
 
 /* V19 — Methodology title, focused controls, and readability polish */
 .methodology > h2 { font-size: 27px; margin-bottom: 20px; }
