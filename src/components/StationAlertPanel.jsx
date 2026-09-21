@@ -1,84 +1,22 @@
-function getAlertLevel(station) {
-    const p = station.properties;
+import {
+    getPriorityReasons,
+    rankMonitoringStations
+  } from '../data/mqims';
   
-    if (
-      p.LATEST_CLASS === 'Poor' ||
-      p.CHANGE_5Y <= -10
-    ) {
-      return 'High';
-    }
-  
-    if (
-      (
-        p.LATEST_CLASS === 'Moderate' &&
-        p.TREND_DIRECTION === 'Declining'
-      ) ||
-      p.CHANGE_5Y <= -5
-    ) {
-      return 'Medium';
-    }
-  
-    if (p.TREND_DIRECTION === 'Declining') {
-      return 'Watch';
-    }
-  
-    return 'Normal';
-  }
-  
-  function getReason(station) {
-    const p = station.properties;
-  
-    if (p.LATEST_CLASS === 'Poor') {
-      return 'Current water quality is classified as Poor and requires attention.';
-    }
-  
-    if (p.CHANGE_5Y <= -10) {
-      return 'Strong deterioration detected over the recent 5-year period.';
-    }
-  
-    if (
-      p.LATEST_CLASS === 'Moderate' &&
-      p.TREND_DIRECTION === 'Declining'
-    ) {
-      return 'Moderate current condition with a continuing downward trend.';
-    }
-  
-    return 'Recent MWQI trend indicates deterioration.';
-  }
+  import {
+    canonicalState
+  } from '../data/stateNames';
   
   export default function StationAlertPanel({
     stations,
     onSelect
   }) {
-    const priority = stations
-      .map(station => ({
-        ...station,
-        alertLevel: getAlertLevel(station)
-      }))
-      .filter(
+    const priority = rankMonitoringStations(
+        stations
+      ).filter(
         station =>
-          station.alertLevel !== 'Normal'
-      )
-      .sort((a, b) => {
-        const priorityOrder = {
-          High: 0,
-          Medium: 1,
-          Watch: 2
-        };
-  
-        const levelDifference =
-          priorityOrder[a.alertLevel] -
-          priorityOrder[b.alertLevel];
-  
-        if (levelDifference !== 0) {
-          return levelDifference;
-        }
-  
-        return (
-          a.properties.CHANGE_5Y -
-          b.properties.CHANGE_5Y
-        );
-      });
+          station.priority.level < 4
+      );
   
     return (
         <div className="marine-alert-list">
@@ -96,9 +34,15 @@ function getAlertLevel(station) {
               <div className="alert-card-top">
       
                 <span
-                  className={`alert-level ${station.alertLevel.toLowerCase()}`}
-                >
-                  {station.alertLevel}
+                    className={`alert-level ${
+                        station.priority.level === 1
+                        ? 'high'
+                        : station.priority.level === 2
+                            ? 'medium'
+                            : 'watch'
+                    }`}
+                    >
+                    {station.priority.label}
                 </span>
       
                 <span className="alert-card-mwqi">
@@ -114,7 +58,9 @@ function getAlertLevel(station) {
               <div className="alert-card-meta">
                 {p.STATION_ID}
                 <span>·</span>
-                {p.STATE_NAME}
+                {canonicalState(
+                    p.STATE_NAME
+                )}
                 <span>·</span>
                 {p.CATEGORY}
               </div>
@@ -155,7 +101,8 @@ function getAlertLevel(station) {
               </div>
       
               <div className="alert-card-reason">
-                {getReason(station)}
+                {getPriorityReasons(station)
+                    .join(' · ')}
               </div>
       
             </button>

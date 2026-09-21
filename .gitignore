@@ -36,3 +36,7 @@ __pycache__/
 dashboard_exports/*
 
 dashboard_exports_other/*
+
+.env
+.env.*
+!.env.example

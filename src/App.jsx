@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useDashboardData } from './hooks/useDashboardData';
 import Header from './components/Header';
 import KpiCards from './components/KpiCards';
@@ -9,19 +9,195 @@ import CausalInsights from './components/CausalInsights';
 import Methodology from './components/Methodology';
 import OverviewSentiment from './components/OverviewSentiment';
 import MQIMS from './components/MQIMS';
+import { buildEvidenceContext } from './evidence/buildEvidenceContext';
+import DecisionIntelligenceDrawer from './components/DecisionIntelligenceDrawer';
 import OverviewStory from './components/OverviewStory';
 
 export default function App() {
-  const { data, error, loading } = useDashboardData();
-  const [tab, setTab] = useState('Overview'), [range, setRange] = useState([2012, 2025]), [selection, setSelection] = useState(null), [selectedState, setSelectedState] = useState('Melaka');
-  if (loading) return <main className="loading" role="status"><span className="brand-mark">◈</span><h1>Loading the observatory</h1><p>Reading local notebook exports…</p></main>;
-  if (error) return <main className="loading" role="alert"><h1>Data could not be loaded</h1><p>{error.message}</p><p>Run the data exporter and serve the site with Vite.</p><button className="button" onClick={() => location.reload()}>Retry</button></main>;
-  const allStates = [...new Set(data.state_year.map(row => row.state))].sort(), states = selection ?? allStates;
+  const {
+    data,
+    error,
+    loading
+  } = useDashboardData();
+
+  const [tab, setTab] =
+    useState('Overview');
+
+  const [range, setRange] =
+    useState([2012, 2025]);
+
+  const [selection, setSelection] =
+    useState(null);
+
+  const [
+    selectedState,
+    setSelectedState
+  ] = useState('Melaka');
+
+  const [
+    aiOpen,
+    setAiOpen
+  ] = useState(false);
+
+  const [
+    mqimsEvidenceContext,
+    setMqimsEvidenceContext
+  ] = useState(null);
+
+  const showDecisionIntelligence = tab !== 'Methodology';
+
+
+  /*
+   * data is null during the first render,
+   * so always use a safe empty array.
+   */
+  const stateYearRows =
+    data?.state_year ?? [];
+
+
+  const allStates = [
+    ...new Set(
+      stateYearRows.map(
+        row => row.state
+      )
+    )
+  ].sort();
+
+
+  const states =
+    selection ?? allStates;
+
+
   const toggle = state => {
-    const next = states.includes(state) ? states.filter(name => name !== state) : [...states, state];
+    const next =
+      states.includes(state)
+        ? states.filter(
+            name => name !== state
+          )
+        : [
+            ...states,
+            state
+          ];
+
     setSelection(next);
-    if (!next.includes(selectedState)) setSelectedState(next[0] ?? '');
+
+    if (
+      !next.includes(
+        selectedState
+      )
+    ) {
+      setSelectedState(
+        next[0] ?? ''
+      );
+    }
   };
+
+
+  const generalEvidenceContext =
+    useMemo(() => {
+
+      if (!data) {
+        return null;
+      }
+
+      const contextualState =
+        tab === 'States'
+          ? selectedState
+
+          : tab === 'Forecast' &&
+            states.length === 1
+            ? states[0]
+
+          : null;
+
+      return buildEvidenceContext({
+        dashboardData:
+          data,
+
+        page:
+          tab,
+
+        state:
+          contextualState,
+
+        year:
+          range?.[1] ?? null
+      });
+
+    }, [
+      data,
+      tab,
+      selectedState,
+      states,
+      range
+    ]);
+
+    useEffect(() => {
+      if (
+        tab === 'Methodology'
+      ) {
+        setAiOpen(false);
+      }
+    }, [tab]);
+
+  const activeEvidenceContext =
+    tab === 'MQIMS'
+      ? mqimsEvidenceContext
+      : generalEvidenceContext;
+
+
+  if (loading) {
+    return (
+      <main
+        className="loading"
+        role="status"
+      >
+        <span className="brand-mark">
+          ◈
+        </span>
+
+        <h1>
+          Loading the observatory
+        </h1>
+
+        <p>
+          Reading local notebook exports…
+        </p>
+      </main>
+    );
+  }
+
+
+  if (error) {
+    return (
+      <main
+        className="loading"
+        role="alert"
+      >
+        <h1>
+          Data could not be loaded
+        </h1>
+
+        <p>
+          {error.message}
+        </p>
+
+        <p>
+          Run the data exporter and
+          serve the site with Vite.
+        </p>
+
+        <button
+          className="button"
+          onClick={() =>
+            location.reload()
+          }
+        >
+          Retry
+        </button>
+      </main>
+    );
+  }
   return <><Header metadata={data.metadata} tab={tab} setTab={setTab}/><main className="page">
     <div className="hero">
       <div>
@@ -92,14 +268,47 @@ export default function App() {
         <p className="filter-note">The range filters Overview and state trends; its To year selects the States-page STI snapshot. Forecast, causal, recovery, stability, and pooled sentiment outputs retain their labelled analysis periods. State selection also filters forecasts.</p>
       </>
     )}
-      {tab === 'Overview' && <KpiCards data={data}/>}<div className="content-stack">
-      {tab === 'Overview' && <OverviewStory data={data} setTab={setTab}/>}
-      {tab === 'States' && <StateExplorer data={data} range={range} states={states} selectedState={selectedState} onSelect={setSelectedState}/ >}
+      {tab === 'Overview' && <KpiCards data={data} evidenceContext={generalEvidenceContext}/>}<div className="content-stack">
+      {tab === 'States' && <StateExplorer data={data} range={range} states={states} selectedState={selectedState} onSelect={setSelectedState} evidenceContext={generalEvidenceContext}/ >}
       {tab === 'Overview' && <NationalTrends data={data} range={range} states={states}/>}
+      {tab === 'Forecast' && <ForecastPanel tasks={data.forecast_tasks} visitorRows={data.forecast_state_visitors.filter(row => states.includes(row.state))} evidenceContext={generalEvidenceContext}/ >}
+      {tab === 'Overview' && <OverviewStory data={data} setTab={setTab}/>}
       {tab === 'Overview' && <OverviewSentiment overall={data.sentiment_overall} dimensions={data.sentiment_dimensions} stakeholders={data.sentiment_stakeholders} quarterly={data.sentiment_quarterly} aspects={data.sentiment_aspects}/>}
-      {tab === 'Forecast' && <ForecastPanel tasks={data.forecast_tasks} visitorRows={data.forecast_state_visitors.filter(row => states.includes(row.state))}/ >}
       {tab === 'Causal' && <CausalInsights causal={data.causal}/ >}{tab === 'Methodology' && <Methodology methodology={data.methodology} causal={data.causal} forecasts={data.forecast_tasks} sentimentOverall={data.sentiment_overall} sentimentQuarterly={data.sentiment_quarterly}/ >}
-      {tab === 'MQIMS' && (<MQIMS geography={data.geography}/>)}
+      {tab === 'MQIMS' && (<MQIMS geography={data.geography} dashboardData={data} onEvidenceContextChange={ setMqimsEvidenceContext }/>)}
     </div><footer><span>TOURISM / MALAYSIA <small>DOSM Datathon 2026</small></span><span>Data vintage: {data.metadata.dataVintage}</span><button onClick={() => window.print()}>Print this view ↗</button></footer>
+    {showDecisionIntelligence && (
+      <div className="ai-launcher">
+        <div className="ai-launch-hint">
+          Explain this view using
+          dashboard evidence
+        </div>
+        <button
+          type="button"
+          className="ai-floating-button"
+          onClick={() =>
+            setAiOpen(true)
+          }
+        >
+        
+          <span>✦</span>
+          
+        
+          <span>
+            Decision Intelligence
+          </span>
+        </button>
+      </div>
+    )}
+  
+  <DecisionIntelligenceDrawer
+    open={aiOpen && showDecisionIntelligence}
+    onClose={() =>
+      setAiOpen(false)
+    }
+    evidenceContext={
+      activeEvidenceContext
+    }
+  />
   </main></>;
 }

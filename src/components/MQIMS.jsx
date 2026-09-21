@@ -1,15 +1,32 @@
 import { useEffect, useMemo, useState } from 'react';
 import Papa from 'papaparse';
 
+import { canonicalState } from '../data/stateNames';
+
+import {
+  filterMqimsStations,
+  filterMpasByState,
+  getMqimsSummary,
+  getPrioritySummary,
+  getMqimsAvailableStates,
+  getStationHistory,
+  rankMonitoringStations,
+} from '../data/mqims';
+
 import MarineStationMap from './MarineStationMap';
 import StationTrendChart from './StationTrendChart';
 import StationAlertPanel from './StationAlertPanel';
 
-export default function MQIMS({ geography }) {
+import { buildEvidenceContext } from '../evidence/buildEvidenceContext';
+
+export default function MQIMS({ geography, dashboardData, onEvidenceContextChange }) {
   const [stations, setStations] = useState(null);
   const [history, setHistory] = useState([]);
   const [selectedStation, setSelectedStation] = useState(null);
   const [sideTab, setSideTab] = useState('alerts');
+  const [mpas, setMpas] = useState(null);
+  const [showMpas, setShowMpas] = useState(true);
+  const [selectedMpa, setSelectedMpa] = useState(null);
 
   const [stateFilter, setStateFilter] = useState('All');
   const [categoryFilter, setCategoryFilter] = useState('All');
@@ -18,7 +35,7 @@ export default function MQIMS({ geography }) {
 
   useEffect(() => {
     fetch(
-        `${import.meta.env.BASE_URL}data/mqims/station_dashboard_summary.geojson`
+        `${import.meta.env.BASE_URL}data/mqims/station_dashboard_summary_enriched.geojson`
     )
       .then(res => {
         if (!res.ok) {
@@ -74,35 +91,33 @@ export default function MQIMS({ geography }) {
       });
   }, []);
 
+  useEffect(() => {
+    fetch(
+      `${import.meta.env.BASE_URL}data/mpa/mpa_points.geojson`
+    )
+      .then(res => {
+        if (!res.ok) {
+          throw new Error('Failed to load MPA data');
+        }
+  
+        return res.json();
+      })
+      .then(setMpas)
+      .catch(error => {
+        console.error('MPA data error:', error);
+      });
+  }, []);
+
   const filteredStations = useMemo(() => {
-    if (!stations) return [];
-  
-    return stations.features.filter(feature => {
-      const station = feature.properties;
-  
-      const matchesState =
-        stateFilter === 'All' ||
-        station.STATE_NAME === stateFilter;
-  
-      const matchesCategory =
-        categoryFilter === 'All' ||
-        station.CATEGORY === categoryFilter;
-  
-      const matchesClass =
-        classFilter === 'All' ||
-        station.LATEST_CLASS === classFilter;
-  
-      const matchesTrend =
-        trendFilter === 'All' ||
-        station.TREND_DIRECTION === trendFilter;
-  
-      return (
-        matchesState &&
-        matchesCategory &&
-        matchesClass &&
-        matchesTrend
-      );
-    });
+    return filterMqimsStations(
+      stations?.features ?? [],
+      {
+        state: stateFilter,
+        category: categoryFilter,
+        mwqiClass: classFilter,
+        trend: trendFilter
+      }
+    );
   }, [
     stations,
     stateFilter,
@@ -111,60 +126,153 @@ export default function MQIMS({ geography }) {
     trendFilter
   ]);
 
+  const filteredMpas = useMemo(() => {
+    return filterMpasByState(
+      mpas?.features ?? [],
+      stateFilter
+    );
+  }, [mpas, stateFilter]);
+
   const summary = useMemo(() => {
-    const features = filteredStations;
-  
-    return {
-      total: features.length,
-  
-      poor: features.filter(
-        feature =>
-          feature.properties.LATEST_CLASS === 'Poor'
-      ).length,
-  
-      moderate: features.filter(
-        feature =>
-          feature.properties.LATEST_CLASS === 'Moderate'
-      ).length,
-  
-      declining: features.filter(
-        feature =>
-          feature.properties.TREND_DIRECTION === 'Declining'
-      ).length
-    };
+    return getMqimsSummary(
+      filteredStations
+    );
   }, [filteredStations]);
 
   const selectedHistory = useMemo(() => {
-    if (!selectedStation) {
-      return [];
-    }
-  
-    return history
-      .filter(
-        row =>
-          row.STATION_ID ===
-          selectedStation.STATION_ID
-      )
-      .sort(
-        (a, b) =>
-          a.YEAR - b.YEAR
-      );
+    return getStationHistory(
+      history,
+      selectedStation?.STATION_ID
+    );
   }, [
     history,
     selectedStation
   ]);
 
   const availableStates = useMemo(() => {
-    if (!stations) return [];
-  
-    return [
-      ...new Set(
-        stations.features
-          .map(feature => feature.properties.STATE_NAME)
-          .filter(Boolean)
-      )
-    ].sort();
+    return getMqimsAvailableStates(
+      stations?.features ?? []
+    );
   }, [stations]);
+
+  const priorityStations = useMemo(() => {
+    return rankMonitoringStations(
+      filteredStations
+    );
+  }, [filteredStations]);
+
+  const prioritySummary = useMemo(() => {
+    return getPrioritySummary(
+      priorityStations
+    );
+  }, [priorityStations]);
+
+  const evidenceContext =
+    useMemo(() => {
+
+        if (
+        !dashboardData ||
+        !stations
+        ) {
+        return null;
+        }
+
+        return buildEvidenceContext({
+        dashboardData,
+
+        page:
+            'MQIMS',
+
+        /*
+        * All should remain All for the
+        * marine filter, but the central
+        * builder will treat it as no
+        * single selected state for STI.
+        */
+        state:
+            stateFilter,
+
+        /*
+        * No year is supplied here.
+        *
+        * buildEvidenceContext() will
+        * automatically use the latest
+        * full STI year from methodology.
+        */
+        year:
+            null,
+
+        selectedStationId:
+            selectedStation
+            ?.STATION_ID ??
+            null,
+
+        waterQuality: {
+            stations:
+            stations.features,
+
+            history,
+
+            filters: {
+            state:
+                stateFilter,
+
+            category:
+                categoryFilter,
+
+            mwqiClass:
+                classFilter,
+
+            trend:
+                trendFilter
+            },
+
+            selectedStationId:
+            selectedStation
+                ?.STATION_ID ??
+            null,
+
+            priorityLimit:
+            10
+        }
+        });
+
+  }, [
+        dashboardData,
+        stations,
+        history,
+
+        stateFilter,
+        categoryFilter,
+        classFilter,
+        trendFilter,
+
+        selectedStation
+  ]);
+
+  useEffect(() => {
+    if (!evidenceContext) {
+      return;
+    }
+  
+    onEvidenceContextChange?.(
+      evidenceContext
+    );
+  
+  }, [
+    evidenceContext,
+    onEvidenceContextChange
+  ]);
+
+  useEffect(() => {
+    return () => {
+      onEvidenceContextChange?.(
+        null
+      );
+    };
+  }, [
+    onEvidenceContextChange
+  ]);
 
   if (!stations || !summary) {
     return (
@@ -184,7 +292,14 @@ export default function MQIMS({ geography }) {
 
   function handleStationSelect(station) {
     setSelectedStation(station);
+    setSelectedMpa(null);
     setSideTab('station');
+  }
+
+  function handleMpaSelect(mpa) {
+    setSelectedMpa(mpa);
+    setSelectedStation(null);
+    setSideTab('mpa');
   }
 
   return (
@@ -193,7 +308,7 @@ export default function MQIMS({ geography }) {
       <div className="section-heading">
         <div>
           <span className="eyebrow">
-            MARINE WATER QUALITY
+            MARINE WATER QUALITY INDEX
           </span>
 
           <h2>
@@ -345,19 +460,56 @@ export default function MQIMS({ geography }) {
         </button>
 
         </div>
+        <div className="priority-strip">
+
+            <div>
+                <span>Immediate review</span>
+                <strong>{prioritySummary.immediate}</strong>
+            </div>
+
+            <div>
+                <span>Elevated</span>
+                <strong>{prioritySummary.elevated}</strong>
+            </div>
+
+            <div>
+                <span>Watch</span>
+                <strong>{prioritySummary.watch}</strong>
+            </div>
+
+         </div>
+         <div className="priority-method-note">
+            <strong>Monitoring priority heuristic</strong>
+
+            <p>
+                Priority combines current MWQI condition,
+                recent deterioration and proximity to an
+                available marine protected-area reference point.
+                MPA distance is measured to a reference coordinate,
+                not the legal protected-area boundary. This is a
+                MarineWatch decision-support indicator and not an
+                official DOE classification.
+            </p>
+        </div>
 
       <div className="marine-explorer">
 
         <div className="marine-map-column">
             <MarineStationMap
             geography={geography}
-            stations={filteredStations}
+            stations={priorityStations}
             allStations={stations.features}
             selectedStation={selectedStation}
+            mpas={filteredMpas}
+            showMpas={showMpas}
+            selectedMpa={selectedMpa}
+            onToggleMpas={setShowMpas}
             focusStation={selectedStation}
             onSelect={handleStationSelect}
+            onMpaSelect={handleMpaSelect}
             />
         </div>
+        
 
         <aside
         className={`marine-station-panel ${
@@ -369,17 +521,42 @@ export default function MQIMS({ geography }) {
         <div className="marine-side-tabs">
 
             <button
-            className={sideTab === 'station' ? 'active' : ''}
-            onClick={() => setSideTab('station')}
+            className={
+                sideTab === 'station'
+                ? 'active'
+                : ''
+            }
+            onClick={() =>
+                setSideTab('station')
+            }
             >
-            Station details
+            Station
             </button>
 
             <button
-            className={sideTab === 'alerts' ? 'active' : ''}
-            onClick={() => setSideTab('alerts')}
+            className={
+                sideTab === 'alerts'
+                ? 'active'
+                : ''
+            }
+            onClick={() =>
+                setSideTab('alerts')
+            }
             >
-            Priority alerts
+            Priority
+            </button>
+
+            <button
+            className={
+                sideTab === 'mpa'
+                ? 'active'
+                : ''
+            }
+            onClick={() =>
+                setSideTab('mpa')
+            }
+            >
+            Protected area
             </button>
 
         </div>
@@ -387,7 +564,7 @@ export default function MQIMS({ geography }) {
 
         {sideTab === 'alerts' && (
             <StationAlertPanel
-            stations={filteredStations}
+            stations={priorityStations}
             onSelect={handleStationSelect}
             />
         )}
@@ -435,7 +612,9 @@ export default function MQIMS({ geography }) {
 
                 <div className="station-meta">
                     <span>
-                    {selectedStation.STATE_NAME}
+                        {canonicalState(
+                            selectedStation.STATE_NAME
+                        )}
                     </span>
 
                     <span>·</span>
@@ -515,10 +694,163 @@ export default function MQIMS({ geography }) {
                     </div>
 
                 </dl>
+                <div className="station-mpa-context">
+
+                    <span className="eyebrow">
+                        MARINE PROTECTED AREA CONTEXT
+                    </span>
+
+                    <div className="station-mpa-card">
+
+                        <div>
+                        <span>Nearest MPA reference</span>
+
+                        <strong>
+                            {selectedStation.NEAREST_MPA_NAME || 'N/A'}
+                        </strong>
+                        </div>
+
+                        <div>
+                        <span>Reference-point distance</span>
+
+                        <strong>
+                            {Number.isFinite(
+                            Number(selectedStation.DISTANCE_KM)
+                            )
+                            ? `${Number(
+                                selectedStation.DISTANCE_KM
+                                ).toFixed(1)} km`
+                            : 'N/A'}
+                        </strong>
+                        </div>
+
+                        <small>
+                        Distance is measured to the protected area's
+                        reference coordinate, not its legal boundary.
+                        </small>
+
+                    </div>
+
+                </div>
 
                 </div>
 
             )}
+            </>
+        )}
+
+        {sideTab === 'mpa' && (
+            <>
+                {!selectedMpa ? (
+
+                <div className="station-empty">
+
+                    <span className="eyebrow">
+                    MARINE PROTECTED AREA EXPLORER
+                    </span>
+
+                    <h3>
+                    Select a protected area
+                    </h3>
+
+                    <p className="muted">
+                    Click a blue diamond on the map
+                    to inspect its available protected-area
+                    information.
+                    </p>
+
+                </div>
+
+                ) : (
+
+                <div
+                    key={selectedMpa.MPA_ID}
+                    className="station-detail-content"
+                >
+
+                    <span className="eyebrow">
+                    MARINE PROTECTED AREA
+                    </span>
+
+                    <h3>
+                    {selectedMpa.MPA_Name}
+                    </h3>
+
+                    <p className="station-code">
+                        {canonicalState(
+                            selectedMpa.State
+                        )}
+                    </p>
+
+                    <div className="mpa-detail-grid">
+
+                    <div>
+                        <span>Designation</span>
+                        <strong>
+                        {selectedMpa.Designation || 'N/A'}
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>Status</span>
+                        <strong>
+                        {selectedMpa.Status || 'N/A'}
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>Established</span>
+                        <strong>
+                        {selectedMpa.Established || 'N/A'}
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>Area</span>
+                        <strong>
+                        {Number.isFinite(
+                            Number(selectedMpa.Area_km2)
+                        )
+                            ? `${Number(
+                                selectedMpa.Area_km2
+                            ).toFixed(1)} km²`
+                            : 'N/A'}
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>IUCN category</span>
+                        <strong>
+                        {selectedMpa.IUCN_Category || 'N/A'}
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>No-take status</span>
+                        <strong>
+                        {selectedMpa.No_Take || 'N/A'}
+                        </strong>
+                    </div>
+
+                    </div>
+
+                    {selectedMpa.Source && (
+                    <div className="mpa-source">
+
+                        <span className="eyebrow">
+                        SOURCE
+                        </span>
+
+                        <p>
+                        {selectedMpa.Source}
+                        </p>
+
+                    </div>
+                    )}
+
+                </div>
+
+                )}
             </>
         )}
 
