@@ -201,3 +201,511 @@
 .provenance-list span { overflow-wrap: anywhere; }
 @media (max-width: 800px) { .indicator-grid { grid-template-columns: 1fr; } .method-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .provenance-list p { grid-template-columns: 1fr; gap: 2px; } }
+.marine-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.marine-stat {
+  padding: 1rem;
+  border: 1px solid #edf0ec;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.marine-stat strong {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 1.8rem;
+}
+
+.marine-selected {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #edf0ec;
+  border-radius: 12px;
+}
+
+.marine-selected dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.marine-selected dt {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.marine-selected dd {
+  margin: 0.2rem 0 0;
+  font-weight: 600;
+}
+
+.marine-map-legend {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+}
+
+.marine-map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.marine-map-legend i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.marine-map-legend .excellent {
+  background: #16705b;
+}
+
+.marine-map-legend .good {
+  background: #74a58f;
+}
+
+.marine-map-legend .moderate {
+  background: #e4c675;
+}
+
+.marine-map-legend .poor {
+  background: #c76451;
+}
+
+@media (max-width: 800px) {
+  .marine-summary-grid,
+  .marine-selected dl {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.marine-map-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+
+  display: flex;
+  gap: 6px;
+}
+
+.marine-map-controls button {
+  border: 1px solid #d8dfdc;
+  background: white;
+  border-radius: 6px;
+
+  min-width: 34px;
+  height: 34px;
+  padding: 0 10px;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.marine-map-controls button:hover {
+  background: #f2f5f3;
+}
+
+.zoom-level {
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: white;
+  border: 1px solid #d8dfdc;
+  border-radius: 6px;
+}
+
+.marine-explorer {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 0.8fr);
+  gap: 1.25rem;
+  align-items: stretch;
+  margin-top: 1.5rem;
+}
+
+.marine-map-column {
+  min-width: 0;
+}
+
+.marine-map-wrap {
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  border: 1px solid #e4e9e6;
+  border-radius: 14px;
+  background: #f7f9f8;
+}
+
+.marine-map-wrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+.marine-station-panel {
+  min-height: 520px;
+  padding: 1.5rem;
+
+  border: 1px solid #e4e9e6;
+  border-radius: 14px;
+
+  background: #fff;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.marine-station-panel.has-selection {
+  border-color: #9ab6a6;
+  box-shadow: 0 8px 24px rgba(20, 47, 41, 0.08);
+}
+
+.station-detail-content {
+  animation: stationChange 0.25s ease;
+}
+
+@keyframes stationChange {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.station-detail-content h3 {
+  margin: 0.4rem 0 0;
+  font-size: 1.35rem;
+}
+
+.station-code {
+  margin: 0.25rem 0;
+  font-weight: 600;
+}
+
+.station-meta {
+  display: flex;
+  gap: 0.4rem;
+  color: #66736f;
+  font-size: 0.85rem;
+}
+
+.station-mwqi {
+  margin-top: 1.5rem;
+  padding: 1rem;
+
+  background: #f5f7f6;
+  border-radius: 10px;
+}
+
+.station-mwqi > span:first-child {
+  display: block;
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+.station-mwqi strong {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 2.3rem;
+}
+
+.mwqi-status {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.mwqi-status.excellent {
+  background: #dceee7;
+}
+
+.mwqi-status.good {
+  background: #e5f0eb;
+}
+
+.mwqi-status.moderate {
+  background: #f6edcf;
+}
+
+.mwqi-status.poor {
+  background: #f4ddda;
+}
+
+.station-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-top: 1.25rem;
+}
+
+.station-metrics div {
+  padding: 0.8rem;
+  border: 1px solid #edf0ec;
+  border-radius: 8px;
+}
+
+.station-metrics dt {
+  color: #6b7280;
+  font-size: 0.72rem;
+}
+
+.station-metrics dd {
+  margin: 0.25rem 0 0;
+  font-weight: 600;
+}
+
+.station-empty {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.station-trend {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #edf0ec;
+}
+
+.station-trend-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.station-trend-heading h3 {
+  margin: 0.2rem 0 0;
+  font-size: 1rem;
+}
+
+.mwqi-threshold-note {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  margin-top: 0.5rem;
+
+  color: #6b7280;
+  font-size: 0.65rem;
+}
+
+.station-chart-empty {
+  margin-top: 1.5rem;
+}
+
+.marine-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.75rem;
+
+  margin: 1.25rem 0;
+  padding: 1rem;
+
+  border: 1px solid #e4e9e6;
+  border-radius: 12px;
+  background: #f8faf9;
+}
+
+.marine-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+
+  min-width: 150px;
+}
+
+.marine-filters label span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #68736f;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.marine-filters select {
+  height: 38px;
+  padding: 0 0.75rem;
+
+  border: 1px solid #d8dfdc;
+  border-radius: 7px;
+
+  background: white;
+  font: inherit;
+  font-size: 0.85rem;
+}
+
+.marine-filter-reset {
+  height: 38px;
+}
+
+.marine-side-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+
+  padding: 4px;
+  margin-bottom: 1rem;
+
+  background: #f2f5f3;
+  border-radius: 8px;
+}
+
+.marine-side-tabs button {
+  border: 0;
+  border-radius: 6px;
+
+  padding: 0.55rem 0.65rem;
+
+  background: transparent;
+  color: #68736f;
+
+  font-size: 0.76rem;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.marine-side-tabs button.active {
+  background: #fff;
+  color: #142f29;
+
+  box-shadow:
+    0 1px 4px rgba(20, 47, 41, 0.08);
+}
+
+.marine-alert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+
+  margin-top: 1rem;
+}
+
+.marine-alert-card {
+  display: block;
+
+  width: 100%;
+  padding: 1rem;
+
+  border: 1px solid #dfe6e2;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  text-align: left;
+  cursor: pointer;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.marine-alert-card:hover {
+  border-color: #9ab6a6;
+
+  box-shadow:
+    0 5px 16px rgba(20, 47, 41, 0.08);
+
+  transform: translateY(-1px);
+}
+
+.alert-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 0.7rem;
+}
+
+.alert-card-mwqi {
+  color: #596762;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.alert-card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #142f29;
+
+  line-height: 1.35;
+}
+
+.alert-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+
+  margin-top: 0.25rem;
+
+  color: #71807a;
+  font-size: 0.72rem;
+}
+
+.alert-card-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+
+  margin-top: 0.9rem;
+}
+
+.alert-card-details > div {
+  padding: 0.65rem;
+
+  border: 1px solid #edf0ec;
+  border-radius: 8px;
+
+  background: #f8faf9;
+}
+
+.alert-detail-label {
+  display: block;
+
+  margin-bottom: 0.2rem;
+
+  color: #7a8782;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.alert-card-details strong {
+  display: block;
+
+  color: #243d35;
+  font-size: 0.82rem;
+}
+
+.alert-card-reason {
+  margin-top: 0.8rem;
+  padding-top: 0.7rem;
+
+  border-top: 1px solid #edf0ec;
+
+  color: #66736f;
+  font-size: 0.72rem;
+  line-height: 1.5;
+}

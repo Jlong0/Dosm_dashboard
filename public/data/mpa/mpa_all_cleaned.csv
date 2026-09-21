@@ -1,0 +1,99 @@
+state_code,state,district_code,district,mpa_code,island_code,gazetted_date,gazette_number,map_link,carta_mal,notes,marine_park_id,marine_park,mpa_type,gazetted_year,location,agency,area_km2,area_name,legal_authority,gazetted_year_clean,MPA_NAME,MPA_ID
+01,Johor,0105,Mersing,010506,01050602,,,,,Small Island,01,Taman Laut Johor,Island,,,,1.33789654,Pulau Duyung,,,Pulau Duyung,MPA_001
+01,Johor,0105,Mersing,010506,01050603,,,,,Small Island,01,Taman Laut Johor,Island,,,,0.05677781,Pulau Lang,,,Pulau Lang,MPA_002
+01,Johor,0105,Mersing,010506,01050604,,,,,Small Island,01,Taman Laut Johor,Island,,,,0.14900417,Pulau Pinang,,,Pulau Pinang,MPA_003
+01,Johor,0105,Mersing,010506,01050601,1994-10-20,P.U. (A) 401/94,PW 229,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,14.4204981,Pulau Aur,,1994,Pulau Aur,MPA_004
+01,Johor,0105,Mersing,010508,01050801,1994-10-20,P.U. (A) 401/94,L.4655 Peta Siri L7030/PW230,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.16417522,Pulau Harimau,,1994,Pulau Harimau,MPA_005
+01,Johor,0105,Mersing,010510,01051001,1994-10-20,P.U. (A) 401/94,L.4655 Peta Siri L7030/PW230,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.08431746,Pulau Mensirip,,1994,Pulau Mensirip,MPA_006
+01,Johor,0105,Mersing,010509,01050902,,,,,Small Island,01,Taman Laut Johor,Island,,,,0.00489259,Pulau Kelabang,,,Pulau Kelabang,MPA_007
+01,Johor,0105,Mersing,010509,01050901,1994-10-20,P.U. (A) 401/94,L.4655 Peta Siri L7030,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.04525316,Pulau Gual,,1994,Pulau Gual,MPA_008
+01,Johor,0105,Mersing,010501,01050101,1994-10-20,P.U. (A) 401/94,L.4655 Peta Siri L7030/PW230,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.23193361,Pulau Rawa,,1994,Pulau Rawa,MPA_009
+01,Johor,0105,Mersing,010502,01050201,1994-10-20,P.U. (A) 401/94,L.4655 Peta Siri L7030/PW230,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.55157709,Pulau Babi Hujong,,1994,Pulau Babi Hujong,MPA_010
+01,Johor,0105,Mersing,010503,01050301,1994-10-20,P.U. (A) 401/94,L.4655 Peta Siri L7030/PW230,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.54466548,Pulau Babi Tengah,,1994,Pulau Babi Tengah,MPA_011
+01,Johor,0105,Mersing,010504,01050401,1994-10-20,P.U. (A) 401/94,L.4751 Peta Siri L7030,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,4.80763274,Pulau Babi Besar,,1994,Pulau Babi Besar,MPA_012
+01,Johor,0105,Mersing,010505,01050506,,,,,Small Island,01,Taman Laut Johor,Island,,,,0.01912691,Pulau Apil,,,Pulau Apil,MPA_013
+01,Johor,0105,Mersing,010505,01050504,,,,,Small Island,01,Taman Laut Johor,Island,,,,0.07004386,Pulau Nanga Besar,,,Pulau Nanga Besar,MPA_014
+01,Johor,0105,Mersing,010505,01050501,1994-10-20,P.U. (A) 401/94,PW 231,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,15.02664889,Pulau Tinggi,,1994,Pulau Tinggi,MPA_015
+01,Johor,0105,Mersing,010505,01050508,,,,,Small Island,01,Taman Laut Johor,Island,,,,0.14917195,Pulau Ibol,,,Pulau Ibol,MPA_016
+01,Johor,0105,Mersing,010505,01050502,,,,,Small Island,01,Taman Laut Johor,Island,,,,0.02538535,Pulau Penyembong,,,Pulau Penyembong,MPA_017
+01,Johor,0105,Mersing,010505,01050507,,,,,Small Island,01,Taman Laut Johor,Island,,,,0.00884208,Pulau Lanting,,,Pulau Lanting,MPA_018
+01,Johor,0105,Mersing,010505,01050503,,,,,Small Island,01,Taman Laut Johor,Island,,,,0.09520544,Pulau Simbang,,,Pulau Simbang,MPA_019
+01,Johor,0105,Mersing,010505,01050505,,,,,Small Island,01,Taman Laut Johor,Island,,,,0.03974652,Pulau Nanga Kecil,,,Pulau Nanga Kecil,MPA_020
+01,Johor,0105,Mersing,010513,01051301,1994-10-20,P.U. (A) 401/94,L.4654 Peta Siri L7030,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.01298488,Pulau Mentigi,,1994,Pulau Mentigi,MPA_021
+01,Johor,0105,Mersing,010518,01051801,2022-01-01,P.U. (A) 401/94,,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.0234738,Pulau Mertang Barat,,2022,Pulau Mertang Barat,MPA_022
+01,Johor,0105,Mersing,010520,01052001,2022-01-01,P.U. (A) 401/94,,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.01407986,Pulau Mertang Tengah (Achi),,2022,Pulau Mertang Tengah (Achi),MPA_023
+01,Johor,0105,Mersing,010519,01051901,2022-01-01,P.U. (A) 401/94,,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.01892907,Pulau Mertang Timur,,2022,Pulau Mertang Timur,MPA_024
+01,Johor,0105,Mersing,010511,01051102,,,,,Small Island,01,Taman Laut Johor,Island,,,,0.01011376,Pulau Papan,,,Pulau Papan,MPA_025
+01,Johor,0105,Mersing,010512,01051201,1994-10-20,P.U. (A) 401/94,L.4654 Peta Siri L7030,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.04153652,Pulau Sibu Hujong,,1994,Pulau Sibu Hujong,MPA_026
+01,Johor,0105,Mersing,010511,01051103,,,,,Small Island,01,Taman Laut Johor,Island,,,,0.36295623,Pulau Sibu Kecil,,,Pulau Sibu Kecil,MPA_027
+01,Johor,0105,Mersing,010511,01051101,1994-10-20,P.U. (A) 401/94,PW 232,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,3.99605439,Pulau Sibu,,1994,Pulau Sibu,MPA_028
+01,Johor,0105,Mersing,010507,01050701,1994-10-20,P.U. (A) 401/94,PW 228,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,8.70929209,Pulau Pemanggil,,1994,Pulau Pemanggil,MPA_029
+01,Johor,0105,Mersing,010514,01051401,2022-01-01,P.U. (A) 401/94,,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.02429351,Pulau Lima Kechil,,2022,Pulau Lima Kechil,MPA_030
+01,Johor,0105,Mersing,010515,01051501,2022-01-01,P.U. (A) 401/94,,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.07129874,Pulau Lima Besar,,2022,Pulau Lima Besar,MPA_031
+01,Johor,0105,Mersing,010516,01051601,2022-01-01,P.U. (A) 401/94,,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.00340409,Pulau Tokong Rakit,,2022,Pulau Tokong Rakit,MPA_032
+01,Johor,0105,Mersing,010517,01051701,2022-01-01,P.U. (A) 401/94,,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.02885673,Pulau Tokong Yu,,2022,Pulau Tokong Yu,MPA_033
+01,Johor,0105,Mersing,010524,01052401,2022-01-01,P.U. (A) 401/94,,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.00055365,Tokong Chupak,,2022,Tokong Chupak,MPA_034
+01,Johor,0105,Mersing,010523,01052301,2022-01-01,P.U. (A) 401/94,,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.00512438,Tokong Belalai,,2022,Tokong Belalai,MPA_035
+01,Johor,0105,Mersing,010522,01052201,2022-01-01,P.U. (A) 401/94,,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.00981473,Tokong Condong,,2022,Tokong Condong,MPA_036
+01,Johor,0105,Mersing,010521,01052101,2022-01-01,P.U. (A) 401/94,,MAL 625,Gazette Island,01,Taman Laut Johor,Island,,,,0.00613653,Tokong Gantang,,2022,Tokong Gantang,MPA_037
+02,Kedah,0201,Kota Setar,020102,02010201,1994-10-20,P.U. (A) 401/94,L.3268 Peta Siri L7030,MAL 565,Gazette Island,02,Taman Laut Kedah,Island,,,,0.06056897,Pulau Lembu,,1994,Pulau Lembu,MPA_038
+02,Kedah,0201,Kota Setar,020101,02010101,1994-10-20,P.U. (A) 401/94,L.3268 Peta Siri L7030,MAL 565,Gazette Island,02,Taman Laut Kedah,Island,,,,0.00698427,Pulau Kacha,,1994,Pulau Kacha,MPA_039
+02,Kedah,0201,Kota Setar,020103,02010301,1994-10-20,P.U. (A) 401/94,L.3268 Peta Siri L7030,MAL 565,Gazette Island,02,Taman Laut Kedah,Island,,,,0.27788936,Pulau Payar,,1994,Pulau Payar,MPA_040
+02,Kedah,0201,Kota Setar,020104,02010401,1994-10-20,P.U. (A) 401/94,L.3268 Peta Siri L7030,MAL 565,Gazette Island,02,Taman Laut Kedah,Island,,,,0.0074903,Pulau Segantang,,1994,Pulau Segantang,MPA_041
+04,Melaka,0401,Melaka Tengah,040103,04010301,2023-04-04,P.U. (A) 401/94,,,Gazette Island,04,Taman Laut Melaka,Island,,,,0.05865104,Pulau Dodol,,2023,Pulau Dodol,MPA_042
+04,Melaka,0401,Melaka Tengah,040102,04010201,2023-04-04,P.U. (A) 401/94,,,Gazette Island,04,Taman Laut Melaka,Island,,,,0.11040023,Pulau Nangka,,2023,Pulau Nangka,MPA_043
+04,Melaka,0401,Melaka Tengah,040101,04010101,2023-04-04,P.U. (A) 401/94,,,Gazette Island,04,Taman Laut Melaka,Island,,,,0.04351054,Pulau Undan,,2023,Pulau Undan,MPA_044
+06,Pahang,0609,Rompin,060901,06090103,,,,,Small Island,06,Taman Laut Pahang,Island,,,,0.01617774,Pulau Tumok,,,Pulau Tumok,MPA_045
+06,Pahang,0609,Rompin,060901,06090101,1994-10-20,P.U. (A) 401/94,"Syit No.1,2,3 Syit Piawai Negeri Pahang",MAL 635 & MAL 625,Gazette Island,06,Taman Laut Pahang,Island,,,,134.63376632,Pulau Tioman,,1994,Pulau Tioman,MPA_046
+06,Pahang,0609,Rompin,060903,06090301,1994-10-20,P.U. (A) 401/94,L.4656 Peta Siri L7030,MAL 635 & MAL 625,Gazette Island,06,Taman Laut Pahang,Island,,,,0.04241776,Pulau Sepoi,,1994,Pulau Sepoi,MPA_047
+06,Pahang,0609,Rompin,060902,06090201,1994-10-20,P.U. (A) 401/94,L.4656 Peta Siri L7030,MAL 635 & MAL 625,Gazette Island,06,Taman Laut Pahang,Island,,,,0.02328866,Pulau Labas,,1994,Pulau Labas,MPA_048
+06,Pahang,0609,Rompin,060901,06090102,,,,,Small Island,06,Taman Laut Pahang,Island,,,,0.00490723,Pulau Renggis,,,Pulau Renggis,MPA_049
+06,Pahang,0609,Rompin,060905,06090501,1994-10-20,P.U. (A) 401/94,L.4655 Peta Siri L7030,MAL 635 & MAL 625,Gazette Island,06,Taman Laut Pahang,Island,,,,0.00785214,Pulau Tokong Bahara,,1994,Pulau Tokong Bahara,MPA_050
+06,Pahang,0609,Rompin,060904,06090401,1994-10-20,P.U. (A) 401/94,L.4655 Peta Siri L7030,MAL 635 & MAL 625,Gazette Island,06,Taman Laut Pahang,Island,,,,0.03661662,Pulau Jahat,,1994,Pulau Jahat,MPA_051
+06,Pahang,0609,Rompin,060901,06090104,,,,,Small Island,06,Taman Laut Pahang,Island,,,,0.01859416,Pulau Soyak,,,Pulau Soyak,MPA_052
+06,Pahang,0609,Rompin,060906,06090601,1994-10-20,P.U. (A) 401/94,L.4656 Peta Siri L7030,MAL 635 & MAL 625,Gazette Island,06,Taman Laut Pahang,Island,,,,0.0465885,Pulau Ceben,,1994,Pulau Ceben,MPA_053
+06,Pahang,0609,Rompin,060907,06090701,1994-10-20,P.U. (A) 401/94,"Syit No.1, Syit Piawai Negeri Pahang",MAL 635 & MAL 625,Gazette Island,06,Taman Laut Pahang,Island,,,,1.2795773,Pulau Tulai,,1994,Pulau Tulai,MPA_054
+06,Pahang,0609,Rompin,060909,06090901,1994-10-20,P.U. (A) 401/94,"Syit No.4, Syit Piawai Negeri Pahang",MAL 635 & MAL 625,Gazette Island,06,Taman Laut Pahang,Island,,,,5.22172323,Pulau Seri Buat,,1994,Pulau Seri Buat,MPA_055
+06,Pahang,0609,Rompin,060909,06090902,,,,,Small Island,06,Taman Laut Pahang,Island,,,,0.03958833,Pulau Tasu,,,Pulau Tasu,MPA_056
+06,Pahang,0609,Rompin,060909,06090903,,,,,Small Island,06,Taman Laut Pahang,Island,,,,0.01414807,Pulau Raja,,,Pulau Raja,MPA_057
+06,Pahang,0609,Rompin,060908,06090801,1994-10-20,P.U. (A) 401/94,"Syit No.4, Syit Piawai Negeri Pahang",MAL 635 & MAL 625,Gazette Island,06,Taman Laut Pahang,Island,,,,2.68933901,Pulau Sembilang,,1994,Pulau Sembilang,MPA_058
+11,Terengganu,1104,Kuala Terengganu,110401,11040101,1994-10-20,P.U. (A) 401/94,L.4267 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,1.27714125,Pulau Lang Tengah,,1994,Pulau Lang Tengah,MPA_059
+11,Terengganu,1102,Dungun,110201,11020101,1998-03-27,P.U. (A) 121/98,L.4463 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,0.19364359,Pulau Nyireh,,1998,Pulau Nyireh,MPA_060
+11,Terengganu,1102,Dungun,110202,11020201,1998-03-27,P.U. (A) 121/98,L.4463 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,2.56660804,Pulau Tenggol,,1998,Pulau Tenggol,MPA_061
+11,Terengganu,1101,Besut,110102,11010201,1994-10-20,P.U. (A) 401/94,L.4167 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,5.78196391,Pulau Perhentian Kecil,,1994,Pulau Perhentian Kecil,MPA_062
+11,Terengganu,1101,Besut,110103,11010301,1994-10-20,P.U. (A) 401/94,L.4167 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,9.55704704,Pulau Perhentian Besar,,1994,Pulau Perhentian Besar,MPA_063
+11,Terengganu,1101,Besut,110101,11010106,,,,,Small Island,11,Taman Laut Terengganu,Island,,,,0.00060535,Pulau Tokong Kemudi Barat,,,Pulau Tokong Kemudi Barat,MPA_064
+11,Terengganu,1104,Kuala Terengganu,110405,11040501,1994-10-20,P.U. (A) 401/94,L.4267 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,0.75495357,Pulau Pinang,,1994,Pulau Pinang,MPA_065
+11,Terengganu,1104,Kuala Terengganu,110404,11040401,1994-10-20,P.U. (A) 401/94,L.4267 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,0.05827304,Pulau Ekor Tebu,,1994,Pulau Ekor Tebu,MPA_066
+11,Terengganu,1104,Kuala Terengganu,110402,11040206,,,,,Small Island,11,Taman Laut Terengganu,Island,,,,0.01269181,Pulau Paku Kechil,,,Pulau Paku Kechil,MPA_067
+11,Terengganu,1104,Kuala Terengganu,110402,11040205,,,,,Small Island,11,Taman Laut Terengganu,Island,,,,0.05444187,Pulau Paku Besar,,,Pulau Paku Besar,MPA_068
+11,Terengganu,1104,Kuala Terengganu,110402,11040207,,,,,Small Island,11,Taman Laut Terengganu,Island,,,,0.00679667,Pulau Cupak,,,Pulau Cupak,MPA_069
+11,Terengganu,1104,Kuala Terengganu,110402,11040202,,,,,Small Island,11,Taman Laut Terengganu,Island,,,,0.0002028,Pulau Ling,,,Pulau Ling,MPA_070
+11,Terengganu,1104,Kuala Terengganu,110402,11040203,,,,,Small Island,11,Taman Laut Terengganu,Island,,,,0.04099275,Pulau Kerengga Besar,,,Pulau Kerengga Besar,MPA_071
+11,Terengganu,1104,Kuala Terengganu,110402,11040204,,,,,Small Island,11,Taman Laut Terengganu,Island,,,,0.00792464,Pulau Kerengga Kecil,,,Pulau Kerengga Kecil,MPA_072
+11,Terengganu,1104,Kuala Terengganu,110403,11040301,1994-10-20,P.U. (A) 401/94,L.4267 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,0.0903402,Pulau Lima,,1994,Pulau Lima,MPA_073
+11,Terengganu,1106,Marang,110601,11060102,,,,,Small Island,11,Taman Laut Terengganu,Island,,,,0.06679901,Pulau Gemia,,,Pulau Gemia,MPA_074
+11,Terengganu,1106,Marang,110601,11060101,1994-10-20,P.U. (A) 401/94,L.4365 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,1.47058541,Pulau Kapas,,1994,Pulau Kapas,MPA_075
+11,Terengganu,1104,Kuala Terengganu,110406,11040601,2008-02-05,P.U. (A) 33/2008,L.4266 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,0.12281549,Pulau Yu Besar,,2008,Pulau Yu Besar,MPA_076
+11,Terengganu,1104,Kuala Terengganu,110407,11040701,2008-02-05,P.U. (A) 33/2008,L.4266 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,0.05502783,Pulau Yu Kecil,,2008,Pulau Yu Kecil,MPA_077
+11,Terengganu,1101,Besut,110101,11010104,,,,,Small Island,11,Taman Laut Terengganu,Island,,,,0.00310264,Pulau Tokong Burung,,,Pulau Tokong Burung,MPA_078
+11,Terengganu,1101,Besut,110101,11010105,,,,,Small Island,11,Taman Laut Terengganu,Island,,,,0.01798298,Pulau Tokong Kemudi,,,Pulau Tokong Kemudi,MPA_079
+11,Terengganu,1101,Besut,110101,11010101,1994-10-20,P.U. (A) 401/94,L.4167 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,0.25170216,Pulau Susu Dara,,1994,Pulau Susu Dara,MPA_080
+11,Terengganu,1101,Besut,110101,11010103,,,,,Small Island,11,Taman Laut Terengganu,Island,,,,0.05046745,Pulau Serenggeh,,,Pulau Serenggeh,MPA_081
+11,Terengganu,1101,Besut,110101,11010102,,,,,Small Island,11,Taman Laut Terengganu,Island,,,,0.07276,Pulau Rawa,,,Pulau Rawa,MPA_082
+11,Terengganu,1104,Kuala Terengganu,110402,11040201,1994-10-20,P.U. (A) 401/94,L.4267 Peta Siri L7030,MAL 664 & MAL64,Gazette Island,11,Taman Laut Terengganu,Island,,,,24.01526,Pulau Redang,,1994,Pulau Redang,MPA_083
+15,Labuan,1500,Tiada Daerah,150003,15000301,2000-08-18,P.U. (A) 306/,"L.5/115/9 Peta Siri T735/PA 20125100,18.5.1994",MAL 754,Gazette Island,15,Taman Laut Labuan,Island,,,,0.05947994,Pulau Rusukan Kecil,,2000,Pulau Rusukan Kecil,MPA_084
+15,Labuan,1500,Tiada Daerah,150002,15000201,2000-08-18,P.U. (A) 306/2000,"L.5/115/9 Peta Siri T735/PA 13022,13.10.1962",MAL 754,Gazette Island,15,Taman Laut Labuan,Island,,,,0.15915262,Pulau Rusukan Besar,,2000,Pulau Rusukan Besar,MPA_085
+15,Labuan,1500,Tiada Daerah,150001,15000101,2000-08-18,P.U. (A) 306/,L.5/115/9 Peta Siri T735,MAL 754,Gazette Island,15,Taman Laut Labuan,Island,,,,1.57995253,Pulau Kuraman,,2000,Pulau Kuraman,MPA_086
+1,Johor,,,,,,,,,"Had kawasan bagi Refugia Udang Karang adalah 1° 55.000’ Utara / 104° 30.000’ Timur, 2° 20.000’ Utara / 104° 30.000’ Timur, 2° 20.000’ Utara / 104° 50.000’ Timur, dan 1° 55.000’ Utara / 104° 50.000’ Timur.",,,Refugia,2023,Perairan Johor,Jabatan Perikanan Malaysia,1716.0,Lobster Refugia Site,Seksyen 8,2023,Perairan Johor,MPA_087
+13,Sarawak,,,,,,,,,"Had kawasan bagi Refugia Udang Harimau adalah 04° 35.40’Utara/  114° 3.84’Timur,  04° 42.30’Utara/ 114° 3.96’Timur,  04° 48.00’Utara/ 113° 58.08’Timur, 04° 34.74’Utara/ 113° 43.32’Timur, 04° 22.80’Utara 114° 0.60’ Timur & 04° 35.40’Utara 113° 59.16’ Timur",,,Refugia,2023,Perairan Kuala Baram,Jabatan Perikanan Malaysia,857.7,Tiger Prawn Refugia Site,Seksyen 8,2023,Perairan Kuala Baram,MPA_088
+04,Melaka,,,,,,,,521,Perairan kelautan dalam kawasan satu batu nautika dari titik terluar Pulau Besar pada tikas air surut,,,Fishery Prohibited Area,1998,Pulau Besar,Jabatan Perikanan Malaysia,22.0,Kawasan Larangan Perikanan,Seksyen 61,1998,Pulau Besar,MPA_089
+04,Melaka,,,,,,,,532,"Perairan kelautan dalam kawasan satu batu nautika dari titik terluar Tanjung Tuan, Melaka yang diukur pada tikas air surut dari Garis Lintang 02°24.86'Utara, Garis Bujur 101°51.53'Timur hingga Garis Lintang 02°24.95'Utara, Garis Bujur 101°51.38'Timur",,,Fishery Prohibited Area,1998,Perairan Tanjung Tuan,Jabatan Perikanan Malaysia,12.3,Kawasan Larangan Perikanan,Seksyen 61,1998,Perairan Tanjung Tuan,MPA_090
+05,Negeri Sembilan,,,,,,,,532,"Perairan kelautan dalam kawasan satu batu nautika dari titik terluar Tanjung Tuan, Melaka yang diukur pada tikas air surut dari Garis Lintang 02°26.90'Utara, Garis Bujur 101°51.35'Timur hingga Garis Lintang 02°24.95'Utara, Garis Bujur 101°51.38'Timur",,,Fishery Prohibited Area,2002,Perairan Tanjung Tuan 1,Jabatan Perikanan Malaysia,7.5,Kawasan Larangan Perikanan,Seksyen 61,2002,Perairan Tanjung Tuan 1,MPA_091
+05,Negeri Sembilan,,,,,,,,532,"Perairan kelautan dalam kawasan satu batu nautika dari titik terluar Tanjung Tuan, Melaka yang diukur pada tikas air surut dari Garis Lintang 02°24.86'Utara, Garis Bujur 101°51.53'Timur hingga Garis Lintang 02°25.30'Utara, Garis Bujur 101°51.80'Timur",,,Fishery Prohibited Area,2002,Perairan Tanjung Tuan 2,Jabatan Perikanan Malaysia,12.1,Kawasan Larangan Perikanan,Seksyen 61,2002,Perairan Tanjung Tuan 2,MPA_092
+13,Sarawak,,,,,,,,723,Perairan kelautan dalam kawasan dua batu nautika dari titik terluar diukur pada tikas air surut,,,Fishery Prohibited Area,1994,Pulau Talang-Talang Kecil,Jabatan Perikanan Malaysia,37.3,Kawasan Larangan Perikanan,Seksyen 61,1994,Pulau Talang-Talang Kecil,MPA_093
+13,Sarawak,,,,,,,,723,Perairan kelautan dalam kawasan dua batu nautika dari titik terluar diukur pada tikas air surut,,,Fishery Prohibited Area,1994,Pulau Talang-Talang Besar,Jabatan Perikanan Malaysia,38.2,Kawasan Larangan Perikanan,Seksyen 61,1994,Pulau Talang-Talang Besar,MPA_094
+13,Sarawak,,,,,,,,731,Perairan kelautan dalam kawasan dua batu nautika dari titik terluar diukur pada tikas air surut,,,Fishery Prohibited Area,1994,Pulau Satang Besar,Jabatan Perikanan Malaysia,65.6,Kawasan Larangan Perikanan,Seksyen 61,1994,Pulau Satang Besar,MPA_095
+11,Terengganu,,,,,,,,654,Test,,,Fishery Prohibited Area,1991,Kuala Merchang dan Kg Kuala Abang (Tanjong Jara) & Perairan Rantau Abang,Jabatan Perikanan Malaysia,513.8,Kawasan Larangan (Rantau Abang),Seksyen 61,1991,Kuala Merchang dan Kg Kuala Abang (Tanjong Jara) & Perairan Rantau Abang,MPA_096
+02,Kedah,,,,,,,,,1bn dari pantai Negeri Kedah,,,Conservatory,,Kedah,Jabatan Perikanan Malaysia,663.076,,Syarat Lesen,,Kedah,MPA_097
+08,Perak,,,,,,,,,1bn dari pantai Negeri Perak,,,Conservatory,,Perak,Jabatan Perikanan Malaysia,570.895,,Syarat Lesen,,Perak,MPA_098
