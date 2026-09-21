@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import TeamDialog from './TeamDialog';
+import dosmLogo from '../../asset/dosm_logo.png';
 
 export const TABS = ['Overview', 'States', 'MQIMS', 'Forecast', 'Causal', 'Methodology'];
 const TAB_LABELS = { MQIMS: 'MarineWatch', Causal: 'Impact Analysis' };
@@ -72,8 +73,8 @@ export default function Header({ metadata, tab, setTab }) {
     onClick={() => { setMenuOpen(false); setTeamOpen(true); }}
   >
     <img 
-      src="asset/dosm_logo.png" 
-      alt="error" 
+      src={dosmLogo} 
+      alt="Department of Statistics Malaysia" 
       className="brand-logo" 
     />
   </button>

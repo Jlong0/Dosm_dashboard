@@ -1,6 +1,8 @@
 # Dependencies
 node_modules/
 
+asset/.png
+
 # Vite build output and local caches
 dist/
 .vite/
