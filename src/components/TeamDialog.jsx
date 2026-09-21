@@ -3,9 +3,12 @@ import { useEffect, useRef } from 'react';
 const MEMBERS = [
   { name: 'Tan Shi Kai', initials: 'TSK' },
   { name: 'Long Ji-Rui', initials: 'LJR' },
-  { name: 'Reena Yee Joan', initials: 'RYJ' },
-  { name: 'Jie Xin', initials: 'JX' },
+  { name: 'TAN YEE JOAN', initials: 'TYJ' },
+  { name: 'LING JIE XIN', initials: 'LJX' },
 ];
+
+
+
 
 export default function TeamDialog({ open, onClose }) {
   const dialogRef = useRef(null);

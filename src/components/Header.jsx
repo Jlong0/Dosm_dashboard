@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 
-import dosmLogo from '../../docs/dosm_logo.png';
 import TeamDialog from './TeamDialog';
+import dosmLogo from '../../asset/dosm_logo.png';
 
-export const TABS = ['Overview', 'States', 'Forecast', 'Causal', 'Methodology', 'MQIMS'];
+export const TABS = ['Overview', 'States', 'MQIMS', 'Forecast', 'Causal', 'Methodology'];
+const TAB_LABELS = { MQIMS: 'MarineWatch', Causal: 'Impact Analysis' };
 
 export default function Header({ metadata, tab, setTab }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -57,14 +58,32 @@ export default function Header({ metadata, tab, setTab }) {
                   setMenuOpen(false);
                   toggleRef.current?.focus();
                 }}>
-                  {section}<span aria-hidden="true">{tab === section ? '●' : '→'}</span>
+                  {TAB_LABELS[section] ?? section}<span aria-hidden="true">{tab === section ? '●' : '→'}</span>
                 </button>
               ))}
             </nav>
           )}
         </div>
-        <div className="brand"><button type="button" className="brand-logo-button" aria-label="Meet our team" aria-haspopup="dialog" onClick={() => { setMenuOpen(false); setTeamOpen(true); }}><img className="brand-logo" src={dosmLogo} alt="DOSM logo" /></button><div><strong>TOURISM / MALAYSIA</strong><span>SUSTAINABILITY OBSERVATORY</span></div></div>
-        <span className="current-section">{tab}</span>
+<div className="brand">
+  <button 
+    type="button" 
+    className="brand-logo-button" 
+    aria-label="Meet our team" 
+    aria-haspopup="dialog" 
+    onClick={() => { setMenuOpen(false); setTeamOpen(true); }}
+  >
+    <img 
+      src={dosmLogo} 
+      alt="Department of Statistics Malaysia" 
+      className="brand-logo" 
+    />
+  </button>
+  <div>
+    <strong>TOURISM / MALAYSIA</strong>
+    <span>SUSTAINABILITY OBSERVATORY</span>
+  </div>
+</div>
+        <span className="current-section">{TAB_LABELS[tab] ?? tab}</span>
       </div>
       <div className="header-meta"><span className="status-dot" /> DOSM Datathon 2026 <small>{metadata.sources.join(' · ')} · Updated {metadata.lastUpdated}</small></div>
       <TeamDialog open={teamOpen} onClose={() => setTeamOpen(false)} />

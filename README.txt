@@ -19,3 +19,6 @@ with zero. Sentiment is separate from STI. Environmental forecast actuals are
 shown as not yet published. Causal findings are observational associations.
 
 See README.md for provenance, regeneration, behavior and limitations.
+
+Final navigation: Overview -> States -> MarineWatch -> Forecast -> Impact Analysis -> Methodology.
+Public sentiment is integrated into Overview and States; it is not a separate navigation page.

@@ -4,8 +4,13 @@ export default function CausalInsights({ causal }) {
   const estimate = causal.tourism_receipts_lag1;
   const [yearStart, yearEnd] = [causal.panel_years[0], causal.panel_years.at(-1)];
   return <section className="panel causal-analysis">
-    <div className="section-heading"><div><span className="eyebrow">EVIDENCE & UNCERTAINTY</span><h2>Tourism intensity and coastal water quality</h2></div><span className="badge">TWFE · observational panel</span></div>
-    <p className="muted">This model estimates an association using the final v5 panel. It does not establish that tourism causes changes in coastal quality.</p>
+    <div className="section-heading"><div><span className="eyebrow">EVIDENCE & UNCERTAINTY</span><h2>Does tourism intensity move with coastal water quality?</h2></div><span className="badge">TWFE · observational panel</span></div>
+    <p className="muted causal-intro">This model estimates an association using the final v5 panel. It does not establish that tourism causes changes in coastal quality.</p>
+    <div className="causal-result-banner">
+      <span className="eyebrow">KEY RESULT</span>
+      <h3>No clear association detected</h3>
+      <p>Across {causal.panel_states} comparable states from {yearStart}–{yearEnd}, the model does not find statistically distinguishable evidence that higher tourism receipts per resident are associated with changes in the share of coastal monitoring stations rated good or excellent.</p>
+    </div>
     <div className="causal-estimate">
       <div><span className="eyebrow">Estimated association</span><h3>Lagged tourism receipts per resident</h3><strong>β = {number(estimate.coefficient)}</strong></div>
       <dl><div><dt>95% confidence interval</dt><dd>[{number(estimate.ci_95[0])}, {number(estimate.ci_95[1])}]</dd></div><div><dt>Robust standard error</dt><dd>{number(estimate.se)}</dd></div><div><dt>p-value</dt><dd>{estimate.p_value.toFixed(3)}</dd></div></dl>
