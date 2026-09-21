@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import dosmLogo from '../../docs/dosm_logo.png';
 import TeamDialog from './TeamDialog';
 
-export const TABS = ['Overview', 'States', 'Forecast', 'Causal', 'Methodology'];
+export const TABS = ['Overview', 'States', 'Forecast', 'Causal', 'Methodology', 'MQIMS'];
 
 export default function Header({ metadata, tab, setTab }) {
   const [menuOpen, setMenuOpen] = useState(false);
