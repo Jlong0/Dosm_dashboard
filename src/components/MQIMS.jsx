@@ -1,11 +1,25 @@
 import { useEffect, useMemo, useState } from 'react';
 import Papa from 'papaparse';
 
+import { canonicalState } from '../data/stateNames';
+
+import {
+  filterMqimsStations,
+  filterMpasByState,
+  getMqimsSummary,
+  getPrioritySummary,
+  getMqimsAvailableStates,
+  getStationHistory,
+  rankMonitoringStations,
+} from '../data/mqims';
+
 import MarineStationMap from './MarineStationMap';
 import StationTrendChart from './StationTrendChart';
 import StationAlertPanel from './StationAlertPanel';
 
-export default function MQIMS({ geography }) {
+import { buildEvidenceContext } from '../evidence/buildEvidenceContext';
+
+export default function MQIMS({ geography, dashboardData, onEvidenceContextChange }) {
   const [stations, setStations] = useState(null);
   const [history, setHistory] = useState([]);
   const [selectedStation, setSelectedStation] = useState(null);
@@ -95,34 +109,15 @@ export default function MQIMS({ geography }) {
   }, []);
 
   const filteredStations = useMemo(() => {
-    if (!stations) return [];
-  
-    return stations.features.filter(feature => {
-      const station = feature.properties;
-  
-      const matchesState =
-        stateFilter === 'All' ||
-        station.STATE_NAME === stateFilter;
-  
-      const matchesCategory =
-        categoryFilter === 'All' ||
-        station.CATEGORY === categoryFilter;
-  
-      const matchesClass =
-        classFilter === 'All' ||
-        station.LATEST_CLASS === classFilter;
-  
-      const matchesTrend =
-        trendFilter === 'All' ||
-        station.TREND_DIRECTION === trendFilter;
-  
-      return (
-        matchesState &&
-        matchesCategory &&
-        matchesClass &&
-        matchesTrend
-      );
-    });
+    return filterMqimsStations(
+      stations?.features ?? [],
+      {
+        state: stateFilter,
+        category: categoryFilter,
+        mwqiClass: classFilter,
+        trend: trendFilter
+      }
+    );
   }, [
     stations,
     stateFilter,
@@ -132,105 +127,152 @@ export default function MQIMS({ geography }) {
   ]);
 
   const filteredMpas = useMemo(() => {
-    if (!mpas) return [];
-  
-    if (stateFilter === 'All') {
-      return mpas.features;
-    }
-  
-    return mpas.features.filter(
-      feature =>
-        feature.properties.State === stateFilter
+    return filterMpasByState(
+      mpas?.features ?? [],
+      stateFilter
     );
   }, [mpas, stateFilter]);
 
   const summary = useMemo(() => {
-    const features = filteredStations;
-  
-    return {
-      total: features.length,
-  
-      poor: features.filter(
-        feature =>
-          feature.properties.LATEST_CLASS === 'Poor'
-      ).length,
-  
-      moderate: features.filter(
-        feature =>
-          feature.properties.LATEST_CLASS === 'Moderate'
-      ).length,
-  
-      declining: features.filter(
-        feature =>
-          feature.properties.TREND_DIRECTION === 'Declining'
-      ).length
-    };
+    return getMqimsSummary(
+      filteredStations
+    );
   }, [filteredStations]);
 
   const selectedHistory = useMemo(() => {
-    if (!selectedStation) {
-      return [];
-    }
-  
-    return history
-      .filter(
-        row =>
-          row.STATION_ID ===
-          selectedStation.STATION_ID
-      )
-      .sort(
-        (a, b) =>
-          a.YEAR - b.YEAR
-      );
+    return getStationHistory(
+      history,
+      selectedStation?.STATION_ID
+    );
   }, [
     history,
     selectedStation
   ]);
 
   const availableStates = useMemo(() => {
-    if (!stations) return [];
-  
-    return [
-      ...new Set(
-        stations.features
-          .map(feature => feature.properties.STATE_NAME)
-          .filter(Boolean)
-      )
-    ].sort();
+    return getMqimsAvailableStates(
+      stations?.features ?? []
+    );
   }, [stations]);
 
   const priorityStations = useMemo(() => {
-    return filteredStations
-      .map(feature => ({
-        ...feature,
-        priority: getMonitoringPriority(
-          feature.properties
-        )
-      }))
-      .sort(
-        (a, b) =>
-          a.priority.level -
-          b.priority.level ||
-          Number(a.properties.LATEST_MWQI) -
-          Number(b.properties.LATEST_MWQI)
-      );
+    return rankMonitoringStations(
+      filteredStations
+    );
   }, [filteredStations]);
 
   const prioritySummary = useMemo(() => {
-    return {
-      immediate: priorityStations.filter(
-        s => s.priority.level === 1
-      ).length,
-  
-      elevated: priorityStations.filter(
-        s => s.priority.level === 2
-      ).length,
-  
-      watch: priorityStations.filter(
-        s => s.priority.level === 3
-      ).length
-    };
+    return getPrioritySummary(
+      priorityStations
+    );
   }, [priorityStations]);
+
+  const evidenceContext =
+    useMemo(() => {
+
+        if (
+        !dashboardData ||
+        !stations
+        ) {
+        return null;
+        }
+
+        return buildEvidenceContext({
+        dashboardData,
+
+        page:
+            'MQIMS',
+
+        /*
+        * All should remain All for the
+        * marine filter, but the central
+        * builder will treat it as no
+        * single selected state for STI.
+        */
+        state:
+            stateFilter,
+
+        /*
+        * No year is supplied here.
+        *
+        * buildEvidenceContext() will
+        * automatically use the latest
+        * full STI year from methodology.
+        */
+        year:
+            null,
+
+        selectedStationId:
+            selectedStation
+            ?.STATION_ID ??
+            null,
+
+        waterQuality: {
+            stations:
+            stations.features,
+
+            history,
+
+            filters: {
+            state:
+                stateFilter,
+
+            category:
+                categoryFilter,
+
+            mwqiClass:
+                classFilter,
+
+            trend:
+                trendFilter
+            },
+
+            selectedStationId:
+            selectedStation
+                ?.STATION_ID ??
+            null,
+
+            priorityLimit:
+            10
+        }
+        });
+
+  }, [
+        dashboardData,
+        stations,
+        history,
+
+        stateFilter,
+        categoryFilter,
+        classFilter,
+        trendFilter,
+
+        selectedStation
+  ]);
+
+  useEffect(() => {
+    if (!evidenceContext) {
+      return;
+    }
+  
+    onEvidenceContextChange?.(
+      evidenceContext
+    );
+  
+  }, [
+    evidenceContext,
+    onEvidenceContextChange
+  ]);
+
+  useEffect(() => {
+    return () => {
+      onEvidenceContextChange?.(
+        null
+      );
+    };
+  }, [
+    onEvidenceContextChange
+  ]);
 
   if (!stations || !summary) {
     return (
@@ -258,65 +300,6 @@ export default function MQIMS({ geography }) {
     setSelectedMpa(mpa);
     setSelectedStation(null);
     setSideTab('mpa');
-  }
-
-  function getMonitoringPriority(station) {
-    const mwqiClass = station.LATEST_CLASS;
-    const trend = station.TREND_DIRECTION;
-  
-    const change5y = Number(station.CHANGE_5Y);
-    const distance = Number(station.DISTANCE_KM);
-  
-    const nearMpa =
-      Number.isFinite(distance) &&
-      distance <= 25;
-  
-    const strongDecline =
-      Number.isFinite(change5y) &&
-      change5y <= -10;
-  
-    if (
-      mwqiClass === 'Poor' &&
-      (
-        trend === 'Declining' ||
-        strongDecline ||
-        nearMpa
-      )
-    ) {
-      return {
-        level: 1,
-        label: 'Immediate review'
-      };
-    }
-  
-    if (
-      mwqiClass === 'Poor' ||
-      (
-        mwqiClass === 'Moderate' &&
-        trend === 'Declining'
-      ) ||
-      strongDecline
-    ) {
-      return {
-        level: 2,
-        label: 'Elevated monitoring'
-      };
-    }
-  
-    if (
-      trend === 'Declining' ||
-      mwqiClass === 'Moderate'
-    ) {
-      return {
-        level: 3,
-        label: 'Watch'
-      };
-    }
-  
-    return {
-      level: 4,
-      label: 'Routine'
-    };
   }
 
   return (
@@ -629,7 +612,9 @@ export default function MQIMS({ geography }) {
 
                 <div className="station-meta">
                     <span>
-                    {selectedStation.STATE_NAME}
+                        {canonicalState(
+                            selectedStation.STATE_NAME
+                        )}
                     </span>
 
                     <span>·</span>
@@ -792,7 +777,9 @@ export default function MQIMS({ geography }) {
                     </h3>
 
                     <p className="station-code">
-                    {selectedMpa.State}
+                        {canonicalState(
+                            selectedMpa.State
+                        )}
                     </p>
 
                     <div className="mpa-detail-grid">
