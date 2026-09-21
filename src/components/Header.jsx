@@ -64,13 +64,25 @@ export default function Header({ metadata, tab, setTab }) {
           )}
         </div>
 <div className="brand">
-  <button type="button" className="brand-logo-button" aria-label="Meet our team" aria-haspopup="dialog" onClick={() => { setMenuOpen(false); setTeamOpen(true); }}>
-    <img src="docs/dosm_logo.png" className="brand-logo brand-logo-fallback" alt="Brand Logo" aria-hidden="true" />
+  <button 
+    type="button" 
+    className="brand-logo-button" 
+    aria-label="Meet our team" 
+    aria-haspopup="dialog" 
+    onClick={() => { setMenuOpen(false); setTeamOpen(true); }}
+  >
+    <img 
+      src="asset/dosm_logo.png" 
+      alt="error" 
+      className="brand-logo" 
+    />
   </button>
   <div>
-    <strong>TOURISM / MALAYSIA</strong><span>SUSTAINABILITY OBSERVATORY</span>
+    <strong>TOURISM / MALAYSIA</strong>
+    <span>SUSTAINABILITY OBSERVATORY</span>
   </div>
-</div>        <span className="current-section">{TAB_LABELS[tab] ?? tab}</span>
+</div>
+        <span className="current-section">{TAB_LABELS[tab] ?? tab}</span>
       </div>
       <div className="header-meta"><span className="status-dot" /> DOSM Datathon 2026 <small>{metadata.sources.join(' · ')} · Updated {metadata.lastUpdated}</small></div>
       <TeamDialog open={teamOpen} onClose={() => setTeamOpen(false)} />

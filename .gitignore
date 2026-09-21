@@ -1,5 +1,4 @@
-docs/*.pdf
-docs/*.png
+asset/*
 
 # Dependencies
 node_modules/
