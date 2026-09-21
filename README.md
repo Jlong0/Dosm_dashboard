@@ -2,6 +2,11 @@
 
 A static React/Vite dashboard for comparing measured sustainable-tourism conditions, public sentiment, forecasts and observational causal evidence. It uses committed exports and requires no backend or runtime external data service.
 
+## Dashboard sections
+
+The final user-facing navigation is: **Overview → States → MarineWatch → Forecast → Impact Analysis → Methodology**. Public sentiment is integrated into Overview at national level and into States at selected-state/destination level rather than presented as a separate navigation page.
+
+
 ## Run locally
 
 Node.js 22.12 or newer is required.
