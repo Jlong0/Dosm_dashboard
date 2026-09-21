@@ -10,9 +10,6 @@ export default function MQIMS({ geography }) {
   const [history, setHistory] = useState([]);
   const [selectedStation, setSelectedStation] = useState(null);
   const [sideTab, setSideTab] = useState('alerts');
-  const [mpas, setMpas] = useState(null);
-  const [showMpas, setShowMpas] = useState(true);
-  const [selectedMpa, setSelectedMpa] = useState(null);
 
   const [stateFilter, setStateFilter] = useState('All');
   const [categoryFilter, setCategoryFilter] = useState('All');
@@ -21,7 +18,7 @@ export default function MQIMS({ geography }) {
 
   useEffect(() => {
     fetch(
-        `${import.meta.env.BASE_URL}data/mqims/station_dashboard_summary_enriched.geojson`
+        `${import.meta.env.BASE_URL}data/mqims/station_dashboard_summary.geojson`
     )
       .then(res => {
         if (!res.ok) {
@@ -77,23 +74,6 @@ export default function MQIMS({ geography }) {
       });
   }, []);
 
-  useEffect(() => {
-    fetch(
-      `${import.meta.env.BASE_URL}data/mpa/mpa_points.geojson`
-    )
-      .then(res => {
-        if (!res.ok) {
-          throw new Error('Failed to load MPA data');
-        }
-  
-        return res.json();
-      })
-      .then(setMpas)
-      .catch(error => {
-        console.error('MPA data error:', error);
-      });
-  }, []);
-
   const filteredStations = useMemo(() => {
     if (!stations) return [];
   
@@ -130,19 +110,6 @@ export default function MQIMS({ geography }) {
     classFilter,
     trendFilter
   ]);
-
-  const filteredMpas = useMemo(() => {
-    if (!mpas) return [];
-  
-    if (stateFilter === 'All') {
-      return mpas.features;
-    }
-  
-    return mpas.features.filter(
-      feature =>
-        feature.properties.State === stateFilter
-    );
-  }, [mpas, stateFilter]);
 
   const summary = useMemo(() => {
     const features = filteredStations;
@@ -199,39 +166,6 @@ export default function MQIMS({ geography }) {
     ].sort();
   }, [stations]);
 
-  const priorityStations = useMemo(() => {
-    return filteredStations
-      .map(feature => ({
-        ...feature,
-        priority: getMonitoringPriority(
-          feature.properties
-        )
-      }))
-      .sort(
-        (a, b) =>
-          a.priority.level -
-          b.priority.level ||
-          Number(a.properties.LATEST_MWQI) -
-          Number(b.properties.LATEST_MWQI)
-      );
-  }, [filteredStations]);
-
-  const prioritySummary = useMemo(() => {
-    return {
-      immediate: priorityStations.filter(
-        s => s.priority.level === 1
-      ).length,
-  
-      elevated: priorityStations.filter(
-        s => s.priority.level === 2
-      ).length,
-  
-      watch: priorityStations.filter(
-        s => s.priority.level === 3
-      ).length
-    };
-  }, [priorityStations]);
-
   if (!stations || !summary) {
     return (
       <section className="panel">
@@ -250,73 +184,7 @@ export default function MQIMS({ geography }) {
 
   function handleStationSelect(station) {
     setSelectedStation(station);
-    setSelectedMpa(null);
     setSideTab('station');
-  }
-
-  function handleMpaSelect(mpa) {
-    setSelectedMpa(mpa);
-    setSelectedStation(null);
-    setSideTab('mpa');
-  }
-
-  function getMonitoringPriority(station) {
-    const mwqiClass = station.LATEST_CLASS;
-    const trend = station.TREND_DIRECTION;
-  
-    const change5y = Number(station.CHANGE_5Y);
-    const distance = Number(station.DISTANCE_KM);
-  
-    const nearMpa =
-      Number.isFinite(distance) &&
-      distance <= 25;
-  
-    const strongDecline =
-      Number.isFinite(change5y) &&
-      change5y <= -10;
-  
-    if (
-      mwqiClass === 'Poor' &&
-      (
-        trend === 'Declining' ||
-        strongDecline ||
-        nearMpa
-      )
-    ) {
-      return {
-        level: 1,
-        label: 'Immediate review'
-      };
-    }
-  
-    if (
-      mwqiClass === 'Poor' ||
-      (
-        mwqiClass === 'Moderate' &&
-        trend === 'Declining'
-      ) ||
-      strongDecline
-    ) {
-      return {
-        level: 2,
-        label: 'Elevated monitoring'
-      };
-    }
-  
-    if (
-      trend === 'Declining' ||
-      mwqiClass === 'Moderate'
-    ) {
-      return {
-        level: 3,
-        label: 'Watch'
-      };
-    }
-  
-    return {
-      level: 4,
-      label: 'Routine'
-    };
   }
 
   return (
@@ -325,7 +193,7 @@ export default function MQIMS({ geography }) {
       <div className="section-heading">
         <div>
           <span className="eyebrow">
-            MARINE WATER QUALITY INDEX
+            MARINE WATER QUALITY
           </span>
 
           <h2>
@@ -477,56 +345,19 @@ export default function MQIMS({ geography }) {
         </button>
 
         </div>
-        <div className="priority-strip">
-
-            <div>
-                <span>Immediate review</span>
-                <strong>{prioritySummary.immediate}</strong>
-            </div>
-
-            <div>
-                <span>Elevated</span>
-                <strong>{prioritySummary.elevated}</strong>
-            </div>
-
-            <div>
-                <span>Watch</span>
-                <strong>{prioritySummary.watch}</strong>
-            </div>
-
-         </div>
-         <div className="priority-method-note">
-            <strong>Monitoring priority heuristic</strong>
-
-            <p>
-                Priority combines current MWQI condition,
-                recent deterioration and proximity to an
-                available marine protected-area reference point.
-                MPA distance is measured to a reference coordinate,
-                not the legal protected-area boundary. This is a
-                MarineWatch decision-support indicator and not an
-                official DOE classification.
-            </p>
-        </div>
 
       <div className="marine-explorer">
 
         <div className="marine-map-column">
             <MarineStationMap
             geography={geography}
-            stations={priorityStations}
+            stations={filteredStations}
             allStations={stations.features}
             selectedStation={selectedStation}
-            mpas={filteredMpas}
-            showMpas={showMpas}
-            selectedMpa={selectedMpa}
-            onToggleMpas={setShowMpas}
             focusStation={selectedStation}
             onSelect={handleStationSelect}
-            onMpaSelect={handleMpaSelect}
             />
         </div>
-        
 
         <aside
         className={`marine-station-panel ${
@@ -538,42 +369,17 @@ export default function MQIMS({ geography }) {
         <div className="marine-side-tabs">
 
             <button
-            className={
-                sideTab === 'station'
-                ? 'active'
-                : ''
-            }
-            onClick={() =>
-                setSideTab('station')
-            }
+            className={sideTab === 'station' ? 'active' : ''}
+            onClick={() => setSideTab('station')}
             >
-            Station
+            Station details
             </button>
 
             <button
-            className={
-                sideTab === 'alerts'
-                ? 'active'
-                : ''
-            }
-            onClick={() =>
-                setSideTab('alerts')
-            }
+            className={sideTab === 'alerts' ? 'active' : ''}
+            onClick={() => setSideTab('alerts')}
             >
-            Priority
-            </button>
-
-            <button
-            className={
-                sideTab === 'mpa'
-                ? 'active'
-                : ''
-            }
-            onClick={() =>
-                setSideTab('mpa')
-            }
-            >
-            Protected area
+            Priority alerts
             </button>
 
         </div>
@@ -581,7 +387,7 @@ export default function MQIMS({ geography }) {
 
         {sideTab === 'alerts' && (
             <StationAlertPanel
-            stations={priorityStations}
+            stations={filteredStations}
             onSelect={handleStationSelect}
             />
         )}
@@ -709,161 +515,10 @@ export default function MQIMS({ geography }) {
                     </div>
 
                 </dl>
-                <div className="station-mpa-context">
-
-                    <span className="eyebrow">
-                        MARINE PROTECTED AREA CONTEXT
-                    </span>
-
-                    <div className="station-mpa-card">
-
-                        <div>
-                        <span>Nearest MPA reference</span>
-
-                        <strong>
-                            {selectedStation.NEAREST_MPA_NAME || 'N/A'}
-                        </strong>
-                        </div>
-
-                        <div>
-                        <span>Reference-point distance</span>
-
-                        <strong>
-                            {Number.isFinite(
-                            Number(selectedStation.DISTANCE_KM)
-                            )
-                            ? `${Number(
-                                selectedStation.DISTANCE_KM
-                                ).toFixed(1)} km`
-                            : 'N/A'}
-                        </strong>
-                        </div>
-
-                        <small>
-                        Distance is measured to the protected area's
-                        reference coordinate, not its legal boundary.
-                        </small>
-
-                    </div>
-
-                </div>
 
                 </div>
 
             )}
-            </>
-        )}
-
-        {sideTab === 'mpa' && (
-            <>
-                {!selectedMpa ? (
-
-                <div className="station-empty">
-
-                    <span className="eyebrow">
-                    MARINE PROTECTED AREA EXPLORER
-                    </span>
-
-                    <h3>
-                    Select a protected area
-                    </h3>
-
-                    <p className="muted">
-                    Click a blue diamond on the map
-                    to inspect its available protected-area
-                    information.
-                    </p>
-
-                </div>
-
-                ) : (
-
-                <div
-                    key={selectedMpa.MPA_ID}
-                    className="station-detail-content"
-                >
-
-                    <span className="eyebrow">
-                    MARINE PROTECTED AREA
-                    </span>
-
-                    <h3>
-                    {selectedMpa.MPA_Name}
-                    </h3>
-
-                    <p className="station-code">
-                    {selectedMpa.State}
-                    </p>
-
-                    <div className="mpa-detail-grid">
-
-                    <div>
-                        <span>Designation</span>
-                        <strong>
-                        {selectedMpa.Designation || 'N/A'}
-                        </strong>
-                    </div>
-
-                    <div>
-                        <span>Status</span>
-                        <strong>
-                        {selectedMpa.Status || 'N/A'}
-                        </strong>
-                    </div>
-
-                    <div>
-                        <span>Established</span>
-                        <strong>
-                        {selectedMpa.Established || 'N/A'}
-                        </strong>
-                    </div>
-
-                    <div>
-                        <span>Area</span>
-                        <strong>
-                        {Number.isFinite(
-                            Number(selectedMpa.Area_km2)
-                        )
-                            ? `${Number(
-                                selectedMpa.Area_km2
-                            ).toFixed(1)} km²`
-                            : 'N/A'}
-                        </strong>
-                    </div>
-
-                    <div>
-                        <span>IUCN category</span>
-                        <strong>
-                        {selectedMpa.IUCN_Category || 'N/A'}
-                        </strong>
-                    </div>
-
-                    <div>
-                        <span>No-take status</span>
-                        <strong>
-                        {selectedMpa.No_Take || 'N/A'}
-                        </strong>
-                    </div>
-
-                    </div>
-
-                    {selectedMpa.Source && (
-                    <div className="mpa-source">
-
-                        <span className="eyebrow">
-                        SOURCE
-                        </span>
-
-                        <p>
-                        {selectedMpa.Source}
-                        </p>
-
-                    </div>
-                    )}
-
-                </div>
-
-                )}
             </>
         )}
 

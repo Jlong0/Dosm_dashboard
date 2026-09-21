@@ -28,13 +28,8 @@ function colorForClass(value) {
     stations,
     allStations,
     selectedStation,
-    selectedMpa,
-    mpas = [],
-    showMpas,
-    onToggleMpas,
     focusStation,
-    onSelect,
-    onMpaSelect
+    onSelect
   }) {
     const [position, setPosition] = useState({
       coordinates: [109.5, 4.1],
@@ -88,29 +83,18 @@ function colorForClass(value) {
   
     return (
       <div className="map-wrap marine-map-wrap">
+  
+        <div className="marine-map-controls">
+            <button onClick={zoomIn}>+</button>
+            <button onClick={zoomOut}>−</button>
 
-        <div className="marine-map-toolbar">
+            <span className="zoom-level">
+                {position.zoom.toFixed(1)}×
+            </span>
 
-            <button
-                type="button"
-                className={`map-layer-button ${
-                showMpas ? 'active' : ''
-                }`}
-                onClick={() => onToggleMpas(!showMpas)}
-            >
-                <span className="map-layer-diamond" />
-                MPAs
+            <button onClick={resetMap}>
+                Reset
             </button>
-
-            <div className="marine-map-controls">
-                <button onClick={zoomIn}>+</button>
-                <button onClick={zoomOut}>−</button>
-                <span className="zoom-level">
-                    {position.zoom.toFixed(1)}×
-                </span>
-                <button onClick={resetMap}>Reset</button>
-            </div>
-
         </div>
   
         <ComposableMap
@@ -157,83 +141,9 @@ function colorForClass(value) {
                 ))
               }
             </Geographies>
-
-            {showMpas && mpas.map(feature => {
-                const mpa = feature.properties;
-
-                const [longitude, latitude] =
-                    feature.geometry.coordinates;
-
-                const selected =
-                    selectedMpa?.MPA_ID === mpa.MPA_ID;
-
-                const size =
-                    (selected ? 13 : 9) / position.zoom;
-
-                return (
-                    <Marker
-                    key={`mpa-${mpa.MPA_ID}`}
-                    coordinates={[
-                        longitude,
-                        latitude
-                    ]}
-                    >
-
-                    {selected && (
-                        <rect
-                        x={-9 / position.zoom}
-                        y={-9 / position.zoom}
-                        width={18 / position.zoom}
-                        height={18 / position.zoom}
-                        fill="none"
-                        stroke="#1f3f67"
-                        strokeWidth={1.5 / position.zoom}
-                        transform="rotate(45)"
-                        pointerEvents="none"
-                        />
-                    )}
-
-                    <rect
-                        x={-size / 2}
-                        y={-size / 2}
-                        width={size}
-                        height={size}
-                        fill="#365f8d"
-                        stroke="#ffffff"
-                        strokeWidth={0.8 / position.zoom}
-                        transform="rotate(45)"
-                        style={{
-                        cursor: 'pointer'
-                        }}
-                        onClick={() => {
-                        onMpaSelect(mpa);
-
-                        setPosition({
-                            coordinates: [
-                            longitude,
-                            latitude
-                            ],
-                            zoom: Math.max(
-                            position.zoom,
-                            10
-                            )
-                        });
-                        }}
-                    >
-                        <title>
-                        {`${mpa.MPA_Name}
-                ${mpa.State}
-                ${mpa.Designation}`}
-                        </title>
-                    </rect>
-
-                    </Marker>
-                );
-            })}
   
             {stations.map(feature => {
               const station = feature.properties;
-              const priority = feature.priority;
   
               const [longitude, latitude] =
                 feature.geometry.coordinates;
@@ -256,17 +166,6 @@ function colorForClass(value) {
                     latitude
                   ]}
                 >
-
-                    {priority.level === 1 && (
-                    <circle
-                        r={10 / position.zoom}
-                        fill="none"
-                        stroke="#7c2f25"
-                        strokeWidth={2 / position.zoom}
-                        pointerEvents="none"
-                    />
-                    )}
-
                   <circle
                     r={radius}
                     fill={colorForClass(
@@ -329,12 +228,6 @@ function colorForClass(value) {
             <i className="poor" />
             Poor
           </span>
-          {showMpas && (
-            <span className="mpa-legend-item">
-                <i className="mpa-symbol" />
-                Protected area
-            </span>
-          )}
         </div>
   
       </div>

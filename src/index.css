@@ -288,6 +288,33 @@
   }
 }
 
+.marine-map-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+
+  display: flex;
+  gap: 6px;
+}
+
+.marine-map-controls button {
+  border: 1px solid #d8dfdc;
+  background: white;
+  border-radius: 6px;
+
+  min-width: 34px;
+  height: 34px;
+  padding: 0 10px;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.marine-map-controls button:hover {
+  background: #f2f5f3;
+}
+
 .zoom-level {
   display: flex;
   align-items: center;
@@ -534,7 +561,7 @@
 
 .marine-side-tabs {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 4px;
 
   padding: 4px;
@@ -682,271 +709,255 @@
   font-size: 0.72rem;
   line-height: 1.5;
 }
+/* Draft overview storytelling layer — preview only, not pushed to Git. */
+.hero-lead{max-width:760px}.problem-statement{max-width:850px;margin-top:17px;padding:13px 16px;border-left:3px solid #8aaa82;background:#f0f4ed;border-radius:0 7px 7px 0;display:flex;gap:12px;align-items:flex-start;font-size:11px;line-height:1.7;color:#5f7063}.problem-statement strong{color:#315e49;white-space:nowrap}.story-panel,.findings-panel{border-top:3px solid #77956f}.story-intro{max-width:800px}.story-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}.story-step{position:relative;padding:20px;border:1px solid #e1e7dd;background:#fafbf8;border-radius:9px;min-height:155px}.story-step-top{display:flex;align-items:center;gap:11px;margin-bottom:13px}.story-step-top span{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#eaf1e7;color:#35634a;font-size:10px;font-weight:700}.story-step-top strong{text-transform:uppercase;letter-spacing:1px;font-size:12px;color:#315e49}.story-step p{font-size:11px;line-height:1.75;color:#657468}.story-step i{position:absolute;right:-12px;top:50%;z-index:2;font-style:normal;color:#7d9a79;background:#f5f6f1;padding:3px}.key-findings-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:22px}.key-finding{padding:21px;border:1px solid #e1e7dd;background:#fafbf8;border-radius:9px}.key-finding-value{display:block;font-family:Georgia,serif;font-size:31px;font-weight:500;color:#315e49}.key-finding h3{font-size:15px;line-height:1.45;margin:10px 0 8px}.key-finding p{font-size:11px;line-height:1.75;color:#627166}.key-finding small{display:block;margin-top:13px;color:#899288;font-size:9px;line-height:1.5}.findings-panel .badge,.story-panel .badge{background:#f7f2e7;color:#8a7445;border-color:#eadfca}
+@media(max-width:800px){.story-steps,.key-findings-grid{grid-template-columns:1fr}.story-step i{display:none}.problem-statement{flex-direction:column;gap:4px}}
+.brand-logo-fallback { display:grid; place-items:center; border:1px solid #d6ded1; border-radius:8px; font-size:12px; font-weight:800; letter-spacing:.08em; color:#31523a; background:#f3f7f1; }
 
-.marine-map-toolbar {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  z-index: 20;
+/* Larger-text review variant — local preview only. Keeps the existing layout and data logic. */
+@media (min-width: 601px) {
+  h1 { font-size: clamp(38px, 3.7vw, 56px); }
+  h2 { font-size: 27px; }
+  h3 { font-size: 16px; }
+  .hero p { font-size: 16px; line-height: 1.7; }
+  .eyebrow { font-size: 11px; }
+  .button { font-size: 14px; }
+  .current-section, nav button { font-size: 14px; }
+  .header-meta { font-size: 13px; }
+  .header-meta small { font-size: 11px; }
+  .controls, .state-picker, details > summary { font-size: 13px; }
+  .range-control label, .reset { font-size: 12px; }
+  .filter-note { font-size: 12px; }
+  .kpi small { font-size: 12px; line-height: 1.5; }
+  .muted { font-size: 14px; }
+  .badge { font-size: 11px; }
+  table { font-size: 13px; }
+  .chart-note { font-size: 13px; }
+  .methodology p, .methodology li { font-size: 15px; }
+  footer { font-size: 12px; }
 
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  /* Overview storytelling additions. */
+  .problem-statement { font-size: 14px; line-height: 1.7; padding: 16px 18px; }
+  .story-step-top span { width: 34px; height: 34px; font-size: 12px; }
+  .story-step-top strong { font-size: 15px; }
+  .story-step p { font-size: 14px; line-height: 1.7; }
+  .key-finding-value { font-size: 36px; }
+  .key-finding h3 { font-size: 18px; }
+  .key-finding p { font-size: 14px; line-height: 1.7; }
+  .key-finding small { font-size: 11px; }
+
+  /* Frequently used analytical cards. */
+  .insight-card p { font-size: 14px; }
+  .insight-card small { font-size: 11px; }
+  .sentiment-summary span, .sentiment-count { font-size: 12px; }
+  .stakeholder-grid span { font-size: 13px; }
+  .stakeholder-grid small, .stakeholder-grid em { font-size: 11px; }
+  .forecast-task dl div { font-size: 12px; }
+  .forecast-task > p span, .forecast-task > small { font-size: 11px; }
+  .baseline-result { font-size: 13px; }
+  .forecast-notes p { font-size: 12px; }
+  .causal-interpretation { font-size: 14px; }
+  .causal-context p { font-size: 13px; }
+  .causal-context small { font-size: 11px; }
 }
 
-.marine-map-controls {
-  position: static;
-  display: flex;
+/* V4: compact evidence-navigation buttons on Overview finding cards. */
+.finding-link{margin-top:16px;padding:8px 11px;border:1px solid #cfdbd0;background:#f1f6ef;color:#315e49;border-radius:6px;font-size:12px;font-weight:700;align-self:flex-start;transition:background .15s ease,border-color .15s ease,transform .15s ease}
+.finding-link:hover{background:#e7f0e4;border-color:#adc2ad;transform:translateY(-1px)}
+.key-finding{display:flex;flex-direction:column}
+.key-finding .finding-link{margin-top:auto;position:relative;top:12px;margin-bottom:12px}
+#national-trends,#public-sentiment{scroll-margin-top:24px}
+
+
+/* V5: compact recovery-pattern breakdown inside the state key-finding card */
+.recovery-breakdown{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 10px;margin:14px 0 2px}
+.recovery-breakdown div{display:flex;align-items:flex-start;gap:8px;padding:8px 9px;border:1px solid #e4e9e1;background:#f5f8f3;border-radius:7px}
+.recovery-breakdown b{font-size:15px;line-height:1.35;color:#315e49}
+.recovery-breakdown span{font-size:11px;line-height:1.4;color:#667469}
+@media(min-width:801px){.recovery-breakdown span{font-size:12px}}
+@media(max-width:520px){.recovery-breakdown{grid-template-columns:1fr}}
+
+/* States V6: sustainability change-pattern storytelling */
+.state-change-summary .section-heading { margin-bottom: 10px; }
+.state-change-intro { max-width: 900px; font-size: 14px; }
+.change-pattern-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
+.change-pattern-card { display: flex; align-items: center; gap: 15px; min-height: 104px; padding: 17px 18px; border: 1px solid #e1e7de; border-radius: 9px; background: #f9faf7; }
+.change-pattern-card > strong { font-family: Georgia, serif; font-size: 34px; line-height: 1; font-weight: 500; color: #315f4b; }
+.change-pattern-card h3 { font-size: 15px; line-height: 1.35; margin-bottom: 7px; }
+.change-pattern-card p { color: #68796c; font-size: 13px; line-height: 1.4; }
+.change-pattern-takeaway { display: flex; align-items: center; gap: 14px; margin-top: 16px; padding: 14px 17px; border-radius: 8px; background: #eff5ed; color: #3d654c; }
+.change-pattern-takeaway strong { font-family: Georgia, serif; font-size: 26px; font-weight: 500; white-space: nowrap; }
+.change-pattern-takeaway span { font-size: 14px; line-height: 1.5; }
+.change-pattern-note { display: block; margin-top: 10px; color: #899288; font-size: 11px; line-height: 1.55; }
+.change-diagnosis .change-direction { margin-bottom: 8px; color: #405f4e; }
+.change-diagnosis .change-direction strong { color: #315f4b; }
+@media (max-width: 1000px) { .change-pattern-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .change-pattern-grid { grid-template-columns: 1fr; } .change-pattern-takeaway { align-items: flex-start; flex-direction: column; gap: 5px; } }
+
+/* States V7 readability refinements */
+.state-change-summary .state-change-intro{font-size:14px;line-height:1.75}
+.state-change-summary .change-pattern-card h3{font-size:15px;line-height:1.35}
+.state-change-summary .change-pattern-card p{font-size:13px;line-height:1.5}
+.state-change-summary .change-pattern-takeaway{font-size:14px}
+.state-change-summary .change-pattern-note{font-size:11px;line-height:1.6}
+.state-profile .section-heading .muted,.state-profile .pillar-heading .muted{font-size:13px}
+.state-profile h3{font-size:16px;line-height:1.45}
+.state-profile .pillar span,.state-profile .pillar-note,.state-profile .insight-card p,.state-profile .insight-card small,.state-profile .report-card{font-size:13px;line-height:1.65}
+.state-profile .detail-charts h3{font-size:14px}
+.state-profile .empty{font-size:13px}
+
+/* V8: clearer state-profile typography and sentiment as a separate module */
+.state-profile .report-card .eyebrow { font-size: 12px; }
+.state-profile .report-card .pillar-heading h3 { font-size: 18px; }
+.state-profile .report-card .pillar-heading .muted { font-size: 14px; }
+.state-profile .report-group-title { font-size: 17px; margin-top: 24px; }
+.state-profile .report-group-title span { font-size: 12px; }
+.state-profile .report-row { min-height: 68px; padding: 13px 16px; font-size: 14px; }
+.state-profile .report-row strong { font-size: 14px; line-height: 1.4; }
+.state-profile .report-row small { font-size: 12px; line-height: 1.45; }
+.state-profile .movement { font-size: 13px; }
+.state-profile .report-status { font-size: 11px; padding: 7px 10px; }
+.state-profile .insight-card h3 { font-size: 18px; }
+.state-profile .insight-card p { font-size: 14px; line-height: 1.65; }
+.state-profile .insight-card small { font-size: 12px; line-height: 1.5; }
+.state-profile .detail-charts h3 { font-size: 16px; }
+.sentiment-bridge { display:flex; align-items:center; justify-content:space-between; gap:24px; margin:26px 0 8px; padding:20px 22px; border:1px solid #e1e7de; border-radius:9px; background:#f7faf5; }
+.sentiment-bridge h3 { margin:5px 0 6px; font-size:17px; }
+.sentiment-bridge p { margin:0; color:#657268; font-size:14px; line-height:1.55; }
+.sentiment-bridge .finding-link { margin:0; top:auto; white-space:nowrap; }
+.public-sentiment-state .state-sentiment { border-top:0; margin-top:20px; }
+@media (max-width:700px){.sentiment-bridge{align-items:flex-start;flex-direction:column}.sentiment-bridge .finding-link{align-self:flex-start}}
+
+/* V9 — strengthen the state diagnosis and keep quantitative trends together */
+.state-profile .change-diagnosis {
+  background: #eef5ec;
+  border: 1.5px solid #b9cfb8;
+  box-shadow: 0 6px 18px rgba(31, 82, 58, 0.07);
+  padding: 24px 26px;
+}
+.state-profile .change-diagnosis .eyebrow { color:#4c715b; }
+.state-profile .change-diagnosis h3 {
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 8px 0 12px;
+  letter-spacing: -0.25px;
+}
+.state-profile .change-diagnosis .change-direction {
+  display: inline-flex;
   gap: 5px;
-}
-
-.marine-map-controls button {
-  border: 1px solid #d8dfdc;
-  background: white;
-  border-radius: 6px;
-
-  min-width: 34px;
-  height: 34px;
-  padding: 0 10px;
-
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.marine-map-controls button:hover {
-  background: #f2f5f3;
-}
-
-.map-layer-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-
-  height: 34px;
-  padding: 0 11px;
-
-  border: 1px solid #d8dfdc;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid #d9e6d7;
   border-radius: 7px;
-
-  background: rgba(255, 255, 255, 0.94);
-  color: #65716d;
-
-  font-size: 0.75rem;
-  font-weight: 600;
-
-  cursor: pointer;
+  padding: 9px 12px;
+  font-size: 15px;
+  margin-bottom: 12px;
 }
-
-.map-layer-button:hover {
-  background: #f7f9f8;
+.state-profile .change-diagnosis > p:not(.change-direction) {
+  font-size: 15px;
+  line-height: 1.65;
+  max-width: 680px;
 }
+.state-profile .change-diagnosis small { display:block; margin-top:12px; font-size:12px; }
+.trend-section-heading { margin: 30px 0 4px; padding-top: 4px; }
+.trend-section-heading h3 { margin: 7px 0 6px; font-size: 20px; }
+.trend-section-heading p { color:#657268; font-size:14px; line-height:1.55; }
+.state-profile .detail-charts { margin-top: 16px; }
+.state-profile .sentiment-bridge { margin-top: 30px; margin-bottom: 0; }
 
-.map-layer-button.active {
-  border-color: #365f8d;
-  background: #eef3f8;
-  color: #294e78;
-}
+/* V11: national issue ranking belongs with national Overview sentiment */
+.national-negative-issues { margin-top: 30px; padding-top: 24px; border-top: 1px solid #e8e3eb; }
+.national-negative-issues .pillar-heading { margin-bottom: 6px; }
+.national-aspect-list { margin-top: 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 18px; }
+.state-sentiment-single { grid-template-columns: 1fr; }
+@media (max-width: 760px) { .national-aspect-list { grid-template-columns: 1fr; } }
 
-.map-layer-diamond {
-  width: 8px;
-  height: 8px;
+/* V12 readability refinements */
+.national-negative-issues .pillar-heading h3 { font-size: 21px; line-height: 1.25; }
+.national-negative-issues > .muted { font-size: 14px; line-height: 1.55; }
+.national-aspect-list li { padding: 15px 16px; }
+.national-aspect-list strong { font-size: 14px; line-height: 1.3; }
+.national-aspect-list small { font-size: 12px; margin-top: 5px; }
+.national-aspect-list > li > span { font-size: 13px; line-height: 1.35; }
+.state-sentiment .pillar-heading h3 { font-size: 22px; line-height: 1.25; }
+.state-sentiment .pillar-heading > .muted { font-size: 13px; }
+.state-sentiment > .muted { font-size: 14px; line-height: 1.55; }
+.state-sentiment-grid > div > h3 { font-size: 18px; }
+.sentiment-source { font-size: 12px; margin-top: 7px; }
+.dimension-comparison article > span { font-size: 14px; }
+.dimension-comparison article > strong { font-size: 24px; }
+.dimension-comparison article > small, .dimension-comparison article > em { font-size: 12px; line-height: 1.45; }
+.state-sentiment .chart-note { font-size: 13px; line-height: 1.55; }
 
-  background: #365f8d;
+/* V14 — Forecast clarity, preserving existing model logic and filtering */
+.forecast-task-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.forecast-task-head > div { min-width: 0; }
+.forecast-verdict { flex: 0 0 auto; max-width: 132px; padding: 7px 9px; border-radius: 6px; font-size: 10px; font-weight: 700; line-height: 1.35; text-align: center; }
+.forecast-verdict.good { background: #e5f1e7; color: #2f6849; }
+.forecast-verdict.warn { background: #f6e9e2; color: #8a503f; }
+.forecast-task dl div { font-size: 12px; }
+.forecast-task > p span { font-size: 11px; }
+.baseline-result { font-size: 12px; }
+.forecast-task > small { font-size: 11px; }
+.forecast-table table { font-size: 12px; }
+.forecast-table th small { font-size: 10px; }
+.forecast-chart h3 { margin: 7px 0 3px; font-size: 18px; }
+.forecast-chart-lead { margin: 0 0 14px; }
+.forecast-limitation { margin-top: 20px; padding: 16px 18px; border-radius: 7px; background: #f7f5ed; color: #626b62; line-height: 1.6; }
+.forecast-limitation strong { display: block; margin-bottom: 5px; color: #284c3d; font-size: 13px; }
+.forecast-limitation p { margin: 0 0 5px; font-size: 12px; }
+.forecast-limitation small { color: #7a786b; font-size: 10px; }
+@media (max-width: 700px) { .forecast-task-head { flex-direction: column; } .forecast-verdict { max-width: none; } }
 
-  transform: rotate(45deg);
+/* V15: sentiment interpretation labels */
+.sentiment-score-line { display: flex; align-items: center; gap: 10px; margin: 7px 0; flex-wrap: wrap; }
+.dimension-comparison .sentiment-score-line strong { margin: 0; }
+.sentiment-band { display: inline-flex !important; width: fit-content; padding: 4px 8px; border-radius: 999px; font-size: 10px !important; font-weight: 700; line-height: 1; letter-spacing: .02em; }
+.sentiment-band.positive,.sentiment-band.slightly-positive { background: #e7f1e8; color: #315f49; }
+.sentiment-band.neutral { background: #eef0ed; color: #5e675f; }
+.sentiment-band.slightly-negative,.sentiment-band.negative { background: #f5e9e4; color: #8a4d3d; }
+.sentiment-band-note { margin-top: 12px; color: #758077; font-size: 11px; }
 
-  flex-shrink: 0;
-}
+/* V16: Forecast readability polish */
+.forecast-task dl div { font-size: 13px; }
+.forecast-task dt { font-size: 12px; }
+.forecast-task dd { font-size: 13px; }
+.forecast-task > p span { font-size: 12px; }
+.forecast-task > small { font-size: 12px; line-height: 1.65; }
+.forecast-verdict { font-size: 11px; }
+.forecast-table table { font-size: 13px; }
+.forecast-table th small { font-size: 11px; }
+.forecast-chart-lead { font-size: 13px; }
+.forecast-limitation strong { font-size: 14px; }
+.forecast-limitation p { font-size: 13px; }
+.forecast-limitation small { font-size: 11px; }
 
-.mpa-legend-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-}
+/* V17 — Impact Analysis storytelling/readability polish */
+.causal-intro { font-size: 14px; }
+.causal-result-banner { margin: 22px 0 4px; padding: 18px 20px; border-left: 4px solid #537b71; background: #f1f5ef; border-radius: 0 8px 8px 0; }
+.causal-result-banner h3 { margin: 7px 0 7px; font-size: 20px; color: #23483b; }
+.causal-result-banner p { max-width: 1050px; color: #53675b; font-size: 14px; line-height: 1.7; }
+.causal-estimate dl div { font-size: 13px; }
+.causal-interpretation { font-size: 14px; }
+.causal-context p { font-size: 13px; }
+.causal-context small { font-size: 11px; }
+.causal-limitations h3 { font-size: 16px; }
+.causal-limitations ul { font-size: 12px; line-height: 1.85; }
 
-.marine-map-legend i.mpa-symbol {
-  display: inline-block;
 
-  width: 9px;
-  height: 9px;
-
-  background: #365f8d;
-
-  border-radius: 0;
-  transform: rotate(45deg);
-}
-
-.mpa-detail-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.7rem;
-  margin-top: 1.25rem;
-}
-
-.mpa-detail-grid > div {
-  padding: 0.8rem;
-
-  border: 1px solid #e5e9ed;
-  border-radius: 8px;
-
-  background: #f8fafc;
-}
-
-.mpa-detail-grid span {
-  display: block;
-
-  margin-bottom: 0.25rem;
-
-  color: #71807a;
-  font-size: 0.67rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.mpa-detail-grid strong {
-  font-size: 0.82rem;
-  line-height: 1.4;
-}
-
-.mpa-source {
-  margin-top: 1.25rem;
-  padding-top: 1rem;
-  border-top: 1px solid #edf0ec;
-}
-
-.mpa-source p {
-  margin-top: 0.4rem;
-  color: #66736f;
-  font-size: 0.75rem;
-  line-height: 1.6;
-}
-
-.station-mpa-context {
-  margin-top: 1.5rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid #edf0ec;
-}
-
-.station-mpa-card {
-  margin-top: 0.65rem;
-  padding: 1rem;
-
-  border: 1px solid #dfe6eb;
-  border-radius: 10px;
-
-  background: #f7f9fc;
-}
-
-.station-mpa-card > div + div {
-  margin-top: 0.8rem;
-}
-
-.station-mpa-card span {
-  display: block;
-  color: #71807a;
-  font-size: 0.68rem;
-}
-
-.station-mpa-card strong {
-  display: block;
-  margin-top: 0.2rem;
-  font-size: 0.85rem;
-}
-
-.station-mpa-card small {
-  display: block;
-  margin-top: 0.9rem;
-
-  color: #7b8581;
-  font-size: 0.65rem;
-  line-height: 1.5;
-}
-
-.priority-strip {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.75rem;
-  margin: 1rem 0;
-}
-
-.priority-strip > div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0.8rem 1rem;
-
-  border: 1px solid #e4e9e6;
-  border-radius: 9px;
-
-  background: #fafbf9;
-}
-
-.priority-strip span {
-  color: #68736f;
-  font-size: 0.72rem;
-}
-
-.priority-strip strong {
-  font-size: 1.2rem;
-}
-
-.priority-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0.85rem 1rem;
-
-  border: 1px solid #e4e9e6;
-  border-radius: 9px;
-
-  background: #fafbf9;
-}
-
-.priority-item span {
-  color: #68736f;
-  font-size: 0.72rem;
-  font-weight: 600;
-}
-
-.priority-item strong {
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-.priority-immediate {
-  border-left: 3px solid #9b493d;
-}
-
-.priority-elevated {
-  border-left: 3px solid #c58a46;
-}
-
-.priority-watch {
-  border-left: 3px solid #788d75;
-}
-
-.priority-method-note {
-  margin-top: 0.75rem;
-  padding: 0.75rem 1rem;
-
-  border-radius: 8px;
-  background: #f7f5ed;
-
-  color: #6f7167;
-  font-size: 0.68rem;
-  line-height: 1.55;
-}
-
-.priority-method-note strong {
-  display: block;
-  margin-bottom: 0.2rem;
-
-  color: #535b54;
-  font-size: 0.7rem;
-}
-
-.priority-method-note p {
-  margin: 0;
-}
+/* V19 — Methodology title, focused controls, and readability polish */
+.methodology > h2 { font-size: 27px; margin-bottom: 20px; }
+.methodology .method-intro { font-size: 15px; line-height: 1.8; }
+.methodology p, .methodology li { font-size: 15px; line-height: 1.85; }
+.method-sections > details > summary { font-size: 14px; padding: 19px 4px; }
+.methodology h3 { font-size: 16px; }
+.indicator-grid strong { font-size: 12px; }
+.indicator-grid small { font-size: 11px; line-height: 1.5; }
+.method-stats strong { font-size: 21px; }
+.method-stats small { font-size: 9px; }
+.method-body table { font-size: 13px; }
+.method-body th small { font-size: 10px; }
+.method-body code { font-size: 12px; }
+.provenance-list p { grid-template-columns: 190px minmax(0, 1fr); align-items: start; }
+.provenance-list p > strong { color: #536a5b; }
+@media (max-width: 600px) { .methodology p, .methodology li { font-size: 14px; } }
