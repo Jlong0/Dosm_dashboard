@@ -57,7 +57,6 @@ export default function OverviewStory({ data, setTab }) {
     <section className="panel story-panel" aria-labelledby="how-it-works-title">
       <div className="section-heading">
         <div><span className="eyebrow">FROM DATA TO DECISION</span><h2 id="how-it-works-title">How the system works</h2></div>
-        <span className="badge">DRAFT PREVIEW</span>
       </div>
       <p className="muted story-intro">The dashboard is designed as a decision-support flow: measure sustainability conditions, detect emerging pressure, then move toward targeted action.</p>
       <div className="story-steps">{steps.map(([number,title,body], index) => <article className="story-step" key={title}>
@@ -67,7 +66,7 @@ export default function OverviewStory({ data, setTab }) {
     </section>
 
     <section className="panel findings-panel" aria-labelledby="key-findings-title">
-      <div className="section-heading"><div><span className="eyebrow">WHAT THE DATA SAYS</span><h2 id="key-findings-title">Key findings</h2></div><span className="badge">DRAFT PREVIEW</span></div>
+      <div className="section-heading"><div><span className="eyebrow">WHAT THE DATA SAYS</span><h2 id="key-findings-title">Key findings</h2></div></div>
       <div className="key-findings-grid">{findings.map(item => <article className="key-finding" key={item.title}>
         <strong className="key-finding-value">{item.value}</strong><h3>{item.title}</h3><p>{item.body}</p>{item.breakdown && <div className="recovery-breakdown">{item.breakdown.map(([count, label]) => <div key={label}><b>{count}</b><span>{label}</span></div>)}</div>}<small>{item.note}</small><button type="button" className="finding-link" onClick={item.onClick}>{item.action}</button>
       </article>)}</div>
