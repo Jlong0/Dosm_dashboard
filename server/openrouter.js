@@ -100,8 +100,13 @@ export async function callOpenRouter({
 
 
   const model =
-    process.env.OPENROUTER_MODEL ??
-    'google/gemini-3.8-flash';
+    process.env.OPENROUTER_MODEL;
+
+  if (!model) {
+    throw new Error(
+      'OPENROUTER_MODEL is not configured.'
+    );
+  }
 
 
   const response =
@@ -181,7 +186,7 @@ export async function callOpenRouter({
 
           temperature: 0.2,
 
-          max_tokens: 4000
+          max_tokens: 8000
         })
       }
     );
@@ -212,41 +217,84 @@ export async function callOpenRouter({
   const choice =
   data?.choices?.[0];
 
-    const content =
-    choice?.message?.content;
+const content =
+  choice?.message?.content;
 
-    const finishReason =
-    choice?.finish_reason;
-
-
-    console.log(
-    'OpenRouter finish reason:',
-    finishReason
-    );
+const finishReason =
+  choice?.finish_reason;
 
 
-    if (!content) {
-    throw new Error(
-        'OpenRouter returned no model content.'
-    );
+/*
+ * Useful diagnostics when using
+ * OpenRouter's free router because the
+ * actual underlying model may change.
+ */
+console.log(
+  'OpenRouter model:',
+  data?.model ?? model
+);
+
+console.log(
+  'OpenRouter finish reason:',
+  finishReason
+);
+
+console.log(
+  'OpenRouter usage:',
+  data?.usage ?? null
+);
+
+
+/*
+ * Check truncation FIRST.
+ *
+ * A model can consume its available
+ * completion tokens before producing
+ * visible JSON content.
+ */
+if (
+  finishReason === 'length'
+) {
+  console.error(
+    'OpenRouter response was truncated.',
+    {
+      model:
+        data?.model ?? model,
+
+      usage:
+        data?.usage ?? null,
+
+      contentLength:
+        typeof content === 'string'
+          ? content.length
+          : 0
     }
+  );
+
+  throw new Error(
+    'The AI model exhausted its output-token limit before completing the response. Please try again.'
+  );
+}
 
 
-    /*
-    * If the model hit the output-token
-    * limit, JSON may be incomplete.
-    */
-    if (
-    finishReason === 'length'
-    ) {
-    console.error(
-        'OpenRouter response was truncated.'
-    );
+if (!content) {
+  console.error(
+    'OpenRouter returned no content.',
+    {
+      model:
+        data?.model ?? model,
 
-    throw new Error(
-        'OpenRouter response exceeded the output-token limit.'
-    );
+      finishReason,
+
+      message:
+        choice?.message ?? null
     }
+  );
+
+  throw new Error(
+    'OpenRouter returned no model content.'
+  );
+}
 
 
   let result;
