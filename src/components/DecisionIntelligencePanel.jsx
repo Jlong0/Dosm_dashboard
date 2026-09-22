@@ -308,7 +308,7 @@ import {
           <div>
   
             <h2>
-              Evidence-guided analysis
+              AI Evidence-guided analysis
             </h2>
   
             <p className="muted">
