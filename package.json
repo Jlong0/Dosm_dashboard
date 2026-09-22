@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
+    "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0",
-    "server": "node server/index.js",
+    "preview": "vite preview",
+    "server": "node server/local.js",
     "deploy": "gh-pages -d dist",
     "check:data": "node scripts/check-data.mjs"
   },
