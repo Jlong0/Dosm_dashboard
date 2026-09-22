@@ -88,7 +88,7 @@ import {
               </span>
   
               <strong>
-                Evidence-guided assistant
+                AI Evidence-guided assistant
               </strong>
             </div>
   
