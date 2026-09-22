@@ -1,15 +1,15 @@
 import {
     buildSystemPrompt,
     buildUserPrompt
-  } from './prompt.js';
+  } from '../server/prompt.js';
   
   import {
     validateInsight
-  } from './validateInsight.js';
+  } from '../server/validateInsight.js';
   
   import {
       callOpenRouter
-    } from './openrouter.js';
+    } from '../server/openrouter.js';
   
   /*
    * Guided Decision Intelligence request
