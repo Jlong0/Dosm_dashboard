@@ -8,7 +8,7 @@ Requirements: Node.js 22.12+ and npm. No backend is required.
 4. Open http://localhost:5173/
 
 Production build: npm run build
-Production preview: npm run preview (http://localhost:4173/)
+Production preview: npm run preview ( http://localhost:4173/ )
 
 Current analytical source: Data_Cleaning_v5.ipynb.
 Current sentiment source: Comment_Sentiment_Pipeline_v2.ipynb.
