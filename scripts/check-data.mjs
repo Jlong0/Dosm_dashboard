@@ -4,7 +4,7 @@ import { geoState } from '../src/data/geoNameMap.js';
 import { parseCsv } from '../src/data/csv.js';
 import { getPillarBreakdown, getStiAvailability, getStiSnapshot } from '../src/data/stiAvailability.js';
 import { getOverviewKpis } from '../src/data/overviewKpis.js';
-import { getYoyReport } from '../src/data/yoyReport.js';
+import { formatIndicatorChange, formatIndicatorValue, getYoyReport } from '../src/data/yoyReport.js';
 import { getRecoveryInsights } from '../src/data/recoveryInsights.js';
 import { destinationSentiment, quarterlySentiment, sentimentMetrics, topNegativeAspects } from '../src/data/sentiment.js';
 const read=name=>JSON.parse(fs.readFileSync(`public/data/${name}.json`,'utf8'));
@@ -84,12 +84,26 @@ for(const year of [2015,2016,2025])assert.equal(getPillarBreakdown(details,fallb
 for(const file of ['agg_states_detail.csv','agg_states_fallback.csv'])assert.equal(fs.readFileSync(`dashboard_exports_other/${file}`,'utf8'),fs.readFileSync(`public/data/${file}`,'utf8'));
 assert.equal(fs.readFileSync('dashboard_exports_other/agg_overview.json','utf8'),fs.readFileSync('public/data/agg_overview.json','utf8'));
 const yoy=parseCsv(fs.readFileSync('public/data/agg_states_yoy_values.csv','utf8'));
-assert.equal(yoy.length,1760);
+const scheduledWaste=yoy.filter(row=>row.indicator==='Scheduled Waste');
+assert.equal(yoy.length,1936);
+assert.equal(scheduledWaste.length,176);
+assert(scheduledWaste.every(row=>row.unit==='tonnes'&&row.part_of_sti==='False'&&row.higher_is_better==null));
+for(const row of scheduledWaste){
+ const previous=yoy[yoy.indexOf(row)-1];
+ assert(previous?.indicator==='Visitors per Resident'&&previous.State===row.State&&previous.Year===row.Year);
+}
 assert.equal(new Set(yoy.map(row=>`${row.State}:${row.Year}:${row.indicator}`)).size,yoy.length);
 assert.equal(new Set(yoy.filter(row=>row.part_of_sti==='True').map(row=>row.indicator)).size,6);
 assert(yoy.filter(row=>row.part_of_sti==='False').every(row=>row.higher_is_better==null));
 const johor2024=getYoyReport(yoy,'Johor',2024);
-assert.equal(johor2024.length,10);
+assert.equal(johor2024.length,11);
+assert.equal(johor2024.filter(row=>!row.partOfSti).at(-1).indicator,'Scheduled Waste');
+assert.equal(johor2024.at(-1).currentValue,644832);
+assert.equal(johor2024.at(-1).status,'Diagnostic');
+assert.equal(getYoyReport(yoy,'Johor',2025).at(-1).currentValue,null);
+assert.equal(formatIndicatorValue(644832,'tonnes'),'644,832 tonnes');
+assert.equal(formatIndicatorValue(12345.5,'tonnes'),'12,345.5 tonnes');
+assert.equal(formatIndicatorChange(-570919,'tonnes'),'-570,919 tonnes');
 assert.equal(johor2024.find(row=>row.indicator==='Unemployment Rate (%)').status,'Favourable');
 assert.equal(johor2024.find(row=>row.indicator==='Non-Domestic Water Share (%)').status,'Concern');
 assert(getYoyReport(yoy,'Perlis',2024).some(row=>row.partOfSti&&row.currentValue!=null));
@@ -101,7 +115,8 @@ for(const row of yoy){
  assert.equal(value==null,row.value==null,`${row.State} ${row.Year} ${row.indicator} missingness disagrees with v5 state panel`);
  if(value!=null)assert(Math.abs(value-row.value)<1e-5,`${row.State} ${row.Year} ${row.indicator} disagrees with v5 state panel`);
 }
-assert.equal(fs.readFileSync('dashboard_exports_other/agg_states_yoy_values.csv','utf8'),fs.readFileSync('public/data/agg_states_yoy_values.csv','utf8'));
+// Scheduled Waste is patched only into runtime data; the upstream export stays unchanged.
+assert.deepEqual(parseCsv(fs.readFileSync('dashboard_exports_other/agg_states_yoy_values.csv','utf8')),yoy.filter(row=>row.indicator!=='Scheduled Waste'));
 const recovery=parseCsv(fs.readFileSync('public/data/agg_states_recovery.csv','utf8'));
 const quadrants=new Set(['Sustainable improvement','Growth under environmental stress','Environmental recovery, tourism weakness','Overall deterioration']);
 assert.equal(recovery.length,13);

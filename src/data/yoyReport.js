@@ -3,7 +3,7 @@ const ORDER = [
   'Labour Force Participation Rate (%)', 'Unemployment Rate (%)',
   'Non-Domestic Water Share (%)', 'Coastal Good+Excellent (%)',
   'Coastal Poor (%)', 'Municipal Waste Facility Tonnes/Day',
-  'Mangrove Area (ha)', 'Visitors per Resident',
+  'Mangrove Area (ha)', 'Visitors per Resident', 'Scheduled Waste',
 ];
 
 const asBool = value => value === true || value === 'True';
@@ -32,11 +32,12 @@ export function formatIndicatorValue(value, unit) {
   if (unit === 'nights') return `${value.toFixed(1)} nights`;
   if (unit === 'ha') return `${value.toLocaleString('en-MY', { maximumFractionDigits: 1 })} ha`;
   if (unit === 'tonnes/day') return `${value.toLocaleString('en-MY', { maximumFractionDigits: 1 })} t/day`;
+  if (unit === 'tonnes') return `${value.toLocaleString('en-MY', { maximumFractionDigits: 1 })} tonnes`;
   return value.toFixed(1);
 }
 
 export function formatIndicatorChange(value, unit) {
   if (!Number.isFinite(value)) return 'YoY: N/A';
   const number = `${value > 0 ? '+' : ''}${value.toLocaleString('en-MY', { maximumFractionDigits: 1 })}`;
-  return `${number}${unit === '%' ? ' pp' : unit === 'RM' ? ' RM' : unit === 'nights' ? ' nights' : unit === 'ha' ? ' ha' : unit === 'tonnes/day' ? ' t/day' : ''}`;
+  return `${number}${unit === '%' ? ' pp' : unit === 'RM' ? ' RM' : unit === 'nights' ? ' nights' : unit === 'ha' ? ' ha' : unit === 'tonnes/day' ? ' t/day' : unit === 'tonnes' ? ' tonnes' : ''}`;
 }
