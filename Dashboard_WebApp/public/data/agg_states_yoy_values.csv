@@ -1,0 +1,1761 @@
+State,Year,value,indicator,unit,higher_is_better,part_of_sti
+Johor,2015,,Avg Length of Stay (nights),nights,True,True
+Johor,2015,52.0,Coastal Good+Excellent (%),%,True,True
+Johor,2015,67.1,Labour Force Participation Rate (%),%,True,True
+Johor,2015,35.583797,Non-Domestic Water Share (%),%,False,True
+Johor,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Johor,2015,3.1,Unemployment Rate (%),%,False,True
+Johor,2015,0.0,Coastal Poor (%),%,,False
+Johor,2015,31915.0,Mangrove Area (ha),ha,,False
+Johor,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Johor,2015,3.209983,Visitors per Resident,ratio,,False
+Johor,2016,,Avg Length of Stay (nights),nights,True,True
+Johor,2016,80.0,Coastal Good+Excellent (%),%,True,True
+Johor,2016,66.6,Labour Force Participation Rate (%),%,True,True
+Johor,2016,39.891135,Non-Domestic Water Share (%),%,False,True
+Johor,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Johor,2016,3.6,Unemployment Rate (%),%,False,True
+Johor,2016,4.0,Coastal Poor (%),%,,False
+Johor,2016,31915.0,Mangrove Area (ha),ha,,False
+Johor,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Johor,2016,3.342735,Visitors per Resident,ratio,,False
+Johor,2017,2.19,Avg Length of Stay (nights),nights,True,True
+Johor,2017,82.758621,Coastal Good+Excellent (%),%,True,True
+Johor,2017,67.0,Labour Force Participation Rate (%),%,True,True
+Johor,2017,40.530303,Non-Domestic Water Share (%),%,False,True
+Johor,2017,1632.675142,Tourism Receipts per Resident (RM),RM,True,True
+Johor,2017,3.4,Unemployment Rate (%),%,False,True
+Johor,2017,0.0,Coastal Poor (%),%,,False
+Johor,2017,18198.0,Mangrove Area (ha),ha,,False
+Johor,2017,3449.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Johor,2017,3.554406,Visitors per Resident,ratio,,False
+Johor,2018,2.54,Avg Length of Stay (nights),nights,True,True
+Johor,2018,79.310345,Coastal Good+Excellent (%),%,True,True
+Johor,2018,69.475,Labour Force Participation Rate (%),%,True,True
+Johor,2018,41.588448,Non-Domestic Water Share (%),%,False,True
+Johor,2018,1793.887022,Tourism Receipts per Resident (RM),RM,True,True
+Johor,2018,3.0,Unemployment Rate (%),%,False,True
+Johor,2018,0.0,Coastal Poor (%),%,,False
+Johor,2018,18198.0,Mangrove Area (ha),ha,,False
+Johor,2018,3062.32,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Johor,2018,3.597172,Visitors per Resident,ratio,,False
+Johor,2019,2.54,Avg Length of Stay (nights),nights,True,True
+Johor,2019,37.931034,Coastal Good+Excellent (%),%,True,True
+Johor,2019,70.175,Labour Force Participation Rate (%),%,True,True
+Johor,2019,41.771269,Non-Domestic Water Share (%),%,False,True
+Johor,2019,1970.11592,Tourism Receipts per Resident (RM),RM,True,True
+Johor,2019,2.7,Unemployment Rate (%),%,False,True
+Johor,2019,10.344828,Coastal Poor (%),%,,False
+Johor,2019,18198.0,Mangrove Area (ha),ha,,False
+Johor,2019,1312.4,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Johor,2019,3.795065,Visitors per Resident,ratio,,False
+Johor,2020,1.85,Avg Length of Stay (nights),nights,True,True
+Johor,2020,65.517241,Coastal Good+Excellent (%),%,True,True
+Johor,2020,70.7,Labour Force Participation Rate (%),%,True,True
+Johor,2020,37.76023,Non-Domestic Water Share (%),%,False,True
+Johor,2020,606.529167,Tourism Receipts per Resident (RM),RM,True,True
+Johor,2020,3.5,Unemployment Rate (%),%,False,True
+Johor,2020,10.344828,Coastal Poor (%),%,,False
+Johor,2020,18198.0,Mangrove Area (ha),ha,,False
+Johor,2020,3350.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Johor,2020,1.80637,Visitors per Resident,ratio,,False
+Johor,2021,2.06,Avg Length of Stay (nights),nights,True,True
+Johor,2021,75.862069,Coastal Good+Excellent (%),%,True,True
+Johor,2021,70.5,Labour Force Participation Rate (%),%,True,True
+Johor,2021,36.488439,Non-Domestic Water Share (%),%,False,True
+Johor,2021,311.442786,Tourism Receipts per Resident (RM),RM,True,True
+Johor,2021,3.7,Unemployment Rate (%),%,False,True
+Johor,2021,0.0,Coastal Poor (%),%,,False
+Johor,2021,18367.0,Mangrove Area (ha),ha,,False
+Johor,2021,1729.1,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Johor,2021,0.909838,Visitors per Resident,ratio,,False
+Johor,2022,2.34,Avg Length of Stay (nights),nights,True,True
+Johor,2022,75.862069,Coastal Good+Excellent (%),%,True,True
+Johor,2022,71.1,Labour Force Participation Rate (%),%,True,True
+Johor,2022,38.203849,Non-Domestic Water Share (%),%,False,True
+Johor,2022,1213.415088,Tourism Receipts per Resident (RM),RM,True,True
+Johor,2022,3.2,Unemployment Rate (%),%,False,True
+Johor,2022,0.0,Coastal Poor (%),%,,False
+Johor,2022,18076.0,Mangrove Area (ha),ha,,False
+Johor,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Johor,2022,3.072264,Visitors per Resident,ratio,,False
+Johor,2023,2.18,Avg Length of Stay (nights),nights,True,True
+Johor,2023,75.862069,Coastal Good+Excellent (%),%,True,True
+Johor,2023,71.3,Labour Force Participation Rate (%),%,True,True
+Johor,2023,39.312715,Non-Domestic Water Share (%),%,False,True
+Johor,2023,1631.038177,Tourism Receipts per Resident (RM),RM,True,True
+Johor,2023,2.6,Unemployment Rate (%),%,False,True
+Johor,2023,0.0,Coastal Poor (%),%,,False
+Johor,2023,,Mangrove Area (ha),ha,,False
+Johor,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Johor,2023,3.84812,Visitors per Resident,ratio,,False
+Johor,2024,2.55,Avg Length of Stay (nights),nights,True,True
+Johor,2024,79.310345,Coastal Good+Excellent (%),%,True,True
+Johor,2024,71.5,Labour Force Participation Rate (%),%,True,True
+Johor,2024,40.370615,Non-Domestic Water Share (%),%,False,True
+Johor,2024,1867.412293,Tourism Receipts per Resident (RM),RM,True,True
+Johor,2024,2.3,Unemployment Rate (%),%,False,True
+Johor,2024,0.0,Coastal Poor (%),%,,False
+Johor,2024,,Mangrove Area (ha),ha,,False
+Johor,2024,3169.1,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Johor,2024,4.095689,Visitors per Resident,ratio,,False
+Johor,2025,2.68,Avg Length of Stay (nights),nights,True,True
+Johor,2025,,Coastal Good+Excellent (%),%,True,True
+Johor,2025,71.775,Labour Force Participation Rate (%),%,True,True
+Johor,2025,,Non-Domestic Water Share (%),%,False,True
+Johor,2025,2074.879285,Tourism Receipts per Resident (RM),RM,True,True
+Johor,2025,2.3,Unemployment Rate (%),%,False,True
+Johor,2025,,Coastal Poor (%),%,,False
+Johor,2025,,Mangrove Area (ha),ha,,False
+Johor,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Johor,2025,4.328394,Visitors per Resident,ratio,,False
+Kedah,2015,,Avg Length of Stay (nights),nights,True,True
+Kedah,2015,12.5,Coastal Good+Excellent (%),%,True,True
+Kedah,2015,64.6,Labour Force Participation Rate (%),%,True,True
+Kedah,2015,27.207977,Non-Domestic Water Share (%),%,False,True
+Kedah,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Kedah,2015,2.6,Unemployment Rate (%),%,False,True
+Kedah,2015,0.0,Coastal Poor (%),%,,False
+Kedah,2015,6201.0,Mangrove Area (ha),ha,,False
+Kedah,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kedah,2015,5.926544,Visitors per Resident,ratio,,False
+Kedah,2016,,Avg Length of Stay (nights),nights,True,True
+Kedah,2016,0.0,Coastal Good+Excellent (%),%,True,True
+Kedah,2016,64.2,Labour Force Participation Rate (%),%,True,True
+Kedah,2016,27.586207,Non-Domestic Water Share (%),%,False,True
+Kedah,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Kedah,2016,2.9,Unemployment Rate (%),%,False,True
+Kedah,2016,0.0,Coastal Poor (%),%,,False
+Kedah,2016,6201.0,Mangrove Area (ha),ha,,False
+Kedah,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kedah,2016,6.221635,Visitors per Resident,ratio,,False
+Kedah,2017,2.13,Avg Length of Stay (nights),nights,True,True
+Kedah,2017,88.888889,Coastal Good+Excellent (%),%,True,True
+Kedah,2017,64.7,Labour Force Participation Rate (%),%,True,True
+Kedah,2017,27.158774,Non-Domestic Water Share (%),%,False,True
+Kedah,2017,2085.451747,Tourism Receipts per Resident (RM),RM,True,True
+Kedah,2017,2.8,Unemployment Rate (%),%,False,True
+Kedah,2017,0.0,Coastal Poor (%),%,,False
+Kedah,2017,6201.0,Mangrove Area (ha),ha,,False
+Kedah,2017,1694.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kedah,2017,6.205763,Visitors per Resident,ratio,,False
+Kedah,2018,2.29,Avg Length of Stay (nights),nights,True,True
+Kedah,2018,100.0,Coastal Good+Excellent (%),%,True,True
+Kedah,2018,63.675,Labour Force Participation Rate (%),%,True,True
+Kedah,2018,26.979866,Non-Domestic Water Share (%),%,False,True
+Kedah,2018,2184.003699,Tourism Receipts per Resident (RM),RM,True,True
+Kedah,2018,2.9,Unemployment Rate (%),%,False,True
+Kedah,2018,0.0,Coastal Poor (%),%,,False
+Kedah,2018,6201.0,Mangrove Area (ha),ha,,False
+Kedah,2018,1657.3,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kedah,2018,6.694414,Visitors per Resident,ratio,,False
+Kedah,2019,2.31,Avg Length of Stay (nights),nights,True,True
+Kedah,2019,77.777778,Coastal Good+Excellent (%),%,True,True
+Kedah,2019,63.225,Labour Force Participation Rate (%),%,True,True
+Kedah,2019,27.40448,Non-Domestic Water Share (%),%,False,True
+Kedah,2019,2395.9148,Tourism Receipts per Resident (RM),RM,True,True
+Kedah,2019,2.8,Unemployment Rate (%),%,False,True
+Kedah,2019,0.0,Coastal Poor (%),%,,False
+Kedah,2019,6201.0,Mangrove Area (ha),ha,,False
+Kedah,2019,840.07,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kedah,2019,6.822929,Visitors per Resident,ratio,,False
+Kedah,2020,1.97,Avg Length of Stay (nights),nights,True,True
+Kedah,2020,88.888889,Coastal Good+Excellent (%),%,True,True
+Kedah,2020,63.3,Labour Force Participation Rate (%),%,True,True
+Kedah,2020,25.162973,Non-Domestic Water Share (%),%,False,True
+Kedah,2020,1066.435207,Tourism Receipts per Resident (RM),RM,True,True
+Kedah,2020,4.1,Unemployment Rate (%),%,False,True
+Kedah,2020,0.0,Coastal Poor (%),%,,False
+Kedah,2020,6201.0,Mangrove Area (ha),ha,,False
+Kedah,2020,1670.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kedah,2020,4.742423,Visitors per Resident,ratio,,False
+Kedah,2021,1.96,Avg Length of Stay (nights),nights,True,True
+Kedah,2021,100.0,Coastal Good+Excellent (%),%,True,True
+Kedah,2021,63.7,Labour Force Participation Rate (%),%,True,True
+Kedah,2021,23.276983,Non-Domestic Water Share (%),%,False,True
+Kedah,2021,391.318492,Tourism Receipts per Resident (RM),RM,True,True
+Kedah,2021,3.9,Unemployment Rate (%),%,False,True
+Kedah,2021,0.0,Coastal Poor (%),%,,False
+Kedah,2021,6201.0,Mangrove Area (ha),ha,,False
+Kedah,2021,1442.5,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kedah,2021,1.869685,Visitors per Resident,ratio,,False
+Kedah,2022,2.11,Avg Length of Stay (nights),nights,True,True
+Kedah,2022,100.0,Coastal Good+Excellent (%),%,True,True
+Kedah,2022,64.2,Labour Force Participation Rate (%),%,True,True
+Kedah,2022,27.927928,Non-Domestic Water Share (%),%,False,True
+Kedah,2022,1604.179187,Tourism Receipts per Resident (RM),RM,True,True
+Kedah,2022,3.0,Unemployment Rate (%),%,False,True
+Kedah,2022,0.0,Coastal Poor (%),%,,False
+Kedah,2022,6714.0,Mangrove Area (ha),ha,,False
+Kedah,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kedah,2022,5.171282,Visitors per Resident,ratio,,False
+Kedah,2023,2.03,Avg Length of Stay (nights),nights,True,True
+Kedah,2023,100.0,Coastal Good+Excellent (%),%,True,True
+Kedah,2023,65.3,Labour Force Participation Rate (%),%,True,True
+Kedah,2023,35.234474,Non-Domestic Water Share (%),%,False,True
+Kedah,2023,1921.618782,Tourism Receipts per Resident (RM),RM,True,True
+Kedah,2023,2.9,Unemployment Rate (%),%,False,True
+Kedah,2023,0.0,Coastal Poor (%),%,,False
+Kedah,2023,,Mangrove Area (ha),ha,,False
+Kedah,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kedah,2023,6.140776,Visitors per Resident,ratio,,False
+Kedah,2024,2.77,Avg Length of Stay (nights),nights,True,True
+Kedah,2024,100.0,Coastal Good+Excellent (%),%,True,True
+Kedah,2024,66.625,Labour Force Participation Rate (%),%,True,True
+Kedah,2024,36.189258,Non-Domestic Water Share (%),%,False,True
+Kedah,2024,2237.607686,Tourism Receipts per Resident (RM),RM,True,True
+Kedah,2024,2.525,Unemployment Rate (%),%,False,True
+Kedah,2024,0.0,Coastal Poor (%),%,,False
+Kedah,2024,,Mangrove Area (ha),ha,,False
+Kedah,2024,1696.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kedah,2024,6.608182,Visitors per Resident,ratio,,False
+Kedah,2025,2.82,Avg Length of Stay (nights),nights,True,True
+Kedah,2025,,Coastal Good+Excellent (%),%,True,True
+Kedah,2025,66.7,Labour Force Participation Rate (%),%,True,True
+Kedah,2025,,Non-Domestic Water Share (%),%,False,True
+Kedah,2025,2478.559562,Tourism Receipts per Resident (RM),RM,True,True
+Kedah,2025,2.425,Unemployment Rate (%),%,False,True
+Kedah,2025,,Coastal Poor (%),%,,False
+Kedah,2025,,Mangrove Area (ha),ha,,False
+Kedah,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kedah,2025,7.008217,Visitors per Resident,ratio,,False
+Kelantan,2015,,Avg Length of Stay (nights),nights,True,True
+Kelantan,2015,0.0,Coastal Good+Excellent (%),%,True,True
+Kelantan,2015,61.9,Labour Force Participation Rate (%),%,True,True
+Kelantan,2015,31.465517,Non-Domestic Water Share (%),%,False,True
+Kelantan,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Kelantan,2015,3.6,Unemployment Rate (%),%,False,True
+Kelantan,2015,0.0,Coastal Poor (%),%,,False
+Kelantan,2015,,Mangrove Area (ha),ha,,False
+Kelantan,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kelantan,2015,5.151653,Visitors per Resident,ratio,,False
+Kelantan,2016,,Avg Length of Stay (nights),nights,True,True
+Kelantan,2016,0.0,Coastal Good+Excellent (%),%,True,True
+Kelantan,2016,59.1,Labour Force Participation Rate (%),%,True,True
+Kelantan,2016,31.799163,Non-Domestic Water Share (%),%,False,True
+Kelantan,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Kelantan,2016,3.8,Unemployment Rate (%),%,False,True
+Kelantan,2016,0.0,Coastal Poor (%),%,,False
+Kelantan,2016,,Mangrove Area (ha),ha,,False
+Kelantan,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kelantan,2016,4.812156,Visitors per Resident,ratio,,False
+Kelantan,2017,2.94,Avg Length of Stay (nights),nights,True,True
+Kelantan,2017,100.0,Coastal Good+Excellent (%),%,True,True
+Kelantan,2017,61.1,Labour Force Participation Rate (%),%,True,True
+Kelantan,2017,32.780083,Non-Domestic Water Share (%),%,False,True
+Kelantan,2017,1986.878075,Tourism Receipts per Resident (RM),RM,True,True
+Kelantan,2017,3.6,Unemployment Rate (%),%,False,True
+Kelantan,2017,0.0,Coastal Poor (%),%,,False
+Kelantan,2017,,Mangrove Area (ha),ha,,False
+Kelantan,2017,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kelantan,2017,5.261708,Visitors per Resident,ratio,,False
+Kelantan,2018,2.88,Avg Length of Stay (nights),nights,True,True
+Kelantan,2018,100.0,Coastal Good+Excellent (%),%,True,True
+Kelantan,2018,60.725,Labour Force Participation Rate (%),%,True,True
+Kelantan,2018,34.136546,Non-Domestic Water Share (%),%,False,True
+Kelantan,2018,2150.497178,Tourism Receipts per Resident (RM),RM,True,True
+Kelantan,2018,4.0,Unemployment Rate (%),%,False,True
+Kelantan,2018,0.0,Coastal Poor (%),%,,False
+Kelantan,2018,,Mangrove Area (ha),ha,,False
+Kelantan,2018,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kelantan,2018,5.292192,Visitors per Resident,ratio,,False
+Kelantan,2019,3.01,Avg Length of Stay (nights),nights,True,True
+Kelantan,2019,100.0,Coastal Good+Excellent (%),%,True,True
+Kelantan,2019,59.225,Labour Force Participation Rate (%),%,True,True
+Kelantan,2019,34.274194,Non-Domestic Water Share (%),%,False,True
+Kelantan,2019,2548.041193,Tourism Receipts per Resident (RM),RM,True,True
+Kelantan,2019,4.0,Unemployment Rate (%),%,False,True
+Kelantan,2019,0.0,Coastal Poor (%),%,,False
+Kelantan,2019,,Mangrove Area (ha),ha,,False
+Kelantan,2019,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kelantan,2019,5.831829,Visitors per Resident,ratio,,False
+Kelantan,2020,1.86,Avg Length of Stay (nights),nights,True,True
+Kelantan,2020,83.333333,Coastal Good+Excellent (%),%,True,True
+Kelantan,2020,56.5,Labour Force Participation Rate (%),%,True,True
+Kelantan,2020,30.612245,Non-Domestic Water Share (%),%,False,True
+Kelantan,2020,867.503487,Tourism Receipts per Resident (RM),RM,True,True
+Kelantan,2020,4.2,Unemployment Rate (%),%,False,True
+Kelantan,2020,0.0,Coastal Poor (%),%,,False
+Kelantan,2020,,Mangrove Area (ha),ha,,False
+Kelantan,2020,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kelantan,2020,3.379637,Visitors per Resident,ratio,,False
+Kelantan,2021,3.14,Avg Length of Stay (nights),nights,True,True
+Kelantan,2021,100.0,Coastal Good+Excellent (%),%,True,True
+Kelantan,2021,55.8,Labour Force Participation Rate (%),%,True,True
+Kelantan,2021,28.451883,Non-Domestic Water Share (%),%,False,True
+Kelantan,2021,263.201457,Tourism Receipts per Resident (RM),RM,True,True
+Kelantan,2021,4.0,Unemployment Rate (%),%,False,True
+Kelantan,2021,0.0,Coastal Poor (%),%,,False
+Kelantan,2021,,Mangrove Area (ha),ha,,False
+Kelantan,2021,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kelantan,2021,1.05994,Visitors per Resident,ratio,,False
+Kelantan,2022,3.16,Avg Length of Stay (nights),nights,True,True
+Kelantan,2022,100.0,Coastal Good+Excellent (%),%,True,True
+Kelantan,2022,56.3,Labour Force Participation Rate (%),%,True,True
+Kelantan,2022,32.217573,Non-Domestic Water Share (%),%,False,True
+Kelantan,2022,1412.65159,Tourism Receipts per Resident (RM),RM,True,True
+Kelantan,2022,3.6,Unemployment Rate (%),%,False,True
+Kelantan,2022,0.0,Coastal Poor (%),%,,False
+Kelantan,2022,,Mangrove Area (ha),ha,,False
+Kelantan,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kelantan,2022,3.620125,Visitors per Resident,ratio,,False
+Kelantan,2023,3.07,Avg Length of Stay (nights),nights,True,True
+Kelantan,2023,100.0,Coastal Good+Excellent (%),%,True,True
+Kelantan,2023,57.3,Labour Force Participation Rate (%),%,True,True
+Kelantan,2023,33.193277,Non-Domestic Water Share (%),%,False,True
+Kelantan,2023,1735.670502,Tourism Receipts per Resident (RM),RM,True,True
+Kelantan,2023,3.5,Unemployment Rate (%),%,False,True
+Kelantan,2023,0.0,Coastal Poor (%),%,,False
+Kelantan,2023,,Mangrove Area (ha),ha,,False
+Kelantan,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kelantan,2023,4.059039,Visitors per Resident,ratio,,False
+Kelantan,2024,2.98,Avg Length of Stay (nights),nights,True,True
+Kelantan,2024,100.0,Coastal Good+Excellent (%),%,True,True
+Kelantan,2024,57.7,Labour Force Participation Rate (%),%,True,True
+Kelantan,2024,32.786885,Non-Domestic Water Share (%),%,False,True
+Kelantan,2024,2405.318078,Tourism Receipts per Resident (RM),RM,True,True
+Kelantan,2024,3.6,Unemployment Rate (%),%,False,True
+Kelantan,2024,0.0,Coastal Poor (%),%,,False
+Kelantan,2024,,Mangrove Area (ha),ha,,False
+Kelantan,2024,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kelantan,2024,5.569151,Visitors per Resident,ratio,,False
+Kelantan,2025,2.98,Avg Length of Stay (nights),nights,True,True
+Kelantan,2025,,Coastal Good+Excellent (%),%,True,True
+Kelantan,2025,59.25,Labour Force Participation Rate (%),%,True,True
+Kelantan,2025,,Non-Domestic Water Share (%),%,False,True
+Kelantan,2025,2910.555556,Tourism Receipts per Resident (RM),RM,True,True
+Kelantan,2025,4.075,Unemployment Rate (%),%,False,True
+Kelantan,2025,,Coastal Poor (%),%,,False
+Kelantan,2025,,Mangrove Area (ha),ha,,False
+Kelantan,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Kelantan,2025,6.701111,Visitors per Resident,ratio,,False
+Melaka,2015,,Avg Length of Stay (nights),nights,True,True
+Melaka,2015,16.666667,Coastal Good+Excellent (%),%,True,True
+Melaka,2015,66.6,Labour Force Participation Rate (%),%,True,True
+Melaka,2015,47.938144,Non-Domestic Water Share (%),%,False,True
+Melaka,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Melaka,2015,1.0,Unemployment Rate (%),%,False,True
+Melaka,2015,0.0,Coastal Poor (%),%,,False
+Melaka,2015,102.0,Mangrove Area (ha),ha,,False
+Melaka,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Melaka,2015,12.994376,Visitors per Resident,ratio,,False
+Melaka,2016,,Avg Length of Stay (nights),nights,True,True
+Melaka,2016,0.0,Coastal Good+Excellent (%),%,True,True
+Melaka,2016,65.4,Labour Force Participation Rate (%),%,True,True
+Melaka,2016,49.135802,Non-Domestic Water Share (%),%,False,True
+Melaka,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Melaka,2016,0.9,Unemployment Rate (%),%,False,True
+Melaka,2016,0.0,Coastal Poor (%),%,,False
+Melaka,2016,135.0,Mangrove Area (ha),ha,,False
+Melaka,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Melaka,2016,13.614471,Visitors per Resident,ratio,,False
+Melaka,2017,2.69,Avg Length of Stay (nights),nights,True,True
+Melaka,2017,44.444444,Coastal Good+Excellent (%),%,True,True
+Melaka,2017,65.6,Labour Force Participation Rate (%),%,True,True
+Melaka,2017,49.759615,Non-Domestic Water Share (%),%,False,True
+Melaka,2017,5441.901216,Tourism Receipts per Resident (RM),RM,True,True
+Melaka,2017,1.0,Unemployment Rate (%),%,False,True
+Melaka,2017,0.0,Coastal Poor (%),%,,False
+Melaka,2017,136.0,Mangrove Area (ha),ha,,False
+Melaka,2017,848.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Melaka,2017,13.826508,Visitors per Resident,ratio,,False
+Melaka,2018,2.23,Avg Length of Stay (nights),nights,True,True
+Melaka,2018,66.666667,Coastal Good+Excellent (%),%,True,True
+Melaka,2018,66.9,Labour Force Participation Rate (%),%,True,True
+Melaka,2018,49.759615,Non-Domestic Water Share (%),%,False,True
+Melaka,2018,6032.090199,Tourism Receipts per Resident (RM),RM,True,True
+Melaka,2018,1.1,Unemployment Rate (%),%,False,True
+Melaka,2018,0.0,Coastal Poor (%),%,,False
+Melaka,2018,136.0,Mangrove Area (ha),ha,,False
+Melaka,2018,950.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Melaka,2018,14.226587,Visitors per Resident,ratio,,False
+Melaka,2019,2.29,Avg Length of Stay (nights),nights,True,True
+Melaka,2019,0.0,Coastal Good+Excellent (%),%,True,True
+Melaka,2019,67.975,Labour Force Participation Rate (%),%,True,True
+Melaka,2019,50.471698,Non-Domestic Water Share (%),%,False,True
+Melaka,2019,6861.266695,Tourism Receipts per Resident (RM),RM,True,True
+Melaka,2019,1.1,Unemployment Rate (%),%,False,True
+Melaka,2019,0.0,Coastal Poor (%),%,,False
+Melaka,2019,136.0,Mangrove Area (ha),ha,,False
+Melaka,2019,851.77,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Melaka,2019,15.057087,Visitors per Resident,ratio,,False
+Melaka,2020,1.8,Avg Length of Stay (nights),nights,True,True
+Melaka,2020,55.555556,Coastal Good+Excellent (%),%,True,True
+Melaka,2020,66.2,Labour Force Participation Rate (%),%,True,True
+Melaka,2020,46.782178,Non-Domestic Water Share (%),%,False,True
+Melaka,2020,2376.802885,Tourism Receipts per Resident (RM),RM,True,True
+Melaka,2020,2.4,Unemployment Rate (%),%,False,True
+Melaka,2020,0.0,Coastal Poor (%),%,,False
+Melaka,2020,136.0,Mangrove Area (ha),ha,,False
+Melaka,2020,952.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Melaka,2020,7.286659,Visitors per Resident,ratio,,False
+Melaka,2021,1.86,Avg Length of Stay (nights),nights,True,True
+Melaka,2021,55.555556,Coastal Good+Excellent (%),%,True,True
+Melaka,2021,67.65,Labour Force Participation Rate (%),%,True,True
+Melaka,2021,44.444444,Non-Domestic Water Share (%),%,False,True
+Melaka,2021,999.50224,Tourism Receipts per Resident (RM),RM,True,True
+Melaka,2021,2.1,Unemployment Rate (%),%,False,True
+Melaka,2021,0.0,Coastal Poor (%),%,,False
+Melaka,2021,238.0,Mangrove Area (ha),ha,,False
+Melaka,2021,981.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Melaka,2021,3.860767,Visitors per Resident,ratio,,False
+Melaka,2022,2.14,Avg Length of Stay (nights),nights,True,True
+Melaka,2022,77.777778,Coastal Good+Excellent (%),%,True,True
+Melaka,2022,69.8,Labour Force Participation Rate (%),%,True,True
+Melaka,2022,45.454545,Non-Domestic Water Share (%),%,False,True
+Melaka,2022,4801.705334,Tourism Receipts per Resident (RM),RM,True,True
+Melaka,2022,1.7,Unemployment Rate (%),%,False,True
+Melaka,2022,0.0,Coastal Poor (%),%,,False
+Melaka,2022,238.0,Mangrove Area (ha),ha,,False
+Melaka,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Melaka,2022,11.656752,Visitors per Resident,ratio,,False
+Melaka,2023,2.23,Avg Length of Stay (nights),nights,True,True
+Melaka,2023,77.777778,Coastal Good+Excellent (%),%,True,True
+Melaka,2023,70.1,Labour Force Participation Rate (%),%,True,True
+Melaka,2023,47.66147,Non-Domestic Water Share (%),%,False,True
+Melaka,2023,6260.818827,Tourism Receipts per Resident (RM),RM,True,True
+Melaka,2023,1.7,Unemployment Rate (%),%,False,True
+Melaka,2023,0.0,Coastal Poor (%),%,,False
+Melaka,2023,,Mangrove Area (ha),ha,,False
+Melaka,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Melaka,2023,15.130798,Visitors per Resident,ratio,,False
+Melaka,2024,2.13,Avg Length of Stay (nights),nights,True,True
+Melaka,2024,77.777778,Coastal Good+Excellent (%),%,True,True
+Melaka,2024,69.95,Labour Force Participation Rate (%),%,True,True
+Melaka,2024,47.045952,Non-Domestic Water Share (%),%,False,True
+Melaka,2024,7579.057992,Tourism Receipts per Resident (RM),RM,True,True
+Melaka,2024,1.6,Unemployment Rate (%),%,False,True
+Melaka,2024,0.0,Coastal Poor (%),%,,False
+Melaka,2024,,Mangrove Area (ha),ha,,False
+Melaka,2024,1094.3,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Melaka,2024,18.274577,Visitors per Resident,ratio,,False
+Melaka,2025,2.11,Avg Length of Stay (nights),nights,True,True
+Melaka,2025,,Coastal Good+Excellent (%),%,True,True
+Melaka,2025,70.05,Labour Force Participation Rate (%),%,True,True
+Melaka,2025,,Non-Domestic Water Share (%),%,False,True
+Melaka,2025,8300.380228,Tourism Receipts per Resident (RM),RM,True,True
+Melaka,2025,1.9,Unemployment Rate (%),%,False,True
+Melaka,2025,,Coastal Poor (%),%,,False
+Melaka,2025,,Mangrove Area (ha),ha,,False
+Melaka,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Melaka,2025,19.802281,Visitors per Resident,ratio,,False
+Negeri Sembilan,2015,,Avg Length of Stay (nights),nights,True,True
+Negeri Sembilan,2015,83.333333,Coastal Good+Excellent (%),%,True,True
+Negeri Sembilan,2015,64.9,Labour Force Participation Rate (%),%,True,True
+Negeri Sembilan,2015,44.016227,Non-Domestic Water Share (%),%,False,True
+Negeri Sembilan,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Negeri Sembilan,2015,3.1,Unemployment Rate (%),%,False,True
+Negeri Sembilan,2015,0.0,Coastal Poor (%),%,,False
+Negeri Sembilan,2015,101.0,Mangrove Area (ha),ha,,False
+Negeri Sembilan,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Negeri Sembilan,2015,9.169728,Visitors per Resident,ratio,,False
+Negeri Sembilan,2016,,Avg Length of Stay (nights),nights,True,True
+Negeri Sembilan,2016,100.0,Coastal Good+Excellent (%),%,True,True
+Negeri Sembilan,2016,64.7,Labour Force Participation Rate (%),%,True,True
+Negeri Sembilan,2016,44.807692,Non-Domestic Water Share (%),%,False,True
+Negeri Sembilan,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Negeri Sembilan,2016,2.7,Unemployment Rate (%),%,False,True
+Negeri Sembilan,2016,0.0,Coastal Poor (%),%,,False
+Negeri Sembilan,2016,101.0,Mangrove Area (ha),ha,,False
+Negeri Sembilan,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Negeri Sembilan,2016,9.214955,Visitors per Resident,ratio,,False
+Negeri Sembilan,2017,2.31,Avg Length of Stay (nights),nights,True,True
+Negeri Sembilan,2017,21.428571,Coastal Good+Excellent (%),%,True,True
+Negeri Sembilan,2017,64.8,Labour Force Participation Rate (%),%,True,True
+Negeri Sembilan,2017,44.508671,Non-Domestic Water Share (%),%,False,True
+Negeri Sembilan,2017,3933.572711,Tourism Receipts per Resident (RM),RM,True,True
+Negeri Sembilan,2017,2.8,Unemployment Rate (%),%,False,True
+Negeri Sembilan,2017,0.0,Coastal Poor (%),%,,False
+Negeri Sembilan,2017,101.0,Mangrove Area (ha),ha,,False
+Negeri Sembilan,2017,944.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Negeri Sembilan,2017,9.71483,Visitors per Resident,ratio,,False
+Negeri Sembilan,2018,2.46,Avg Length of Stay (nights),nights,True,True
+Negeri Sembilan,2018,71.428571,Coastal Good+Excellent (%),%,True,True
+Negeri Sembilan,2018,65.925,Labour Force Participation Rate (%),%,True,True
+Negeri Sembilan,2018,44.821092,Non-Domestic Water Share (%),%,False,True
+Negeri Sembilan,2018,4301.362543,Tourism Receipts per Resident (RM),RM,True,True
+Negeri Sembilan,2018,3.0,Unemployment Rate (%),%,False,True
+Negeri Sembilan,2018,0.0,Coastal Poor (%),%,,False
+Negeri Sembilan,2018,101.0,Mangrove Area (ha),ha,,False
+Negeri Sembilan,2018,887.67,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Negeri Sembilan,2018,11.400943,Visitors per Resident,ratio,,False
+Negeri Sembilan,2019,2.46,Avg Length of Stay (nights),nights,True,True
+Negeri Sembilan,2019,57.142857,Coastal Good+Excellent (%),%,True,True
+Negeri Sembilan,2019,64.7,Labour Force Participation Rate (%),%,True,True
+Negeri Sembilan,2019,45.35316,Non-Domestic Water Share (%),%,False,True
+Negeri Sembilan,2019,4502.752619,Tourism Receipts per Resident (RM),RM,True,True
+Negeri Sembilan,2019,3.1,Unemployment Rate (%),%,False,True
+Negeri Sembilan,2019,0.0,Coastal Poor (%),%,,False
+Negeri Sembilan,2019,101.0,Mangrove Area (ha),ha,,False
+Negeri Sembilan,2019,893.51,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Negeri Sembilan,2019,11.812289,Visitors per Resident,ratio,,False
+Negeri Sembilan,2020,1.9,Avg Length of Stay (nights),nights,True,True
+Negeri Sembilan,2020,85.714286,Coastal Good+Excellent (%),%,True,True
+Negeri Sembilan,2020,65.0,Labour Force Participation Rate (%),%,True,True
+Negeri Sembilan,2020,41.111111,Non-Domestic Water Share (%),%,False,True
+Negeri Sembilan,2020,1860.833333,Tourism Receipts per Resident (RM),RM,True,True
+Negeri Sembilan,2020,3.8,Unemployment Rate (%),%,False,True
+Negeri Sembilan,2020,0.0,Coastal Poor (%),%,,False
+Negeri Sembilan,2020,101.0,Mangrove Area (ha),ha,,False
+Negeri Sembilan,2020,794.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Negeri Sembilan,2020,6.598333,Visitors per Resident,ratio,,False
+Negeri Sembilan,2021,1.72,Avg Length of Stay (nights),nights,True,True
+Negeri Sembilan,2021,85.714286,Coastal Good+Excellent (%),%,True,True
+Negeri Sembilan,2021,64.75,Labour Force Participation Rate (%),%,True,True
+Negeri Sembilan,2021,40.437158,Non-Domestic Water Share (%),%,False,True
+Negeri Sembilan,2021,1007.307756,Tourism Receipts per Resident (RM),RM,True,True
+Negeri Sembilan,2021,4.0,Unemployment Rate (%),%,False,True
+Negeri Sembilan,2021,0.0,Coastal Poor (%),%,,False
+Negeri Sembilan,2021,101.0,Mangrove Area (ha),ha,,False
+Negeri Sembilan,2021,960.59,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Negeri Sembilan,2021,4.555032,Visitors per Resident,ratio,,False
+Negeri Sembilan,2022,2.48,Avg Length of Stay (nights),nights,True,True
+Negeri Sembilan,2022,100.0,Coastal Good+Excellent (%),%,True,True
+Negeri Sembilan,2022,65.1,Labour Force Participation Rate (%),%,True,True
+Negeri Sembilan,2022,42.936803,Non-Domestic Water Share (%),%,False,True
+Negeri Sembilan,2022,3022.601209,Tourism Receipts per Resident (RM),RM,True,True
+Negeri Sembilan,2022,3.4,Unemployment Rate (%),%,False,True
+Negeri Sembilan,2022,0.0,Coastal Poor (%),%,,False
+Negeri Sembilan,2022,99.0,Mangrove Area (ha),ha,,False
+Negeri Sembilan,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Negeri Sembilan,2022,9.512377,Visitors per Resident,ratio,,False
+Negeri Sembilan,2023,2.42,Avg Length of Stay (nights),nights,True,True
+Negeri Sembilan,2023,100.0,Coastal Good+Excellent (%),%,True,True
+Negeri Sembilan,2023,66.1,Labour Force Participation Rate (%),%,True,True
+Negeri Sembilan,2023,42.242991,Non-Domestic Water Share (%),%,False,True
+Negeri Sembilan,2023,3899.910197,Tourism Receipts per Resident (RM),RM,True,True
+Negeri Sembilan,2023,3.2,Unemployment Rate (%),%,False,True
+Negeri Sembilan,2023,0.0,Coastal Poor (%),%,,False
+Negeri Sembilan,2023,,Mangrove Area (ha),ha,,False
+Negeri Sembilan,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Negeri Sembilan,2023,12.212426,Visitors per Resident,ratio,,False
+Negeri Sembilan,2024,2.25,Avg Length of Stay (nights),nights,True,True
+Negeri Sembilan,2024,100.0,Coastal Good+Excellent (%),%,True,True
+Negeri Sembilan,2024,67.35,Labour Force Participation Rate (%),%,True,True
+Negeri Sembilan,2024,42.321429,Non-Domestic Water Share (%),%,False,True
+Negeri Sembilan,2024,4734.97378,Tourism Receipts per Resident (RM),RM,True,True
+Negeri Sembilan,2024,3.1,Unemployment Rate (%),%,False,True
+Negeri Sembilan,2024,0.0,Coastal Poor (%),%,,False
+Negeri Sembilan,2024,,Mangrove Area (ha),ha,,False
+Negeri Sembilan,2024,1115.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Negeri Sembilan,2024,14.348528,Visitors per Resident,ratio,,False
+Negeri Sembilan,2025,2.29,Avg Length of Stay (nights),nights,True,True
+Negeri Sembilan,2025,,Coastal Good+Excellent (%),%,True,True
+Negeri Sembilan,2025,67.45,Labour Force Participation Rate (%),%,True,True
+Negeri Sembilan,2025,,Non-Domestic Water Share (%),%,False,True
+Negeri Sembilan,2025,5248.814213,Tourism Receipts per Resident (RM),RM,True,True
+Negeri Sembilan,2025,2.725,Unemployment Rate (%),%,False,True
+Negeri Sembilan,2025,,Coastal Poor (%),%,,False
+Negeri Sembilan,2025,,Mangrove Area (ha),ha,,False
+Negeri Sembilan,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Negeri Sembilan,2025,15.56154,Visitors per Resident,ratio,,False
+Pahang,2015,,Avg Length of Stay (nights),nights,True,True
+Pahang,2015,50.0,Coastal Good+Excellent (%),%,True,True
+Pahang,2015,67.3,Labour Force Participation Rate (%),%,True,True
+Pahang,2015,41.917293,Non-Domestic Water Share (%),%,False,True
+Pahang,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Pahang,2015,2.9,Unemployment Rate (%),%,False,True
+Pahang,2015,0.0,Coastal Poor (%),%,,False
+Pahang,2015,2416.0,Mangrove Area (ha),ha,,False
+Pahang,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pahang,2015,8.954537,Visitors per Resident,ratio,,False
+Pahang,2016,,Avg Length of Stay (nights),nights,True,True
+Pahang,2016,20.0,Coastal Good+Excellent (%),%,True,True
+Pahang,2016,66.0,Labour Force Participation Rate (%),%,True,True
+Pahang,2016,41.034483,Non-Domestic Water Share (%),%,False,True
+Pahang,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Pahang,2016,2.6,Unemployment Rate (%),%,False,True
+Pahang,2016,0.0,Coastal Poor (%),%,,False
+Pahang,2016,2416.0,Mangrove Area (ha),ha,,False
+Pahang,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pahang,2016,8.709658,Visitors per Resident,ratio,,False
+Pahang,2017,1.7,Avg Length of Stay (nights),nights,True,True
+Pahang,2017,68.181818,Coastal Good+Excellent (%),%,True,True
+Pahang,2017,65.3,Labour Force Participation Rate (%),%,True,True
+Pahang,2017,42.881647,Non-Domestic Water Share (%),%,False,True
+Pahang,2017,3907.71099,Tourism Receipts per Resident (RM),RM,True,True
+Pahang,2017,2.9,Unemployment Rate (%),%,False,True
+Pahang,2017,0.0,Coastal Poor (%),%,,False
+Pahang,2017,2416.0,Mangrove Area (ha),ha,,False
+Pahang,2017,1251.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pahang,2017,10.012956,Visitors per Resident,ratio,,False
+Pahang,2018,2.46,Avg Length of Stay (nights),nights,True,True
+Pahang,2018,90.909091,Coastal Good+Excellent (%),%,True,True
+Pahang,2018,66.725,Labour Force Participation Rate (%),%,True,True
+Pahang,2018,43.463497,Non-Domestic Water Share (%),%,False,True
+Pahang,2018,4448.248934,Tourism Receipts per Resident (RM),RM,True,True
+Pahang,2018,2.6,Unemployment Rate (%),%,False,True
+Pahang,2018,0.0,Coastal Poor (%),%,,False
+Pahang,2018,2416.0,Mangrove Area (ha),ha,,False
+Pahang,2018,1143.4,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pahang,2018,10.879652,Visitors per Resident,ratio,,False
+Pahang,2019,2.49,Avg Length of Stay (nights),nights,True,True
+Pahang,2019,59.090909,Coastal Good+Excellent (%),%,True,True
+Pahang,2019,66.625,Labour Force Participation Rate (%),%,True,True
+Pahang,2019,45.933014,Non-Domestic Water Share (%),%,False,True
+Pahang,2019,4547.684576,Tourism Receipts per Resident (RM),RM,True,True
+Pahang,2019,2.9,Unemployment Rate (%),%,False,True
+Pahang,2019,0.0,Coastal Poor (%),%,,False
+Pahang,2019,2416.0,Mangrove Area (ha),ha,,False
+Pahang,2019,734.8,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pahang,2019,11.067369,Visitors per Resident,ratio,,False
+Pahang,2020,1.93,Avg Length of Stay (nights),nights,True,True
+Pahang,2020,63.636364,Coastal Good+Excellent (%),%,True,True
+Pahang,2020,65.975,Labour Force Participation Rate (%),%,True,True
+Pahang,2020,41.838352,Non-Domestic Water Share (%),%,False,True
+Pahang,2020,1726.889964,Tourism Receipts per Resident (RM),RM,True,True
+Pahang,2020,3.2,Unemployment Rate (%),%,False,True
+Pahang,2020,0.0,Coastal Poor (%),%,,False
+Pahang,2020,2412.0,Mangrove Area (ha),ha,,False
+Pahang,2020,1404.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pahang,2020,6.224471,Visitors per Resident,ratio,,False
+Pahang,2021,1.92,Avg Length of Stay (nights),nights,True,True
+Pahang,2021,86.363636,Coastal Good+Excellent (%),%,True,True
+Pahang,2021,64.7,Labour Force Participation Rate (%),%,True,True
+Pahang,2021,39.096573,Non-Domestic Water Share (%),%,False,True
+Pahang,2021,570.714955,Tourism Receipts per Resident (RM),RM,True,True
+Pahang,2021,3.3,Unemployment Rate (%),%,False,True
+Pahang,2021,0.0,Coastal Poor (%),%,,False
+Pahang,2021,2376.0,Mangrove Area (ha),ha,,False
+Pahang,2021,742.4,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pahang,2021,2.125989,Visitors per Resident,ratio,,False
+Pahang,2022,2.11,Avg Length of Stay (nights),nights,True,True
+Pahang,2022,90.909091,Coastal Good+Excellent (%),%,True,True
+Pahang,2022,65.125,Labour Force Participation Rate (%),%,True,True
+Pahang,2022,42.365269,Non-Domestic Water Share (%),%,False,True
+Pahang,2022,3293.687666,Tourism Receipts per Resident (RM),RM,True,True
+Pahang,2022,2.3,Unemployment Rate (%),%,False,True
+Pahang,2022,0.0,Coastal Poor (%),%,,False
+Pahang,2022,1822.0,Mangrove Area (ha),ha,,False
+Pahang,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pahang,2022,8.170105,Visitors per Resident,ratio,,False
+Pahang,2023,2.13,Avg Length of Stay (nights),nights,True,True
+Pahang,2023,100.0,Coastal Good+Excellent (%),%,True,True
+Pahang,2023,65.625,Labour Force Participation Rate (%),%,True,True
+Pahang,2023,43.047337,Non-Domestic Water Share (%),%,False,True
+Pahang,2023,4097.492697,Tourism Receipts per Resident (RM),RM,True,True
+Pahang,2023,2.0,Unemployment Rate (%),%,False,True
+Pahang,2023,0.0,Coastal Poor (%),%,,False
+Pahang,2023,,Mangrove Area (ha),ha,,False
+Pahang,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pahang,2023,10.014606,Visitors per Resident,ratio,,False
+Pahang,2024,2.17,Avg Length of Stay (nights),nights,True,True
+Pahang,2024,100.0,Coastal Good+Excellent (%),%,True,True
+Pahang,2024,64.75,Labour Force Participation Rate (%),%,True,True
+Pahang,2024,43.66617,Non-Domestic Water Share (%),%,False,True
+Pahang,2024,5222.761888,Tourism Receipts per Resident (RM),RM,True,True
+Pahang,2024,2.0,Unemployment Rate (%),%,False,True
+Pahang,2024,0.0,Coastal Poor (%),%,,False
+Pahang,2024,,Mangrove Area (ha),ha,,False
+Pahang,2024,754.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pahang,2024,12.0969,Visitors per Resident,ratio,,False
+Pahang,2025,2.21,Avg Length of Stay (nights),nights,True,True
+Pahang,2025,,Coastal Good+Excellent (%),%,True,True
+Pahang,2025,65.75,Labour Force Participation Rate (%),%,True,True
+Pahang,2025,,Non-Domestic Water Share (%),%,False,True
+Pahang,2025,5872.495229,Tourism Receipts per Resident (RM),RM,True,True
+Pahang,2025,1.825,Unemployment Rate (%),%,False,True
+Pahang,2025,,Coastal Poor (%),%,,False
+Pahang,2025,,Mangrove Area (ha),ha,,False
+Pahang,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pahang,2025,13.812619,Visitors per Resident,ratio,,False
+Perak,2015,,Avg Length of Stay (nights),nights,True,True
+Perak,2015,0.0,Coastal Good+Excellent (%),%,True,True
+Perak,2015,61.4,Labour Force Participation Rate (%),%,True,True
+Perak,2015,28.473804,Non-Domestic Water Share (%),%,False,True
+Perak,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Perak,2015,3.2,Unemployment Rate (%),%,False,True
+Perak,2015,0.0,Coastal Poor (%),%,,False
+Perak,2015,1045.0,Mangrove Area (ha),ha,,False
+Perak,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perak,2015,6.47209,Visitors per Resident,ratio,,False
+Perak,2016,,Avg Length of Stay (nights),nights,True,True
+Perak,2016,0.0,Coastal Good+Excellent (%),%,True,True
+Perak,2016,61.7,Labour Force Participation Rate (%),%,True,True
+Perak,2016,28.571429,Non-Domestic Water Share (%),%,False,True
+Perak,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Perak,2016,3.4,Unemployment Rate (%),%,False,True
+Perak,2016,0.0,Coastal Poor (%),%,,False
+Perak,2016,1045.0,Mangrove Area (ha),ha,,False
+Perak,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perak,2016,6.761613,Visitors per Resident,ratio,,False
+Perak,2017,2.33,Avg Length of Stay (nights),nights,True,True
+Perak,2017,100.0,Coastal Good+Excellent (%),%,True,True
+Perak,2017,63.0,Labour Force Participation Rate (%),%,True,True
+Perak,2017,28.634361,Non-Domestic Water Share (%),%,False,True
+Perak,2017,2704.155302,Tourism Receipts per Resident (RM),RM,True,True
+Perak,2017,3.7,Unemployment Rate (%),%,False,True
+Perak,2017,0.0,Coastal Poor (%),%,,False
+Perak,2017,381.0,Mangrove Area (ha),ha,,False
+Perak,2017,2350.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perak,2017,8.065823,Visitors per Resident,ratio,,False
+Perak,2018,1.85,Avg Length of Stay (nights),nights,True,True
+Perak,2018,100.0,Coastal Good+Excellent (%),%,True,True
+Perak,2018,63.525,Labour Force Participation Rate (%),%,True,True
+Perak,2018,28.724544,Non-Domestic Water Share (%),%,False,True
+Perak,2018,2583.982425,Tourism Receipts per Resident (RM),RM,True,True
+Perak,2018,3.3,Unemployment Rate (%),%,False,True
+Perak,2018,0.0,Coastal Poor (%),%,,False
+Perak,2018,381.0,Mangrove Area (ha),ha,,False
+Perak,2018,2305.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perak,2018,7.011448,Visitors per Resident,ratio,,False
+Perak,2019,2.21,Avg Length of Stay (nights),nights,True,True
+Perak,2019,25.0,Coastal Good+Excellent (%),%,True,True
+Perak,2019,64.15,Labour Force Participation Rate (%),%,True,True
+Perak,2019,29.049112,Non-Domestic Water Share (%),%,False,True
+Perak,2019,3118.622449,Tourism Receipts per Resident (RM),RM,True,True
+Perak,2019,3.4,Unemployment Rate (%),%,False,True
+Perak,2019,0.0,Coastal Poor (%),%,,False
+Perak,2019,42216.0,Mangrove Area (ha),ha,,False
+Perak,2019,20.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perak,2019,8.398438,Visitors per Resident,ratio,,False
+Perak,2020,1.85,Avg Length of Stay (nights),nights,True,True
+Perak,2020,100.0,Coastal Good+Excellent (%),%,True,True
+Perak,2020,64.375,Labour Force Participation Rate (%),%,True,True
+Perak,2020,27.366255,Non-Domestic Water Share (%),%,False,True
+Perak,2020,1328.926282,Tourism Receipts per Resident (RM),RM,True,True
+Perak,2020,4.5,Unemployment Rate (%),%,False,True
+Perak,2020,0.0,Coastal Poor (%),%,,False
+Perak,2020,42216.0,Mangrove Area (ha),ha,,False
+Perak,2020,350.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perak,2020,5.277644,Visitors per Resident,ratio,,False
+Perak,2021,2.29,Avg Length of Stay (nights),nights,True,True
+Perak,2021,87.5,Coastal Good+Excellent (%),%,True,True
+Perak,2021,64.725,Labour Force Participation Rate (%),%,True,True
+Perak,2021,27.45098,Non-Domestic Water Share (%),%,False,True
+Perak,2021,461.085937,Tourism Receipts per Resident (RM),RM,True,True
+Perak,2021,4.7,Unemployment Rate (%),%,False,True
+Perak,2021,0.0,Coastal Poor (%),%,,False
+Perak,2021,42212.0,Mangrove Area (ha),ha,,False
+Perak,2021,6.3,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perak,2021,1.784432,Visitors per Resident,ratio,,False
+Perak,2022,2.43,Avg Length of Stay (nights),nights,True,True
+Perak,2022,100.0,Coastal Good+Excellent (%),%,True,True
+Perak,2022,65.85,Labour Force Participation Rate (%),%,True,True
+Perak,2022,29.251012,Non-Domestic Water Share (%),%,False,True
+Perak,2022,1805.997455,Tourism Receipts per Resident (RM),RM,True,True
+Perak,2022,4.4,Unemployment Rate (%),%,False,True
+Perak,2022,0.0,Coastal Poor (%),%,,False
+Perak,2022,42411.0,Mangrove Area (ha),ha,,False
+Perak,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perak,2022,5.79343,Visitors per Resident,ratio,,False
+Perak,2023,2.35,Avg Length of Stay (nights),nights,True,True
+Perak,2023,100.0,Coastal Good+Excellent (%),%,True,True
+Perak,2023,66.0,Labour Force Participation Rate (%),%,True,True
+Perak,2023,39.209726,Non-Domestic Water Share (%),%,False,True
+Perak,2023,2219.817409,Tourism Receipts per Resident (RM),RM,True,True
+Perak,2023,3.9,Unemployment Rate (%),%,False,True
+Perak,2023,0.0,Coastal Poor (%),%,,False
+Perak,2023,,Mangrove Area (ha),ha,,False
+Perak,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perak,2023,6.732252,Visitors per Resident,ratio,,False
+Perak,2024,2.35,Avg Length of Stay (nights),nights,True,True
+Perak,2024,100.0,Coastal Good+Excellent (%),%,True,True
+Perak,2024,66.5,Labour Force Participation Rate (%),%,True,True
+Perak,2024,39.83984,Non-Domestic Water Share (%),%,False,True
+Perak,2024,2811.551335,Tourism Receipts per Resident (RM),RM,True,True
+Perak,2024,3.6,Unemployment Rate (%),%,False,True
+Perak,2024,0.0,Coastal Poor (%),%,,False
+Perak,2024,,Mangrove Area (ha),ha,,False
+Perak,2024,12.1,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perak,2024,8.47513,Visitors per Resident,ratio,,False
+Perak,2025,2.44,Avg Length of Stay (nights),nights,True,True
+Perak,2025,,Coastal Good+Excellent (%),%,True,True
+Perak,2025,68.9,Labour Force Participation Rate (%),%,True,True
+Perak,2025,,Non-Domestic Water Share (%),%,False,True
+Perak,2025,3115.6267,Tourism Receipts per Resident (RM),RM,True,True
+Perak,2025,3.35,Unemployment Rate (%),%,False,True
+Perak,2025,,Coastal Poor (%),%,,False
+Perak,2025,,Mangrove Area (ha),ha,,False
+Perak,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perak,2025,9.18564,Visitors per Resident,ratio,,False
+Perlis,2015,,Avg Length of Stay (nights),nights,True,True
+Perlis,2015,,Coastal Good+Excellent (%),%,True,True
+Perlis,2015,61.0,Labour Force Participation Rate (%),%,True,True
+Perlis,2015,15.625,Non-Domestic Water Share (%),%,False,True
+Perlis,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Perlis,2015,2.9,Unemployment Rate (%),%,False,True
+Perlis,2015,,Coastal Poor (%),%,,False
+Perlis,2015,43878.0,Mangrove Area (ha),ha,,False
+Perlis,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perlis,2015,5.674044,Visitors per Resident,ratio,,False
+Perlis,2016,,Avg Length of Stay (nights),nights,True,True
+Perlis,2016,,Coastal Good+Excellent (%),%,True,True
+Perlis,2016,61.6,Labour Force Participation Rate (%),%,True,True
+Perlis,2016,14.583333,Non-Domestic Water Share (%),%,False,True
+Perlis,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Perlis,2016,2.9,Unemployment Rate (%),%,False,True
+Perlis,2016,,Coastal Poor (%),%,,False
+Perlis,2016,43878.0,Mangrove Area (ha),ha,,False
+Perlis,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perlis,2016,5.61753,Visitors per Resident,ratio,,False
+Perlis,2017,2.33,Avg Length of Stay (nights),nights,True,True
+Perlis,2017,,Coastal Good+Excellent (%),%,True,True
+Perlis,2017,59.9,Labour Force Participation Rate (%),%,True,True
+Perlis,2017,12.359551,Non-Domestic Water Share (%),%,False,True
+Perlis,2017,1880.952381,Tourism Receipts per Resident (RM),RM,True,True
+Perlis,2017,3.4,Unemployment Rate (%),%,False,True
+Perlis,2017,,Coastal Poor (%),%,,False
+Perlis,2017,42216.0,Mangrove Area (ha),ha,,False
+Perlis,2017,300.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perlis,2017,5.609566,Visitors per Resident,ratio,,False
+Perlis,2018,2.32,Avg Length of Stay (nights),nights,True,True
+Perlis,2018,,Coastal Good+Excellent (%),%,True,True
+Perlis,2018,62.7,Labour Force Participation Rate (%),%,True,True
+Perlis,2018,11.111111,Non-Domestic Water Share (%),%,False,True
+Perlis,2018,2433.925049,Tourism Receipts per Resident (RM),RM,True,True
+Perlis,2018,3.4,Unemployment Rate (%),%,False,True
+Perlis,2018,,Coastal Poor (%),%,,False
+Perlis,2018,42216.0,Mangrove Area (ha),ha,,False
+Perlis,2018,164.7,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perlis,2018,8.50299,Visitors per Resident,ratio,,False
+Perlis,2019,2.55,Avg Length of Stay (nights),nights,True,True
+Perlis,2019,,Coastal Good+Excellent (%),%,True,True
+Perlis,2019,65.2,Labour Force Participation Rate (%),%,True,True
+Perlis,2019,13.043478,Non-Domestic Water Share (%),%,False,True
+Perlis,2019,2279.527559,Tourism Receipts per Resident (RM),RM,True,True
+Perlis,2019,3.3,Unemployment Rate (%),%,False,True
+Perlis,2019,,Coastal Poor (%),%,,False
+Perlis,2019,13.0,Mangrove Area (ha),ha,,False
+Perlis,2019,148.06,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perlis,2019,8.220472,Visitors per Resident,ratio,,False
+Perlis,2020,2.45,Avg Length of Stay (nights),nights,True,True
+Perlis,2020,,Coastal Good+Excellent (%),%,True,True
+Perlis,2020,59.6,Labour Force Participation Rate (%),%,True,True
+Perlis,2020,13.333333,Non-Domestic Water Share (%),%,False,True
+Perlis,2020,786.240786,Tourism Receipts per Resident (RM),RM,True,True
+Perlis,2020,4.3,Unemployment Rate (%),%,False,True
+Perlis,2020,,Coastal Poor (%),%,,False
+Perlis,2020,14.0,Mangrove Area (ha),ha,,False
+Perlis,2020,168.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perlis,2020,4.187434,Visitors per Resident,ratio,,False
+Perlis,2021,2.21,Avg Length of Stay (nights),nights,True,True
+Perlis,2021,,Coastal Good+Excellent (%),%,True,True
+Perlis,2021,59.6,Labour Force Participation Rate (%),%,True,True
+Perlis,2021,12.087912,Non-Domestic Water Share (%),%,False,True
+Perlis,2021,271.210014,Tourism Receipts per Resident (RM),RM,True,True
+Perlis,2021,4.4,Unemployment Rate (%),%,False,True
+Perlis,2021,,Coastal Poor (%),%,,False
+Perlis,2021,14.0,Mangrove Area (ha),ha,,False
+Perlis,2021,177.3,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perlis,2021,1.414451,Visitors per Resident,ratio,,False
+Perlis,2022,2.35,Avg Length of Stay (nights),nights,True,True
+Perlis,2022,,Coastal Good+Excellent (%),%,True,True
+Perlis,2022,60.3,Labour Force Participation Rate (%),%,True,True
+Perlis,2022,18.367347,Non-Domestic Water Share (%),%,False,True
+Perlis,2022,1573.498965,Tourism Receipts per Resident (RM),RM,True,True
+Perlis,2022,4.4,Unemployment Rate (%),%,False,True
+Perlis,2022,,Coastal Poor (%),%,,False
+Perlis,2022,13.0,Mangrove Area (ha),ha,,False
+Perlis,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perlis,2022,5.759144,Visitors per Resident,ratio,,False
+Perlis,2023,2.21,Avg Length of Stay (nights),nights,True,True
+Perlis,2023,,Coastal Good+Excellent (%),%,True,True
+Perlis,2023,61.7,Labour Force Participation Rate (%),%,True,True
+Perlis,2023,35.051546,Non-Domestic Water Share (%),%,False,True
+Perlis,2023,1992.494029,Tourism Receipts per Resident (RM),RM,True,True
+Perlis,2023,4.4,Unemployment Rate (%),%,False,True
+Perlis,2023,,Coastal Poor (%),%,,False
+Perlis,2023,,Mangrove Area (ha),ha,,False
+Perlis,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perlis,2023,6.656431,Visitors per Resident,ratio,,False
+Perlis,2024,2.49,Avg Length of Stay (nights),nights,True,True
+Perlis,2024,,Coastal Good+Excellent (%),%,True,True
+Perlis,2024,62.0,Labour Force Participation Rate (%),%,True,True
+Perlis,2024,36.0,Non-Domestic Water Share (%),%,False,True
+Perlis,2024,3379.380054,Tourism Receipts per Resident (RM),RM,True,True
+Perlis,2024,4.1,Unemployment Rate (%),%,False,True
+Perlis,2024,,Coastal Poor (%),%,,False
+Perlis,2024,,Mangrove Area (ha),ha,,False
+Perlis,2024,177.0,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perlis,2024,10.865903,Visitors per Resident,ratio,,False
+Perlis,2025,2.25,Avg Length of Stay (nights),nights,True,True
+Perlis,2025,,Coastal Good+Excellent (%),%,True,True
+Perlis,2025,63.3,Labour Force Participation Rate (%),%,True,True
+Perlis,2025,,Non-Domestic Water Share (%),%,False,True
+Perlis,2025,4077.441077,Tourism Receipts per Resident (RM),RM,True,True
+Perlis,2025,3.35,Unemployment Rate (%),%,False,True
+Perlis,2025,,Coastal Poor (%),%,,False
+Perlis,2025,,Mangrove Area (ha),ha,,False
+Perlis,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Perlis,2025,12.646465,Visitors per Resident,ratio,,False
+Pulau Pinang,2015,,Avg Length of Stay (nights),nights,True,True
+Pulau Pinang,2015,0.0,Coastal Good+Excellent (%),%,True,True
+Pulau Pinang,2015,69.9,Labour Force Participation Rate (%),%,True,True
+Pulau Pinang,2015,40.517241,Non-Domestic Water Share (%),%,False,True
+Pulau Pinang,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Pulau Pinang,2015,1.6,Unemployment Rate (%),%,False,True
+Pulau Pinang,2015,14.285714,Coastal Poor (%),%,,False
+Pulau Pinang,2015,,Mangrove Area (ha),ha,,False
+Pulau Pinang,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pulau Pinang,2015,5.500854,Visitors per Resident,ratio,,False
+Pulau Pinang,2016,,Avg Length of Stay (nights),nights,True,True
+Pulau Pinang,2016,21.428571,Coastal Good+Excellent (%),%,True,True
+Pulau Pinang,2016,69.0,Labour Force Participation Rate (%),%,True,True
+Pulau Pinang,2016,40.50786,Non-Domestic Water Share (%),%,False,True
+Pulau Pinang,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Pulau Pinang,2016,2.1,Unemployment Rate (%),%,False,True
+Pulau Pinang,2016,7.142857,Coastal Poor (%),%,,False
+Pulau Pinang,2016,,Mangrove Area (ha),ha,,False
+Pulau Pinang,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pulau Pinang,2016,7.315014,Visitors per Resident,ratio,,False
+Pulau Pinang,2017,2.23,Avg Length of Stay (nights),nights,True,True
+Pulau Pinang,2017,17.647059,Coastal Good+Excellent (%),%,True,True
+Pulau Pinang,2017,67.5,Labour Force Participation Rate (%),%,True,True
+Pulau Pinang,2017,41.646489,Non-Domestic Water Share (%),%,False,True
+Pulau Pinang,2017,2788.830916,Tourism Receipts per Resident (RM),RM,True,True
+Pulau Pinang,2017,2.1,Unemployment Rate (%),%,False,True
+Pulau Pinang,2017,5.882353,Coastal Poor (%),%,,False
+Pulau Pinang,2017,,Mangrove Area (ha),ha,,False
+Pulau Pinang,2017,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pulau Pinang,2017,7.248806,Visitors per Resident,ratio,,False
+Pulau Pinang,2018,2.51,Avg Length of Stay (nights),nights,True,True
+Pulau Pinang,2018,41.176471,Coastal Good+Excellent (%),%,True,True
+Pulau Pinang,2018,67.65,Labour Force Participation Rate (%),%,True,True
+Pulau Pinang,2018,41.547619,Non-Domestic Water Share (%),%,False,True
+Pulau Pinang,2018,3497.277059,Tourism Receipts per Resident (RM),RM,True,True
+Pulau Pinang,2018,2.2,Unemployment Rate (%),%,False,True
+Pulau Pinang,2018,0.0,Coastal Poor (%),%,,False
+Pulau Pinang,2018,,Mangrove Area (ha),ha,,False
+Pulau Pinang,2018,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pulau Pinang,2018,8.197465,Visitors per Resident,ratio,,False
+Pulau Pinang,2019,2.5,Avg Length of Stay (nights),nights,True,True
+Pulau Pinang,2019,11.764706,Coastal Good+Excellent (%),%,True,True
+Pulau Pinang,2019,67.475,Labour Force Participation Rate (%),%,True,True
+Pulau Pinang,2019,40.736342,Non-Domestic Water Share (%),%,False,True
+Pulau Pinang,2019,3761.872456,Tourism Receipts per Resident (RM),RM,True,True
+Pulau Pinang,2019,2.0,Unemployment Rate (%),%,False,True
+Pulau Pinang,2019,0.0,Coastal Poor (%),%,,False
+Pulau Pinang,2019,381.0,Mangrove Area (ha),ha,,False
+Pulau Pinang,2019,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pulau Pinang,2019,8.712687,Visitors per Resident,ratio,,False
+Pulau Pinang,2020,2.03,Avg Length of Stay (nights),nights,True,True
+Pulau Pinang,2020,35.294118,Coastal Good+Excellent (%),%,True,True
+Pulau Pinang,2020,68.25,Labour Force Participation Rate (%),%,True,True
+Pulau Pinang,2020,37.072019,Non-Domestic Water Share (%),%,False,True
+Pulau Pinang,2020,1394.50701,Tourism Receipts per Resident (RM),RM,True,True
+Pulau Pinang,2020,3.6,Unemployment Rate (%),%,False,True
+Pulau Pinang,2020,0.0,Coastal Poor (%),%,,False
+Pulau Pinang,2020,381.0,Mangrove Area (ha),ha,,False
+Pulau Pinang,2020,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pulau Pinang,2020,5.13043,Visitors per Resident,ratio,,False
+Pulau Pinang,2021,2.14,Avg Length of Stay (nights),nights,True,True
+Pulau Pinang,2021,41.176471,Coastal Good+Excellent (%),%,True,True
+Pulau Pinang,2021,69.4,Labour Force Participation Rate (%),%,True,True
+Pulau Pinang,2021,36.395349,Non-Domestic Water Share (%),%,False,True
+Pulau Pinang,2021,666.091954,Tourism Receipts per Resident (RM),RM,True,True
+Pulau Pinang,2021,3.575,Unemployment Rate (%),%,False,True
+Pulau Pinang,2021,0.0,Coastal Poor (%),%,,False
+Pulau Pinang,2021,381.0,Mangrove Area (ha),ha,,False
+Pulau Pinang,2021,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pulau Pinang,2021,2.908543,Visitors per Resident,ratio,,False
+Pulau Pinang,2022,2.59,Avg Length of Stay (nights),nights,True,True
+Pulau Pinang,2022,52.941176,Coastal Good+Excellent (%),%,True,True
+Pulau Pinang,2022,70.1,Labour Force Participation Rate (%),%,True,True
+Pulau Pinang,2022,38.479263,Non-Domestic Water Share (%),%,False,True
+Pulau Pinang,2022,2095.467861,Tourism Receipts per Resident (RM),RM,True,True
+Pulau Pinang,2022,2.7,Unemployment Rate (%),%,False,True
+Pulau Pinang,2022,0.0,Coastal Poor (%),%,,False
+Pulau Pinang,2022,1058.0,Mangrove Area (ha),ha,,False
+Pulau Pinang,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pulau Pinang,2022,5.745879,Visitors per Resident,ratio,,False
+Pulau Pinang,2023,2.4,Avg Length of Stay (nights),nights,True,True
+Pulau Pinang,2023,58.823529,Coastal Good+Excellent (%),%,True,True
+Pulau Pinang,2023,71.3,Labour Force Participation Rate (%),%,True,True
+Pulau Pinang,2023,42.905789,Non-Domestic Water Share (%),%,False,True
+Pulau Pinang,2023,3280.491933,Tourism Receipts per Resident (RM),RM,True,True
+Pulau Pinang,2023,2.2,Unemployment Rate (%),%,False,True
+Pulau Pinang,2023,0.0,Coastal Poor (%),%,,False
+Pulau Pinang,2023,,Mangrove Area (ha),ha,,False
+Pulau Pinang,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pulau Pinang,2023,7.40607,Visitors per Resident,ratio,,False
+Pulau Pinang,2024,2.58,Avg Length of Stay (nights),nights,True,True
+Pulau Pinang,2024,76.470588,Coastal Good+Excellent (%),%,True,True
+Pulau Pinang,2024,72.025,Labour Force Participation Rate (%),%,True,True
+Pulau Pinang,2024,43.103448,Non-Domestic Water Share (%),%,False,True
+Pulau Pinang,2024,4123.299084,Tourism Receipts per Resident (RM),RM,True,True
+Pulau Pinang,2024,2.0,Unemployment Rate (%),%,False,True
+Pulau Pinang,2024,0.0,Coastal Poor (%),%,,False
+Pulau Pinang,2024,,Mangrove Area (ha),ha,,False
+Pulau Pinang,2024,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pulau Pinang,2024,9.222438,Visitors per Resident,ratio,,False
+Pulau Pinang,2025,2.65,Avg Length of Stay (nights),nights,True,True
+Pulau Pinang,2025,,Coastal Good+Excellent (%),%,True,True
+Pulau Pinang,2025,71.65,Labour Force Participation Rate (%),%,True,True
+Pulau Pinang,2025,,Non-Domestic Water Share (%),%,False,True
+Pulau Pinang,2025,4705.425927,Tourism Receipts per Resident (RM),RM,True,True
+Pulau Pinang,2025,2.4,Unemployment Rate (%),%,False,True
+Pulau Pinang,2025,,Coastal Poor (%),%,,False
+Pulau Pinang,2025,,Mangrove Area (ha),ha,,False
+Pulau Pinang,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Pulau Pinang,2025,9.819875,Visitors per Resident,ratio,,False
+Sabah,2015,,Avg Length of Stay (nights),nights,True,True
+Sabah,2015,62.5,Coastal Good+Excellent (%),%,True,True
+Sabah,2015,69.5,Labour Force Participation Rate (%),%,True,True
+Sabah,2015,42.934783,Non-Domestic Water Share (%),%,False,True
+Sabah,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Sabah,2015,5.0,Unemployment Rate (%),%,False,True
+Sabah,2015,0.0,Coastal Poor (%),%,,False
+Sabah,2015,18998.0,Mangrove Area (ha),ha,,False
+Sabah,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sabah,2015,4.225776,Visitors per Resident,ratio,,False
+Sabah,2016,,Avg Length of Stay (nights),nights,True,True
+Sabah,2016,0.0,Coastal Good+Excellent (%),%,True,True
+Sabah,2016,70.8,Labour Force Participation Rate (%),%,True,True
+Sabah,2016,42.41908,Non-Domestic Water Share (%),%,False,True
+Sabah,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Sabah,2016,5.4,Unemployment Rate (%),%,False,True
+Sabah,2016,0.0,Coastal Poor (%),%,,False
+Sabah,2016,18998.0,Mangrove Area (ha),ha,,False
+Sabah,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sabah,2016,4.343642,Visitors per Resident,ratio,,False
+Sabah,2017,3.12,Avg Length of Stay (nights),nights,True,True
+Sabah,2017,20.833333,Coastal Good+Excellent (%),%,True,True
+Sabah,2017,68.4,Labour Force Participation Rate (%),%,True,True
+Sabah,2017,44.501718,Non-Domestic Water Share (%),%,False,True
+Sabah,2017,1777.017039,Tourism Receipts per Resident (RM),RM,True,True
+Sabah,2017,5.6,Unemployment Rate (%),%,False,True
+Sabah,2017,4.166667,Coastal Poor (%),%,,False
+Sabah,2017,18998.0,Mangrove Area (ha),ha,,False
+Sabah,2017,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sabah,2017,4.614153,Visitors per Resident,ratio,,False
+Sabah,2018,2.68,Avg Length of Stay (nights),nights,True,True
+Sabah,2018,100.0,Coastal Good+Excellent (%),%,True,True
+Sabah,2018,68.875,Labour Force Participation Rate (%),%,True,True
+Sabah,2018,44.642857,Non-Domestic Water Share (%),%,False,True
+Sabah,2018,1925.918325,Tourism Receipts per Resident (RM),RM,True,True
+Sabah,2018,5.8,Unemployment Rate (%),%,False,True
+Sabah,2018,0.0,Coastal Poor (%),%,,False
+Sabah,2018,18998.0,Mangrove Area (ha),ha,,False
+Sabah,2018,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sabah,2018,5.222625,Visitors per Resident,ratio,,False
+Sabah,2019,2.79,Avg Length of Stay (nights),nights,True,True
+Sabah,2019,75.0,Coastal Good+Excellent (%),%,True,True
+Sabah,2019,70.0,Labour Force Participation Rate (%),%,True,True
+Sabah,2019,43.167702,Non-Domestic Water Share (%),%,False,True
+Sabah,2019,2069.716218,Tourism Receipts per Resident (RM),RM,True,True
+Sabah,2019,5.8,Unemployment Rate (%),%,False,True
+Sabah,2019,0.0,Coastal Poor (%),%,,False
+Sabah,2019,390526.0,Mangrove Area (ha),ha,,False
+Sabah,2019,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sabah,2019,5.643633,Visitors per Resident,ratio,,False
+Sabah,2020,1.96,Avg Length of Stay (nights),nights,True,True
+Sabah,2020,0.0,Coastal Good+Excellent (%),%,True,True
+Sabah,2020,68.3,Labour Force Participation Rate (%),%,True,True
+Sabah,2020,41.713222,Non-Domestic Water Share (%),%,False,True
+Sabah,2020,783.023283,Tourism Receipts per Resident (RM),RM,True,True
+Sabah,2020,8.2,Unemployment Rate (%),%,False,True
+Sabah,2020,0.0,Coastal Poor (%),%,,False
+Sabah,2020,390526.0,Mangrove Area (ha),ha,,False
+Sabah,2020,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sabah,2020,3.023576,Visitors per Resident,ratio,,False
+Sabah,2021,2.31,Avg Length of Stay (nights),nights,True,True
+Sabah,2021,12.5,Coastal Good+Excellent (%),%,True,True
+Sabah,2021,68.7,Labour Force Participation Rate (%),%,True,True
+Sabah,2021,34.615385,Non-Domestic Water Share (%),%,False,True
+Sabah,2021,308.269355,Tourism Receipts per Resident (RM),RM,True,True
+Sabah,2021,8.5,Unemployment Rate (%),%,False,True
+Sabah,2021,0.0,Coastal Poor (%),%,,False
+Sabah,2021,365764.0,Mangrove Area (ha),ha,,False
+Sabah,2021,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sabah,2021,1.117921,Visitors per Resident,ratio,,False
+Sabah,2022,3.06,Avg Length of Stay (nights),nights,True,True
+Sabah,2022,8.333333,Coastal Good+Excellent (%),%,True,True
+Sabah,2022,68.7,Labour Force Participation Rate (%),%,True,True
+Sabah,2022,37.658228,Non-Domestic Water Share (%),%,False,True
+Sabah,2022,1413.218542,Tourism Receipts per Resident (RM),RM,True,True
+Sabah,2022,7.7,Unemployment Rate (%),%,False,True
+Sabah,2022,0.0,Coastal Poor (%),%,,False
+Sabah,2022,365764.0,Mangrove Area (ha),ha,,False
+Sabah,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sabah,2022,3.686492,Visitors per Resident,ratio,,False
+Sabah,2023,2.67,Avg Length of Stay (nights),nights,True,True
+Sabah,2023,0.0,Coastal Good+Excellent (%),%,True,True
+Sabah,2023,70.675,Labour Force Participation Rate (%),%,True,True
+Sabah,2023,35.503876,Non-Domestic Water Share (%),%,False,True
+Sabah,2023,1866.433119,Tourism Receipts per Resident (RM),RM,True,True
+Sabah,2023,7.525,Unemployment Rate (%),%,False,True
+Sabah,2023,0.0,Coastal Poor (%),%,,False
+Sabah,2023,,Mangrove Area (ha),ha,,False
+Sabah,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sabah,2023,4.470765,Visitors per Resident,ratio,,False
+Sabah,2024,3.01,Avg Length of Stay (nights),nights,True,True
+Sabah,2024,12.5,Coastal Good+Excellent (%),%,True,True
+Sabah,2024,70.55,Labour Force Participation Rate (%),%,True,True
+Sabah,2024,17.857143,Non-Domestic Water Share (%),%,False,True
+Sabah,2024,2307.322288,Tourism Receipts per Resident (RM),RM,True,True
+Sabah,2024,7.6,Unemployment Rate (%),%,False,True
+Sabah,2024,0.0,Coastal Poor (%),%,,False
+Sabah,2024,,Mangrove Area (ha),ha,,False
+Sabah,2024,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sabah,2024,5.50294,Visitors per Resident,ratio,,False
+Sabah,2025,3.15,Avg Length of Stay (nights),nights,True,True
+Sabah,2025,,Coastal Good+Excellent (%),%,True,True
+Sabah,2025,70.425,Labour Force Participation Rate (%),%,True,True
+Sabah,2025,,Non-Domestic Water Share (%),%,False,True
+Sabah,2025,2597.682781,Tourism Receipts per Resident (RM),RM,True,True
+Sabah,2025,6.325,Unemployment Rate (%),%,False,True
+Sabah,2025,,Coastal Poor (%),%,,False
+Sabah,2025,,Mangrove Area (ha),ha,,False
+Sabah,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sabah,2025,5.955786,Visitors per Resident,ratio,,False
+Sarawak,2015,,Avg Length of Stay (nights),nights,True,True
+Sarawak,2015,68.75,Coastal Good+Excellent (%),%,True,True
+Sarawak,2015,68.4,Labour Force Participation Rate (%),%,True,True
+Sarawak,2015,43.498818,Non-Domestic Water Share (%),%,False,True
+Sarawak,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Sarawak,2015,3.5,Unemployment Rate (%),%,False,True
+Sarawak,2015,0.0,Coastal Poor (%),%,,False
+Sarawak,2015,1037.0,Mangrove Area (ha),ha,,False
+Sarawak,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sarawak,2015,5.683879,Visitors per Resident,ratio,,False
+Sarawak,2016,,Avg Length of Stay (nights),nights,True,True
+Sarawak,2016,43.75,Coastal Good+Excellent (%),%,True,True
+Sarawak,2016,67.7,Labour Force Participation Rate (%),%,True,True
+Sarawak,2016,44.235294,Non-Domestic Water Share (%),%,False,True
+Sarawak,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Sarawak,2016,3.3,Unemployment Rate (%),%,False,True
+Sarawak,2016,0.0,Coastal Poor (%),%,,False
+Sarawak,2016,1037.0,Mangrove Area (ha),ha,,False
+Sarawak,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sarawak,2016,5.945156,Visitors per Resident,ratio,,False
+Sarawak,2017,3.21,Avg Length of Stay (nights),nights,True,True
+Sarawak,2017,91.304348,Coastal Good+Excellent (%),%,True,True
+Sarawak,2017,67.8,Labour Force Participation Rate (%),%,True,True
+Sarawak,2017,44.482759,Non-Domestic Water Share (%),%,False,True
+Sarawak,2017,2655.894155,Tourism Receipts per Resident (RM),RM,True,True
+Sarawak,2017,3.0,Unemployment Rate (%),%,False,True
+Sarawak,2017,0.0,Coastal Poor (%),%,,False
+Sarawak,2017,1037.0,Mangrove Area (ha),ha,,False
+Sarawak,2017,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sarawak,2017,6.387719,Visitors per Resident,ratio,,False
+Sarawak,2018,3.39,Avg Length of Stay (nights),nights,True,True
+Sarawak,2018,95.652174,Coastal Good+Excellent (%),%,True,True
+Sarawak,2018,68.275,Labour Force Participation Rate (%),%,True,True
+Sarawak,2018,45.647321,Non-Domestic Water Share (%),%,False,True
+Sarawak,2018,2917.577104,Tourism Receipts per Resident (RM),RM,True,True
+Sarawak,2018,3.175,Unemployment Rate (%),%,False,True
+Sarawak,2018,0.0,Coastal Poor (%),%,,False
+Sarawak,2018,1037.0,Mangrove Area (ha),ha,,False
+Sarawak,2018,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sarawak,2018,6.942089,Visitors per Resident,ratio,,False
+Sarawak,2019,3.43,Avg Length of Stay (nights),nights,True,True
+Sarawak,2019,95.652174,Coastal Good+Excellent (%),%,True,True
+Sarawak,2019,68.075,Labour Force Participation Rate (%),%,True,True
+Sarawak,2019,48.397104,Non-Domestic Water Share (%),%,False,True
+Sarawak,2019,3090.163934,Tourism Receipts per Resident (RM),RM,True,True
+Sarawak,2019,3.1,Unemployment Rate (%),%,False,True
+Sarawak,2019,0.0,Coastal Poor (%),%,,False
+Sarawak,2019,72587.0,Mangrove Area (ha),ha,,False
+Sarawak,2019,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sarawak,2019,7.053813,Visitors per Resident,ratio,,False
+Sarawak,2020,2.55,Avg Length of Stay (nights),nights,True,True
+Sarawak,2020,13.043478,Coastal Good+Excellent (%),%,True,True
+Sarawak,2020,66.2,Labour Force Participation Rate (%),%,True,True
+Sarawak,2020,44.97992,Non-Domestic Water Share (%),%,False,True
+Sarawak,2020,1379.549252,Tourism Receipts per Resident (RM),RM,True,True
+Sarawak,2020,4.3,Unemployment Rate (%),%,False,True
+Sarawak,2020,4.347826,Coastal Poor (%),%,,False
+Sarawak,2020,72579.0,Mangrove Area (ha),ha,,False
+Sarawak,2020,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sarawak,2020,3.828096,Visitors per Resident,ratio,,False
+Sarawak,2021,3.03,Avg Length of Stay (nights),nights,True,True
+Sarawak,2021,69.565217,Coastal Good+Excellent (%),%,True,True
+Sarawak,2021,66.4,Labour Force Participation Rate (%),%,True,True
+Sarawak,2021,43.179588,Non-Domestic Water Share (%),%,False,True
+Sarawak,2021,784.798832,Tourism Receipts per Resident (RM),RM,True,True
+Sarawak,2021,4.5,Unemployment Rate (%),%,False,True
+Sarawak,2021,0.0,Coastal Poor (%),%,,False
+Sarawak,2021,72579.0,Mangrove Area (ha),ha,,False
+Sarawak,2021,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sarawak,2021,2.640696,Visitors per Resident,ratio,,False
+Sarawak,2022,3.52,Avg Length of Stay (nights),nights,True,True
+Sarawak,2022,47.826087,Coastal Good+Excellent (%),%,True,True
+Sarawak,2022,67.5,Labour Force Participation Rate (%),%,True,True
+Sarawak,2022,43.474178,Non-Domestic Water Share (%),%,False,True
+Sarawak,2022,2195.674146,Tourism Receipts per Resident (RM),RM,True,True
+Sarawak,2022,3.8,Unemployment Rate (%),%,False,True
+Sarawak,2022,0.0,Coastal Poor (%),%,,False
+Sarawak,2022,67634.0,Mangrove Area (ha),ha,,False
+Sarawak,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sarawak,2022,6.252274,Visitors per Resident,ratio,,False
+Sarawak,2023,3.48,Avg Length of Stay (nights),nights,True,True
+Sarawak,2023,0.0,Coastal Good+Excellent (%),%,True,True
+Sarawak,2023,69.0,Labour Force Participation Rate (%),%,True,True
+Sarawak,2023,47.826087,Non-Domestic Water Share (%),%,False,True
+Sarawak,2023,2774.647324,Tourism Receipts per Resident (RM),RM,True,True
+Sarawak,2023,3.4,Unemployment Rate (%),%,False,True
+Sarawak,2023,0.0,Coastal Poor (%),%,,False
+Sarawak,2023,,Mangrove Area (ha),ha,,False
+Sarawak,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sarawak,2023,7.153818,Visitors per Resident,ratio,,False
+Sarawak,2024,3.09,Avg Length of Stay (nights),nights,True,True
+Sarawak,2024,0.0,Coastal Good+Excellent (%),%,True,True
+Sarawak,2024,69.65,Labour Force Participation Rate (%),%,True,True
+Sarawak,2024,49.451477,Non-Domestic Water Share (%),%,False,True
+Sarawak,2024,3160.675273,Tourism Receipts per Resident (RM),RM,True,True
+Sarawak,2024,3.4,Unemployment Rate (%),%,False,True
+Sarawak,2024,0.0,Coastal Poor (%),%,,False
+Sarawak,2024,,Mangrove Area (ha),ha,,False
+Sarawak,2024,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sarawak,2024,7.795829,Visitors per Resident,ratio,,False
+Sarawak,2025,3.1,Avg Length of Stay (nights),nights,True,True
+Sarawak,2025,,Coastal Good+Excellent (%),%,True,True
+Sarawak,2025,69.8,Labour Force Participation Rate (%),%,True,True
+Sarawak,2025,,Non-Domestic Water Share (%),%,False,True
+Sarawak,2025,3613.428763,Tourism Receipts per Resident (RM),RM,True,True
+Sarawak,2025,3.15,Unemployment Rate (%),%,False,True
+Sarawak,2025,,Coastal Poor (%),%,,False
+Sarawak,2025,,Mangrove Area (ha),ha,,False
+Sarawak,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Sarawak,2025,8.984934,Visitors per Resident,ratio,,False
+Selangor,2015,,Avg Length of Stay (nights),nights,True,True
+Selangor,2015,50.0,Coastal Good+Excellent (%),%,True,True
+Selangor,2015,73.1,Labour Force Participation Rate (%),%,True,True
+Selangor,2015,41.409692,Non-Domestic Water Share (%),%,False,True
+Selangor,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Selangor,2015,2.4,Unemployment Rate (%),%,False,True
+Selangor,2015,0.0,Coastal Poor (%),%,,False
+Selangor,2015,385755.0,Mangrove Area (ha),ha,,False
+Selangor,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Selangor,2015,3.57122,Visitors per Resident,ratio,,False
+Selangor,2016,,Avg Length of Stay (nights),nights,True,True
+Selangor,2016,25.0,Coastal Good+Excellent (%),%,True,True
+Selangor,2016,74.2,Labour Force Participation Rate (%),%,True,True
+Selangor,2016,41.503573,Non-Domestic Water Share (%),%,False,True
+Selangor,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Selangor,2016,3.2,Unemployment Rate (%),%,False,True
+Selangor,2016,0.0,Coastal Poor (%),%,,False
+Selangor,2016,385755.0,Mangrove Area (ha),ha,,False
+Selangor,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Selangor,2016,3.83438,Visitors per Resident,ratio,,False
+Selangor,2017,2.0,Avg Length of Stay (nights),nights,True,True
+Selangor,2017,50.0,Coastal Good+Excellent (%),%,True,True
+Selangor,2017,75.7,Labour Force Participation Rate (%),%,True,True
+Selangor,2017,42.337342,Non-Domestic Water Share (%),%,False,True
+Selangor,2017,1843.684862,Tourism Receipts per Resident (RM),RM,True,True
+Selangor,2017,2.8,Unemployment Rate (%),%,False,True
+Selangor,2017,0.0,Coastal Poor (%),%,,False
+Selangor,2017,409456.0,Mangrove Area (ha),ha,,False
+Selangor,2017,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Selangor,2017,3.995041,Visitors per Resident,ratio,,False
+Selangor,2018,1.87,Avg Length of Stay (nights),nights,True,True
+Selangor,2018,83.333333,Coastal Good+Excellent (%),%,True,True
+Selangor,2018,75.775,Labour Force Participation Rate (%),%,True,True
+Selangor,2018,42.219542,Non-Domestic Water Share (%),%,False,True
+Selangor,2018,2036.911197,Tourism Receipts per Resident (RM),RM,True,True
+Selangor,2018,2.8,Unemployment Rate (%),%,False,True
+Selangor,2018,0.0,Coastal Poor (%),%,,False
+Selangor,2018,409456.0,Mangrove Area (ha),ha,,False
+Selangor,2018,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Selangor,2018,4.660857,Visitors per Resident,ratio,,False
+Selangor,2019,2.24,Avg Length of Stay (nights),nights,True,True
+Selangor,2019,16.666667,Coastal Good+Excellent (%),%,True,True
+Selangor,2019,75.975,Labour Force Participation Rate (%),%,True,True
+Selangor,2019,42.033996,Non-Domestic Water Share (%),%,False,True
+Selangor,2019,2389.142497,Tourism Receipts per Resident (RM),RM,True,True
+Selangor,2019,2.9,Unemployment Rate (%),%,False,True
+Selangor,2019,0.0,Coastal Poor (%),%,,False
+Selangor,2019,18998.0,Mangrove Area (ha),ha,,False
+Selangor,2019,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Selangor,2019,5.162693,Visitors per Resident,ratio,,False
+Selangor,2020,1.64,Avg Length of Stay (nights),nights,True,True
+Selangor,2020,16.666667,Coastal Good+Excellent (%),%,True,True
+Selangor,2020,75.75,Labour Force Participation Rate (%),%,True,True
+Selangor,2020,38.387824,Non-Domestic Water Share (%),%,False,True
+Selangor,2020,1008.092188,Tourism Receipts per Resident (RM),RM,True,True
+Selangor,2020,4.5,Unemployment Rate (%),%,False,True
+Selangor,2020,0.0,Coastal Poor (%),%,,False
+Selangor,2020,18998.0,Mangrove Area (ha),ha,,False
+Selangor,2020,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Selangor,2020,2.818684,Visitors per Resident,ratio,,False
+Selangor,2021,1.83,Avg Length of Stay (nights),nights,True,True
+Selangor,2021,50.0,Coastal Good+Excellent (%),%,True,True
+Selangor,2021,76.4,Labour Force Participation Rate (%),%,True,True
+Selangor,2021,36.436686,Non-Domestic Water Share (%),%,False,True
+Selangor,2021,450.34,Tourism Receipts per Resident (RM),RM,True,True
+Selangor,2021,4.4,Unemployment Rate (%),%,False,True
+Selangor,2021,0.0,Coastal Poor (%),%,,False
+Selangor,2021,18998.0,Mangrove Area (ha),ha,,False
+Selangor,2021,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Selangor,2021,1.45574,Visitors per Resident,ratio,,False
+Selangor,2022,2.32,Avg Length of Stay (nights),nights,True,True
+Selangor,2022,50.0,Coastal Good+Excellent (%),%,True,True
+Selangor,2022,76.8,Labour Force Participation Rate (%),%,True,True
+Selangor,2022,37.709497,Non-Domestic Water Share (%),%,False,True
+Selangor,2022,1238.954371,Tourism Receipts per Resident (RM),RM,True,True
+Selangor,2022,3.8,Unemployment Rate (%),%,False,True
+Selangor,2022,0.0,Coastal Poor (%),%,,False
+Selangor,2022,18998.0,Mangrove Area (ha),ha,,False
+Selangor,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Selangor,2022,3.119016,Visitors per Resident,ratio,,False
+Selangor,2023,2.24,Avg Length of Stay (nights),nights,True,True
+Selangor,2023,83.333333,Coastal Good+Excellent (%),%,True,True
+Selangor,2023,76.7,Labour Force Participation Rate (%),%,True,True
+Selangor,2023,40.117208,Non-Domestic Water Share (%),%,False,True
+Selangor,2023,1540.0086,Tourism Receipts per Resident (RM),RM,True,True
+Selangor,2023,2.7,Unemployment Rate (%),%,False,True
+Selangor,2023,0.0,Coastal Poor (%),%,,False
+Selangor,2023,,Mangrove Area (ha),ha,,False
+Selangor,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Selangor,2023,3.825263,Visitors per Resident,ratio,,False
+Selangor,2024,2.24,Avg Length of Stay (nights),nights,True,True
+Selangor,2024,66.666667,Coastal Good+Excellent (%),%,True,True
+Selangor,2024,77.9,Labour Force Participation Rate (%),%,True,True
+Selangor,2024,41.015726,Non-Domestic Water Share (%),%,False,True
+Selangor,2024,1932.171622,Tourism Receipts per Resident (RM),RM,True,True
+Selangor,2024,2.3,Unemployment Rate (%),%,False,True
+Selangor,2024,0.0,Coastal Poor (%),%,,False
+Selangor,2024,,Mangrove Area (ha),ha,,False
+Selangor,2024,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Selangor,2024,4.680484,Visitors per Resident,ratio,,False
+Selangor,2025,2.31,Avg Length of Stay (nights),nights,True,True
+Selangor,2025,,Coastal Good+Excellent (%),%,True,True
+Selangor,2025,77.4,Labour Force Participation Rate (%),%,True,True
+Selangor,2025,,Non-Domestic Water Share (%),%,False,True
+Selangor,2025,2127.498751,Tourism Receipts per Resident (RM),RM,True,True
+Selangor,2025,2.2,Unemployment Rate (%),%,False,True
+Selangor,2025,,Coastal Poor (%),%,,False
+Selangor,2025,,Mangrove Area (ha),ha,,False
+Selangor,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Selangor,2025,4.909903,Visitors per Resident,ratio,,False
+Terengganu,2015,,Avg Length of Stay (nights),nights,True,True
+Terengganu,2015,0.0,Coastal Good+Excellent (%),%,True,True
+Terengganu,2015,59.9,Labour Force Participation Rate (%),%,True,True
+Terengganu,2015,42.523364,Non-Domestic Water Share (%),%,False,True
+Terengganu,2015,,Tourism Receipts per Resident (RM),RM,True,True
+Terengganu,2015,4.0,Unemployment Rate (%),%,False,True
+Terengganu,2015,0.0,Coastal Poor (%),%,,False
+Terengganu,2015,88565.0,Mangrove Area (ha),ha,,False
+Terengganu,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Terengganu,2015,9.890612,Visitors per Resident,ratio,,False
+Terengganu,2016,,Avg Length of Stay (nights),nights,True,True
+Terengganu,2016,0.0,Coastal Good+Excellent (%),%,True,True
+Terengganu,2016,60.0,Labour Force Participation Rate (%),%,True,True
+Terengganu,2016,40.0,Non-Domestic Water Share (%),%,False,True
+Terengganu,2016,,Tourism Receipts per Resident (RM),RM,True,True
+Terengganu,2016,4.2,Unemployment Rate (%),%,False,True
+Terengganu,2016,0.0,Coastal Poor (%),%,,False
+Terengganu,2016,72545.0,Mangrove Area (ha),ha,,False
+Terengganu,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Terengganu,2016,10.148724,Visitors per Resident,ratio,,False
+Terengganu,2017,2.45,Avg Length of Stay (nights),nights,True,True
+Terengganu,2017,100.0,Coastal Good+Excellent (%),%,True,True
+Terengganu,2017,60.2,Labour Force Participation Rate (%),%,True,True
+Terengganu,2017,40.046838,Non-Domestic Water Share (%),%,False,True
+Terengganu,2017,3942.880795,Tourism Receipts per Resident (RM),RM,True,True
+Terengganu,2017,4.5,Unemployment Rate (%),%,False,True
+Terengganu,2017,0.0,Coastal Poor (%),%,,False
+Terengganu,2017,71086.0,Mangrove Area (ha),ha,,False
+Terengganu,2017,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Terengganu,2017,10.744517,Visitors per Resident,ratio,,False
+Terengganu,2018,2.6,Avg Length of Stay (nights),nights,True,True
+Terengganu,2018,100.0,Coastal Good+Excellent (%),%,True,True
+Terengganu,2018,60.4,Labour Force Participation Rate (%),%,True,True
+Terengganu,2018,39.858491,Non-Domestic Water Share (%),%,False,True
+Terengganu,2018,4546.934788,Tourism Receipts per Resident (RM),RM,True,True
+Terengganu,2018,4.8,Unemployment Rate (%),%,False,True
+Terengganu,2018,0.0,Coastal Poor (%),%,,False
+Terengganu,2018,72819.0,Mangrove Area (ha),ha,,False
+Terengganu,2018,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Terengganu,2018,11.188119,Visitors per Resident,ratio,,False
+Terengganu,2019,2.58,Avg Length of Stay (nights),nights,True,True
+Terengganu,2019,87.5,Coastal Good+Excellent (%),%,True,True
+Terengganu,2019,61.225,Labour Force Participation Rate (%),%,True,True
+Terengganu,2019,39.819005,Non-Domestic Water Share (%),%,False,True
+Terengganu,2019,4813.177983,Tourism Receipts per Resident (RM),RM,True,True
+Terengganu,2019,3.5,Unemployment Rate (%),%,False,True
+Terengganu,2019,0.0,Coastal Poor (%),%,,False
+Terengganu,2019,1037.0,Mangrove Area (ha),ha,,False
+Terengganu,2019,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Terengganu,2019,11.376456,Visitors per Resident,ratio,,False
+Terengganu,2020,2.06,Avg Length of Stay (nights),nights,True,True
+Terengganu,2020,93.75,Coastal Good+Excellent (%),%,True,True
+Terengganu,2020,60.2,Labour Force Participation Rate (%),%,True,True
+Terengganu,2020,36.585366,Non-Domestic Water Share (%),%,False,True
+Terengganu,2020,1961.893162,Tourism Receipts per Resident (RM),RM,True,True
+Terengganu,2020,4.2,Unemployment Rate (%),%,False,True
+Terengganu,2020,0.0,Coastal Poor (%),%,,False
+Terengganu,2020,1037.0,Mangrove Area (ha),ha,,False
+Terengganu,2020,116.71,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Terengganu,2020,6.455542,Visitors per Resident,ratio,,False
+Terengganu,2021,2.2,Avg Length of Stay (nights),nights,True,True
+Terengganu,2021,100.0,Coastal Good+Excellent (%),%,True,True
+Terengganu,2021,59.4,Labour Force Participation Rate (%),%,True,True
+Terengganu,2021,34.773218,Non-Domestic Water Share (%),%,False,True
+Terengganu,2021,840.522764,Tourism Receipts per Resident (RM),RM,True,True
+Terengganu,2021,4.1,Unemployment Rate (%),%,False,True
+Terengganu,2021,0.0,Coastal Poor (%),%,,False
+Terengganu,2021,1037.0,Mangrove Area (ha),ha,,False
+Terengganu,2021,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Terengganu,2021,3.176776,Visitors per Resident,ratio,,False
+Terengganu,2022,2.69,Avg Length of Stay (nights),nights,True,True
+Terengganu,2022,100.0,Coastal Good+Excellent (%),%,True,True
+Terengganu,2022,59.8,Labour Force Participation Rate (%),%,True,True
+Terengganu,2022,37.690632,Non-Domestic Water Share (%),%,False,True
+Terengganu,2022,2834.147986,Tourism Receipts per Resident (RM),RM,True,True
+Terengganu,2022,3.5,Unemployment Rate (%),%,False,True
+Terengganu,2022,0.0,Coastal Poor (%),%,,False
+Terengganu,2022,1037.0,Mangrove Area (ha),ha,,False
+Terengganu,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Terengganu,2022,8.623799,Visitors per Resident,ratio,,False
+Terengganu,2023,2.59,Avg Length of Stay (nights),nights,True,True
+Terengganu,2023,100.0,Coastal Good+Excellent (%),%,True,True
+Terengganu,2023,60.225,Labour Force Participation Rate (%),%,True,True
+Terengganu,2023,39.285714,Non-Domestic Water Share (%),%,False,True
+Terengganu,2023,3464.46281,Tourism Receipts per Resident (RM),RM,True,True
+Terengganu,2023,3.4,Unemployment Rate (%),%,False,True
+Terengganu,2023,0.0,Coastal Poor (%),%,,False
+Terengganu,2023,,Mangrove Area (ha),ha,,False
+Terengganu,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Terengganu,2023,9.719835,Visitors per Resident,ratio,,False
+Terengganu,2024,2.5,Avg Length of Stay (nights),nights,True,True
+Terengganu,2024,100.0,Coastal Good+Excellent (%),%,True,True
+Terengganu,2024,61.05,Labour Force Participation Rate (%),%,True,True
+Terengganu,2024,39.877301,Non-Domestic Water Share (%),%,False,True
+Terengganu,2024,4198.132359,Tourism Receipts per Resident (RM),RM,True,True
+Terengganu,2024,3.1,Unemployment Rate (%),%,False,True
+Terengganu,2024,0.0,Coastal Poor (%),%,,False
+Terengganu,2024,,Mangrove Area (ha),ha,,False
+Terengganu,2024,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Terengganu,2024,11.74259,Visitors per Resident,ratio,,False
+Terengganu,2025,2.76,Avg Length of Stay (nights),nights,True,True
+Terengganu,2025,,Coastal Good+Excellent (%),%,True,True
+Terengganu,2025,61.475,Labour Force Participation Rate (%),%,True,True
+Terengganu,2025,,Non-Domestic Water Share (%),%,False,True
+Terengganu,2025,4651.629475,Tourism Receipts per Resident (RM),RM,True,True
+Terengganu,2025,2.9,Unemployment Rate (%),%,False,True
+Terengganu,2025,,Coastal Poor (%),%,,False
+Terengganu,2025,,Mangrove Area (ha),ha,,False
+Terengganu,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+Terengganu,2025,12.411302,Visitors per Resident,ratio,,False
+W.P. Kuala Lumpur,2015,,Avg Length of Stay (nights),nights,True,True
+W.P. Kuala Lumpur,2015,,Coastal Good+Excellent (%),%,True,True
+W.P. Kuala Lumpur,2015,70.5,Labour Force Participation Rate (%),%,True,True
+W.P. Kuala Lumpur,2015,,Non-Domestic Water Share (%),%,False,True
+W.P. Kuala Lumpur,2015,,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Kuala Lumpur,2015,3.3,Unemployment Rate (%),%,False,True
+W.P. Kuala Lumpur,2015,,Coastal Poor (%),%,,False
+W.P. Kuala Lumpur,2015,,Mangrove Area (ha),ha,,False
+W.P. Kuala Lumpur,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Kuala Lumpur,2015,8.470007,Visitors per Resident,ratio,,False
+W.P. Kuala Lumpur,2016,,Avg Length of Stay (nights),nights,True,True
+W.P. Kuala Lumpur,2016,,Coastal Good+Excellent (%),%,True,True
+W.P. Kuala Lumpur,2016,68.1,Labour Force Participation Rate (%),%,True,True
+W.P. Kuala Lumpur,2016,,Non-Domestic Water Share (%),%,False,True
+W.P. Kuala Lumpur,2016,,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Kuala Lumpur,2016,3.3,Unemployment Rate (%),%,False,True
+W.P. Kuala Lumpur,2016,,Coastal Poor (%),%,,False
+W.P. Kuala Lumpur,2016,,Mangrove Area (ha),ha,,False
+W.P. Kuala Lumpur,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Kuala Lumpur,2016,9.378108,Visitors per Resident,ratio,,False
+W.P. Kuala Lumpur,2017,2.75,Avg Length of Stay (nights),nights,True,True
+W.P. Kuala Lumpur,2017,,Coastal Good+Excellent (%),%,True,True
+W.P. Kuala Lumpur,2017,68.7,Labour Force Participation Rate (%),%,True,True
+W.P. Kuala Lumpur,2017,,Non-Domestic Water Share (%),%,False,True
+W.P. Kuala Lumpur,2017,5239.237118,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Kuala Lumpur,2017,3.1,Unemployment Rate (%),%,False,True
+W.P. Kuala Lumpur,2017,,Coastal Poor (%),%,,False
+W.P. Kuala Lumpur,2017,,Mangrove Area (ha),ha,,False
+W.P. Kuala Lumpur,2017,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Kuala Lumpur,2017,10.623156,Visitors per Resident,ratio,,False
+W.P. Kuala Lumpur,2018,2.57,Avg Length of Stay (nights),nights,True,True
+W.P. Kuala Lumpur,2018,,Coastal Good+Excellent (%),%,True,True
+W.P. Kuala Lumpur,2018,67.475,Labour Force Participation Rate (%),%,True,True
+W.P. Kuala Lumpur,2018,,Non-Domestic Water Share (%),%,False,True
+W.P. Kuala Lumpur,2018,5717.877095,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Kuala Lumpur,2018,2.4,Unemployment Rate (%),%,False,True
+W.P. Kuala Lumpur,2018,,Coastal Poor (%),%,,False
+W.P. Kuala Lumpur,2018,,Mangrove Area (ha),ha,,False
+W.P. Kuala Lumpur,2018,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Kuala Lumpur,2018,10.706982,Visitors per Resident,ratio,,False
+W.P. Kuala Lumpur,2019,2.39,Avg Length of Stay (nights),nights,True,True
+W.P. Kuala Lumpur,2019,,Coastal Good+Excellent (%),%,True,True
+W.P. Kuala Lumpur,2019,70.0,Labour Force Participation Rate (%),%,True,True
+W.P. Kuala Lumpur,2019,,Non-Domestic Water Share (%),%,False,True
+W.P. Kuala Lumpur,2019,6811.220196,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Kuala Lumpur,2019,2.625,Unemployment Rate (%),%,False,True
+W.P. Kuala Lumpur,2019,,Coastal Poor (%),%,,False
+W.P. Kuala Lumpur,2019,,Mangrove Area (ha),ha,,False
+W.P. Kuala Lumpur,2019,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Kuala Lumpur,2019,12.697335,Visitors per Resident,ratio,,False
+W.P. Kuala Lumpur,2020,1.83,Avg Length of Stay (nights),nights,True,True
+W.P. Kuala Lumpur,2020,,Coastal Good+Excellent (%),%,True,True
+W.P. Kuala Lumpur,2020,72.6,Labour Force Participation Rate (%),%,True,True
+W.P. Kuala Lumpur,2020,,Non-Domestic Water Share (%),%,False,True
+W.P. Kuala Lumpur,2020,2660.309772,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Kuala Lumpur,2020,4.1,Unemployment Rate (%),%,False,True
+W.P. Kuala Lumpur,2020,,Coastal Poor (%),%,,False
+W.P. Kuala Lumpur,2020,,Mangrove Area (ha),ha,,False
+W.P. Kuala Lumpur,2020,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Kuala Lumpur,2020,6.273649,Visitors per Resident,ratio,,False
+W.P. Kuala Lumpur,2021,2.18,Avg Length of Stay (nights),nights,True,True
+W.P. Kuala Lumpur,2021,,Coastal Good+Excellent (%),%,True,True
+W.P. Kuala Lumpur,2021,71.5,Labour Force Participation Rate (%),%,True,True
+W.P. Kuala Lumpur,2021,,Non-Domestic Water Share (%),%,False,True
+W.P. Kuala Lumpur,2021,1570.264766,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Kuala Lumpur,2021,4.6,Unemployment Rate (%),%,False,True
+W.P. Kuala Lumpur,2021,,Coastal Poor (%),%,,False
+W.P. Kuala Lumpur,2021,,Mangrove Area (ha),ha,,False
+W.P. Kuala Lumpur,2021,2142.9,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Kuala Lumpur,2021,4.64155,Visitors per Resident,ratio,,False
+W.P. Kuala Lumpur,2022,3.09,Avg Length of Stay (nights),nights,True,True
+W.P. Kuala Lumpur,2022,,Coastal Good+Excellent (%),%,True,True
+W.P. Kuala Lumpur,2022,72.7,Labour Force Participation Rate (%),%,True,True
+W.P. Kuala Lumpur,2022,,Non-Domestic Water Share (%),%,False,True
+W.P. Kuala Lumpur,2022,3942.994085,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Kuala Lumpur,2022,3.8,Unemployment Rate (%),%,False,True
+W.P. Kuala Lumpur,2022,,Coastal Poor (%),%,,False
+W.P. Kuala Lumpur,2022,,Mangrove Area (ha),ha,,False
+W.P. Kuala Lumpur,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Kuala Lumpur,2022,8.623802,Visitors per Resident,ratio,,False
+W.P. Kuala Lumpur,2023,2.7,Avg Length of Stay (nights),nights,True,True
+W.P. Kuala Lumpur,2023,,Coastal Good+Excellent (%),%,True,True
+W.P. Kuala Lumpur,2023,74.2,Labour Force Participation Rate (%),%,True,True
+W.P. Kuala Lumpur,2023,,Non-Domestic Water Share (%),%,False,True
+W.P. Kuala Lumpur,2023,5481.876652,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Kuala Lumpur,2023,3.0,Unemployment Rate (%),%,False,True
+W.P. Kuala Lumpur,2023,,Coastal Poor (%),%,,False
+W.P. Kuala Lumpur,2023,,Mangrove Area (ha),ha,,False
+W.P. Kuala Lumpur,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Kuala Lumpur,2023,11.084908,Visitors per Resident,ratio,,False
+W.P. Kuala Lumpur,2024,2.23,Avg Length of Stay (nights),nights,True,True
+W.P. Kuala Lumpur,2024,,Coastal Good+Excellent (%),%,True,True
+W.P. Kuala Lumpur,2024,75.225,Labour Force Participation Rate (%),%,True,True
+W.P. Kuala Lumpur,2024,,Non-Domestic Water Share (%),%,False,True
+W.P. Kuala Lumpur,2024,6809.189843,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Kuala Lumpur,2024,2.6,Unemployment Rate (%),%,False,True
+W.P. Kuala Lumpur,2024,,Coastal Poor (%),%,,False
+W.P. Kuala Lumpur,2024,,Mangrove Area (ha),ha,,False
+W.P. Kuala Lumpur,2024,2382.8,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Kuala Lumpur,2024,13.051028,Visitors per Resident,ratio,,False
+W.P. Kuala Lumpur,2025,2.33,Avg Length of Stay (nights),nights,True,True
+W.P. Kuala Lumpur,2025,,Coastal Good+Excellent (%),%,True,True
+W.P. Kuala Lumpur,2025,75.675,Labour Force Participation Rate (%),%,True,True
+W.P. Kuala Lumpur,2025,,Non-Domestic Water Share (%),%,False,True
+W.P. Kuala Lumpur,2025,8146.684657,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Kuala Lumpur,2025,3.025,Unemployment Rate (%),%,False,True
+W.P. Kuala Lumpur,2025,,Coastal Poor (%),%,,False
+W.P. Kuala Lumpur,2025,,Mangrove Area (ha),ha,,False
+W.P. Kuala Lumpur,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Kuala Lumpur,2025,16.894757,Visitors per Resident,ratio,,False
+W.P. Labuan,2015,,Avg Length of Stay (nights),nights,True,True
+W.P. Labuan,2015,0.0,Coastal Good+Excellent (%),%,True,True
+W.P. Labuan,2015,64.5,Labour Force Participation Rate (%),%,True,True
+W.P. Labuan,2015,65.306122,Non-Domestic Water Share (%),%,False,True
+W.P. Labuan,2015,,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Labuan,2015,5.0,Unemployment Rate (%),%,False,True
+W.P. Labuan,2015,0.0,Coastal Poor (%),%,,False
+W.P. Labuan,2015,,Mangrove Area (ha),ha,,False
+W.P. Labuan,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Labuan,2015,3.259727,Visitors per Resident,ratio,,False
+W.P. Labuan,2016,,Avg Length of Stay (nights),nights,True,True
+W.P. Labuan,2016,0.0,Coastal Good+Excellent (%),%,True,True
+W.P. Labuan,2016,66.5,Labour Force Participation Rate (%),%,True,True
+W.P. Labuan,2016,66.0,Non-Domestic Water Share (%),%,False,True
+W.P. Labuan,2016,,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Labuan,2016,7.8,Unemployment Rate (%),%,False,True
+W.P. Labuan,2016,0.0,Coastal Poor (%),%,,False
+W.P. Labuan,2016,,Mangrove Area (ha),ha,,False
+W.P. Labuan,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Labuan,2016,3.657025,Visitors per Resident,ratio,,False
+W.P. Labuan,2017,2.46,Avg Length of Stay (nights),nights,True,True
+W.P. Labuan,2017,0.0,Coastal Good+Excellent (%),%,True,True
+W.P. Labuan,2017,63.7,Labour Force Participation Rate (%),%,True,True
+W.P. Labuan,2017,64.583333,Non-Domestic Water Share (%),%,False,True
+W.P. Labuan,2017,2786.885246,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Labuan,2017,8.5,Unemployment Rate (%),%,False,True
+W.P. Labuan,2017,0.0,Coastal Poor (%),%,,False
+W.P. Labuan,2017,,Mangrove Area (ha),ha,,False
+W.P. Labuan,2017,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Labuan,2017,3.903737,Visitors per Resident,ratio,,False
+W.P. Labuan,2018,3.28,Avg Length of Stay (nights),nights,True,True
+W.P. Labuan,2018,100.0,Coastal Good+Excellent (%),%,True,True
+W.P. Labuan,2018,65.1,Labour Force Participation Rate (%),%,True,True
+W.P. Labuan,2018,64.705882,Non-Domestic Water Share (%),%,False,True
+W.P. Labuan,2018,3949.494949,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Labuan,2018,7.1,Unemployment Rate (%),%,False,True
+W.P. Labuan,2018,0.0,Coastal Poor (%),%,,False
+W.P. Labuan,2018,,Mangrove Area (ha),ha,,False
+W.P. Labuan,2018,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Labuan,2018,5.504364,Visitors per Resident,ratio,,False
+W.P. Labuan,2019,3.05,Avg Length of Stay (nights),nights,True,True
+W.P. Labuan,2019,40.0,Coastal Good+Excellent (%),%,True,True
+W.P. Labuan,2019,61.925,Labour Force Participation Rate (%),%,True,True
+W.P. Labuan,2019,66.666667,Non-Domestic Water Share (%),%,False,True
+W.P. Labuan,2019,3947.633434,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Labuan,2019,6.9,Unemployment Rate (%),%,False,True
+W.P. Labuan,2019,0.0,Coastal Poor (%),%,,False
+W.P. Labuan,2019,,Mangrove Area (ha),ha,,False
+W.P. Labuan,2019,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Labuan,2019,5.276939,Visitors per Resident,ratio,,False
+W.P. Labuan,2020,1.57,Avg Length of Stay (nights),nights,True,True
+W.P. Labuan,2020,0.0,Coastal Good+Excellent (%),%,True,True
+W.P. Labuan,2020,64.3,Labour Force Participation Rate (%),%,True,True
+W.P. Labuan,2020,70.175439,Non-Domestic Water Share (%),%,False,True
+W.P. Labuan,2020,630.914827,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Labuan,2020,7.3,Unemployment Rate (%),%,False,True
+W.P. Labuan,2020,0.0,Coastal Poor (%),%,,False
+W.P. Labuan,2020,,Mangrove Area (ha),ha,,False
+W.P. Labuan,2020,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Labuan,2020,1.125131,Visitors per Resident,ratio,,False
+W.P. Labuan,2021,2.52,Avg Length of Stay (nights),nights,True,True
+W.P. Labuan,2021,0.0,Coastal Good+Excellent (%),%,True,True
+W.P. Labuan,2021,66.3,Labour Force Participation Rate (%),%,True,True
+W.P. Labuan,2021,61.538462,Non-Domestic Water Share (%),%,False,True
+W.P. Labuan,2021,302.083333,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Labuan,2021,7.5,Unemployment Rate (%),%,False,True
+W.P. Labuan,2021,0.0,Coastal Poor (%),%,,False
+W.P. Labuan,2021,,Mangrove Area (ha),ha,,False
+W.P. Labuan,2021,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Labuan,2021,0.561448,Visitors per Resident,ratio,,False
+W.P. Labuan,2022,3.67,Avg Length of Stay (nights),nights,True,True
+W.P. Labuan,2022,0.0,Coastal Good+Excellent (%),%,True,True
+W.P. Labuan,2022,67.1,Labour Force Participation Rate (%),%,True,True
+W.P. Labuan,2022,63.461538,Non-Domestic Water Share (%),%,False,True
+W.P. Labuan,2022,1403.508772,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Labuan,2022,7.0,Unemployment Rate (%),%,False,True
+W.P. Labuan,2022,0.0,Coastal Poor (%),%,,False
+W.P. Labuan,2022,,Mangrove Area (ha),ha,,False
+W.P. Labuan,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Labuan,2022,2.51806,Visitors per Resident,ratio,,False
+W.P. Labuan,2023,2.89,Avg Length of Stay (nights),nights,True,True
+W.P. Labuan,2023,0.0,Coastal Good+Excellent (%),%,True,True
+W.P. Labuan,2023,67.9,Labour Force Participation Rate (%),%,True,True
+W.P. Labuan,2023,62.745098,Non-Domestic Water Share (%),%,False,True
+W.P. Labuan,2023,1959.59596,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Labuan,2023,6.9,Unemployment Rate (%),%,False,True
+W.P. Labuan,2023,0.0,Coastal Poor (%),%,,False
+W.P. Labuan,2023,,Mangrove Area (ha),ha,,False
+W.P. Labuan,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Labuan,2023,3.343434,Visitors per Resident,ratio,,False
+W.P. Labuan,2024,2.84,Avg Length of Stay (nights),nights,True,True
+W.P. Labuan,2024,0.0,Coastal Good+Excellent (%),%,True,True
+W.P. Labuan,2024,68.1,Labour Force Participation Rate (%),%,True,True
+W.P. Labuan,2024,62.745098,Non-Domestic Water Share (%),%,False,True
+W.P. Labuan,2024,2628.968254,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Labuan,2024,6.475,Unemployment Rate (%),%,False,True
+W.P. Labuan,2024,0.0,Coastal Poor (%),%,,False
+W.P. Labuan,2024,,Mangrove Area (ha),ha,,False
+W.P. Labuan,2024,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Labuan,2024,4.464286,Visitors per Resident,ratio,,False
+W.P. Labuan,2025,2.51,Avg Length of Stay (nights),nights,True,True
+W.P. Labuan,2025,,Coastal Good+Excellent (%),%,True,True
+W.P. Labuan,2025,66.975,Labour Force Participation Rate (%),%,True,True
+W.P. Labuan,2025,,Non-Domestic Water Share (%),%,False,True
+W.P. Labuan,2025,3756.194252,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Labuan,2025,5.4,Unemployment Rate (%),%,False,True
+W.P. Labuan,2025,,Coastal Poor (%),%,,False
+W.P. Labuan,2025,,Mangrove Area (ha),ha,,False
+W.P. Labuan,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Labuan,2025,5.986125,Visitors per Resident,ratio,,False
+W.P. Putrajaya,2015,,Avg Length of Stay (nights),nights,True,True
+W.P. Putrajaya,2015,,Coastal Good+Excellent (%),%,True,True
+W.P. Putrajaya,2015,78.2,Labour Force Participation Rate (%),%,True,True
+W.P. Putrajaya,2015,,Non-Domestic Water Share (%),%,False,True
+W.P. Putrajaya,2015,,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Putrajaya,2015,1.0,Unemployment Rate (%),%,False,True
+W.P. Putrajaya,2015,,Coastal Poor (%),%,,False
+W.P. Putrajaya,2015,,Mangrove Area (ha),ha,,False
+W.P. Putrajaya,2015,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Putrajaya,2015,14.313253,Visitors per Resident,ratio,,False
+W.P. Putrajaya,2016,,Avg Length of Stay (nights),nights,True,True
+W.P. Putrajaya,2016,,Coastal Good+Excellent (%),%,True,True
+W.P. Putrajaya,2016,77.6,Labour Force Participation Rate (%),%,True,True
+W.P. Putrajaya,2016,,Non-Domestic Water Share (%),%,False,True
+W.P. Putrajaya,2016,,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Putrajaya,2016,1.7,Unemployment Rate (%),%,False,True
+W.P. Putrajaya,2016,,Coastal Poor (%),%,,False
+W.P. Putrajaya,2016,,Mangrove Area (ha),ha,,False
+W.P. Putrajaya,2016,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Putrajaya,2016,21.516588,Visitors per Resident,ratio,,False
+W.P. Putrajaya,2017,2.27,Avg Length of Stay (nights),nights,True,True
+W.P. Putrajaya,2017,,Coastal Good+Excellent (%),%,True,True
+W.P. Putrajaya,2017,76.5,Labour Force Participation Rate (%),%,True,True
+W.P. Putrajaya,2017,,Non-Domestic Water Share (%),%,False,True
+W.P. Putrajaya,2017,8011.428571,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Putrajaya,2017,1.5,Unemployment Rate (%),%,False,True
+W.P. Putrajaya,2017,,Coastal Poor (%),%,,False
+W.P. Putrajaya,2017,,Mangrove Area (ha),ha,,False
+W.P. Putrajaya,2017,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Putrajaya,2017,21.392659,Visitors per Resident,ratio,,False
+W.P. Putrajaya,2018,2.68,Avg Length of Stay (nights),nights,True,True
+W.P. Putrajaya,2018,,Coastal Good+Excellent (%),%,True,True
+W.P. Putrajaya,2018,76.2,Labour Force Participation Rate (%),%,True,True
+W.P. Putrajaya,2018,,Non-Domestic Water Share (%),%,False,True
+W.P. Putrajaya,2018,10370.37037,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Putrajaya,2018,1.3,Unemployment Rate (%),%,False,True
+W.P. Putrajaya,2018,,Coastal Poor (%),%,,False
+W.P. Putrajaya,2018,,Mangrove Area (ha),ha,,False
+W.P. Putrajaya,2018,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Putrajaya,2018,19.464064,Visitors per Resident,ratio,,False
+W.P. Putrajaya,2019,3.04,Avg Length of Stay (nights),nights,True,True
+W.P. Putrajaya,2019,,Coastal Good+Excellent (%),%,True,True
+W.P. Putrajaya,2019,75.9,Labour Force Participation Rate (%),%,True,True
+W.P. Putrajaya,2019,,Non-Domestic Water Share (%),%,False,True
+W.P. Putrajaya,2019,8187.07811,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Putrajaya,2019,1.2,Unemployment Rate (%),%,False,True
+W.P. Putrajaya,2019,,Coastal Poor (%),%,,False
+W.P. Putrajaya,2019,,Mangrove Area (ha),ha,,False
+W.P. Putrajaya,2019,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Putrajaya,2019,18.7946,Visitors per Resident,ratio,,False
+W.P. Putrajaya,2020,1.98,Avg Length of Stay (nights),nights,True,True
+W.P. Putrajaya,2020,,Coastal Good+Excellent (%),%,True,True
+W.P. Putrajaya,2020,76.1,Labour Force Participation Rate (%),%,True,True
+W.P. Putrajaya,2020,,Non-Domestic Water Share (%),%,False,True
+W.P. Putrajaya,2020,1300.3663,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Putrajaya,2020,1.5,Unemployment Rate (%),%,False,True
+W.P. Putrajaya,2020,,Coastal Poor (%),%,,False
+W.P. Putrajaya,2020,,Mangrove Area (ha),ha,,False
+W.P. Putrajaya,2020,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Putrajaya,2020,4.130037,Visitors per Resident,ratio,,False
+W.P. Putrajaya,2021,2.23,Avg Length of Stay (nights),nights,True,True
+W.P. Putrajaya,2021,,Coastal Good+Excellent (%),%,True,True
+W.P. Putrajaya,2021,77.0,Labour Force Participation Rate (%),%,True,True
+W.P. Putrajaya,2021,,Non-Domestic Water Share (%),%,False,True
+W.P. Putrajaya,2021,590.277778,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Putrajaya,2021,1.7,Unemployment Rate (%),%,False,True
+W.P. Putrajaya,2021,,Coastal Poor (%),%,,False
+W.P. Putrajaya,2021,,Mangrove Area (ha),ha,,False
+W.P. Putrajaya,2021,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Putrajaya,2021,1.935816,Visitors per Resident,ratio,,False
+W.P. Putrajaya,2022,2.68,Avg Length of Stay (nights),nights,True,True
+W.P. Putrajaya,2022,,Coastal Good+Excellent (%),%,True,True
+W.P. Putrajaya,2022,77.7,Labour Force Participation Rate (%),%,True,True
+W.P. Putrajaya,2022,,Non-Domestic Water Share (%),%,False,True
+W.P. Putrajaya,2022,3897.435897,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Putrajaya,2022,1.3,Unemployment Rate (%),%,False,True
+W.P. Putrajaya,2022,,Coastal Poor (%),%,,False
+W.P. Putrajaya,2022,,Mangrove Area (ha),ha,,False
+W.P. Putrajaya,2022,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Putrajaya,2022,11.162393,Visitors per Resident,ratio,,False
+W.P. Putrajaya,2023,2.08,Avg Length of Stay (nights),nights,True,True
+W.P. Putrajaya,2023,,Coastal Good+Excellent (%),%,True,True
+W.P. Putrajaya,2023,78.6,Labour Force Participation Rate (%),%,True,True
+W.P. Putrajaya,2023,,Non-Domestic Water Share (%),%,False,True
+W.P. Putrajaya,2023,5639.73064,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Putrajaya,2023,0.9,Unemployment Rate (%),%,False,True
+W.P. Putrajaya,2023,,Coastal Poor (%),%,,False
+W.P. Putrajaya,2023,,Mangrove Area (ha),ha,,False
+W.P. Putrajaya,2023,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Putrajaya,2023,15.993266,Visitors per Resident,ratio,,False
+W.P. Putrajaya,2024,2.14,Avg Length of Stay (nights),nights,True,True
+W.P. Putrajaya,2024,,Coastal Good+Excellent (%),%,True,True
+W.P. Putrajaya,2024,79.1,Labour Force Participation Rate (%),%,True,True
+W.P. Putrajaya,2024,,Non-Domestic Water Share (%),%,False,True
+W.P. Putrajaya,2024,7788.86118,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Putrajaya,2024,1.1,Unemployment Rate (%),%,False,True
+W.P. Putrajaya,2024,,Coastal Poor (%),%,,False
+W.P. Putrajaya,2024,,Mangrove Area (ha),ha,,False
+W.P. Putrajaya,2024,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Putrajaya,2024,21.255195,Visitors per Resident,ratio,,False
+W.P. Putrajaya,2025,2.5,Avg Length of Stay (nights),nights,True,True
+W.P. Putrajaya,2025,,Coastal Good+Excellent (%),%,True,True
+W.P. Putrajaya,2025,79.45,Labour Force Participation Rate (%),%,True,True
+W.P. Putrajaya,2025,,Non-Domestic Water Share (%),%,False,True
+W.P. Putrajaya,2025,10240.26512,Tourism Receipts per Resident (RM),RM,True,True
+W.P. Putrajaya,2025,1.525,Unemployment Rate (%),%,False,True
+W.P. Putrajaya,2025,,Coastal Poor (%),%,,False
+W.P. Putrajaya,2025,,Mangrove Area (ha),ha,,False
+W.P. Putrajaya,2025,,Municipal Waste Facility Tonnes/Day,tonnes/day,,False
+W.P. Putrajaya,2025,26.064623,Visitors per Resident,ratio,,False

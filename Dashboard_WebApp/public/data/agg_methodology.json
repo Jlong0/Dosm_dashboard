@@ -1,0 +1,41 @@
+{
+  "index_method": {
+    "indicators": {
+      "Tourism Receipts per Resident (RM)": "Economic",
+      "Avg Length of Stay (nights)": "Economic",
+      "Labour Force Participation Rate (%)": "Social",
+      "Unemployment Rate (%)": "Social",
+      "Non-Domestic Water Share (%)": "Environmental",
+      "Coastal Good+Excellent (%)": "Environmental"
+    },
+    "weighting": "equal pillar (33.3% Economic / Social / Environmental)",
+    "dropped_indicators": [
+      { "dropped": "Visitors per Resident", "kept_instead": "Tourism Receipts per Resident (RM)", "correlation": 0.966 },
+      { "dropped": "Coastal MWQI Proxy", "kept_instead": "Coastal Good+Excellent (%)", "correlation": 0.983 }
+    ],
+    "excluded_states": ["Perlis", "W.P. Kuala Lumpur", "W.P. Putrajaya"],
+    "excluded_reason": "no coastal water-quality monitoring stations",
+    "panel_years": [2017, 2024]
+  },
+  "robustness": {
+    "kmo": 0.464,
+    "bartlett_p": 4.103583767885193e-21,
+    "components_for_80pct_variance": "4 of 6",
+    "pearson_r_equal_vs_pca": 0.829,
+    "spearman_rho_equal_vs_pca": 0.724,
+    "leave_one_out_weakest_link": "Tourism Receipts per Resident (RM) - ranking most sensitive to this indicator"
+  },
+  "forecast_method": {
+    "rule": "every model must beat a naive persistence baseline (value_t+1 = value_t) to be used",
+    "outcome": "1 of 3 tasks (domestic visitor demand) beat the naive baseline; water pressure and coastal quality did not"
+  },
+  "limitations": [
+    "Coastal-quality % swings sharply in low-station states (see coastal_station_caveat in agg_causal.json)",
+    "2025 environmental data not yet published - full STI and validated forecasts unavailable for 2025",
+    "Environmental Data & Monitoring Readiness measures coverage only, not governance quality"
+  ],
+  "provenance": {
+    "source_file": "skyfinal.xlsx (State_year sheet) - single source of truth",
+    "notebook": "Data_Cleaning_v5.ipynb"
+  }
+}

@@ -1,0 +1,49 @@
+destination,sustainability_dimension,n,net_sentiment
+Johor,economic,82.0,26.8
+Johor,environmental,33.0,39.4
+Johor,infrastructure,47.0,27.7
+Johor,social,24.0,33.3
+Kuala Lumpur,economic,212.0,20.8
+Kuala Lumpur,environmental,217.0,25.3
+Kuala Lumpur,infrastructure,261.0,5.0
+Kuala Lumpur,social,147.0,12.2
+Langkawi,economic,20.0,25.0
+Langkawi,environmental,42.0,45.2
+Langkawi,infrastructure,19.0,47.4
+Langkawi,social,23.0,65.2
+Malaysia,economic,485.0,6.4
+Malaysia,environmental,293.0,-24.2
+Malaysia,infrastructure,468.0,-40.6
+Malaysia,social,383.0,-13.6
+Melaka,economic,71.0,36.6
+Melaka,environmental,43.0,9.3
+Melaka,infrastructure,55.0,23.6
+Melaka,social,45.0,37.8
+Pahang,economic,19.0,21.1
+Pahang,environmental,36.0,19.4
+Pahang,infrastructure,24.0,25.0
+Pahang,social,18.0,16.7
+Penang,economic,294.0,38.1
+Penang,environmental,151.0,35.8
+Penang,infrastructure,151.0,37.1
+Penang,social,113.0,45.1
+Perak,economic,33.0,66.7
+Perak,environmental,13.0,69.2
+Perak,infrastructure,14.0,64.3
+Perak,social,9.0,88.9
+Putrajaya,economic,6.0,16.7
+Putrajaya,environmental,8.0,0.0
+Putrajaya,infrastructure,8.0,-25.0
+Putrajaya,social,10.0,10.0
+Sabah,economic,57.0,63.2
+Sabah,environmental,118.0,49.2
+Sabah,infrastructure,54.0,40.7
+Sabah,social,53.0,47.2
+Sarawak,economic,117.0,45.3
+Sarawak,environmental,78.0,51.3
+Sarawak,infrastructure,71.0,39.4
+Sarawak,social,77.0,48.1
+Terengganu,economic,13.0,69.2
+Terengganu,environmental,36.0,47.2
+Terengganu,infrastructure,7.0,28.6
+Terengganu,social,10.0,70.0
