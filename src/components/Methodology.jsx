@@ -24,6 +24,58 @@ export default function Methodology({ methodology, causal, forecasts, sentimentO
         <p>To reduce double-counting, <strong>Visitors per Resident</strong> was removed in favour of receipts per resident (r={index.dropped_indicators[0].correlation}), and <strong>Coastal MWQI Proxy</strong> was removed in favour of coastal good/excellent share (r={index.dropped_indicators[1].correlation}). Correlation indicates redundancy here; it does not make either candidate intrinsically invalid.</p>
         <div className="method-note"><strong>Coverage and missing data</strong><p>{index.excluded_states.join(', ')} have no coastal water-quality monitoring stations, so a comparable Environmental pillar cannot be built. Full STI is unavailable in 2015–2016 because receipts and length-of-stay inputs are unavailable; the fallback export also has no rows for those years. In 2025, environmental observations are not published, so states with the necessary Economic and Social inputs can have an exported <code>Economic_Social_0_100</code> partial fallback—not STI. The dashboard does not interpolate, substitute zero, fabricate STI, or silently relabel a fallback.</p></div>
       </div></details>
+      <details>
+        <summary>
+          Additional environmental diagnostic
+        </summary>
+
+        <div className="method-body">
+
+          <h3>
+            Scheduled waste
+          </h3>
+
+          <p>
+            Scheduled waste is included as a
+            state-level environmental-pressure
+            diagnostic. It represents scheduled
+            waste generated within each state and
+            provides broader industrial
+            environmental context.
+          </p>
+
+          <p>
+            The indicator is not currently included
+            in the Sustainable Tourism Index (STI)
+            and is not interpreted as waste generated
+            directly by tourism activity.
+          </p>
+
+          <p>
+            Higher scheduled-waste generation is
+            also not treated automatically as
+            evidence of environmental damage,
+            because the dataset does not capture
+            how the waste was treated, recovered
+            or disposed of.
+          </p>
+
+          <div className="method-note">
+            <strong>
+              Interpretation
+            </strong>
+
+            <p>
+              Scheduled waste should be read as a
+              broader environmental-pressure signal.
+              It currently supports contextual
+              comparison between states rather than
+              STI scoring or causal interpretation.
+            </p>
+          </div>
+
+        </div>
+      </details>
 
       <details open><summary>02 / Robustness and ranking sensitivity</summary><div className="method-body">
         <div className="method-stats"><strong>{robust.kmo.toFixed(3)}<small>KMO</small></strong><strong>p &lt; 0.0001<small>Bartlett</small></strong><strong>{robust.components_for_80pct_variance}<small>PCs for ≥80%</small></strong><strong>{robust.pearson_r_equal_vs_pca.toFixed(3)}<small>Pearson r</small></strong><strong>{robust.spearman_rho_equal_vs_pca.toFixed(3)}<small>Spearman ρ</small></strong></div>
@@ -54,6 +106,7 @@ export default function Methodology({ methodology, causal, forecasts, sentimentO
         <li>Environmental publication lags tourism data: 2025 environmental actuals, full STI, and real-world environmental forecast validation are unavailable.</li>
         <li><strong>Readiness ≠ governance quality.</strong> Environmental Data &amp; Monitoring Readiness measures the share of desired monitoring fields observed across years, not policy performance or institutional quality.</li>
         <li>STI is a relative 0–100 composite for the fixed comparison panel, not a certification or absolute sustainability threshold.</li>
+        <li>Scheduled-waste quantity represents state-level waste generation rather than confirmed pollution, treatment performance or tourism-generated waste. It is therefore presented as a diagnostic and is not currently included in STI.</li>
       </ul></div></details>
 
       <details open><summary>07 / Data provenance</summary><div className="method-body provenance-list">

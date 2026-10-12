@@ -2085,3 +2085,105 @@
         0 16px 24px;
     }
   }
+
+  .waste-context {
+    margin-top: 14px;
+    padding: 16px;
+  
+    border: 1px solid #e3e8e5;
+    border-radius: 10px;
+  
+    background: #f8faf9;
+  }
+  
+  
+  .waste-context-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  
+  
+  .waste-context-heading h4 {
+    margin: 3px 0 0;
+  }
+  
+  
+  .diagnostic-badge {
+    padding: 4px 8px;
+  
+    border-radius: 999px;
+  
+    background: #e9efed;
+  
+    color: #596761;
+  
+    font-size: 10px;
+    font-weight: 600;
+  
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  
+  
+  .waste-context-grid {
+    display: grid;
+  
+    grid-template-columns:
+      repeat(
+        3,
+        minmax(0, 1fr)
+      );
+  
+    gap: 10px;
+  }
+  
+  
+  .waste-context-grid > div {
+    padding: 10px 12px;
+  
+    border-radius: 8px;
+  
+    background: white;
+  }
+  
+  
+  .waste-context-grid span {
+    display: block;
+  
+    margin-bottom: 4px;
+  
+    color: #77807b;
+  
+    font-size: 11px;
+  }
+  
+  
+  .waste-context-grid strong {
+    font-size: 17px;
+  }
+  
+  
+  .waste-context-note {
+    margin:
+      12px 0 0;
+  
+    color: #66706b;
+  
+    font-size: 11px;
+    line-height: 1.55;
+  }
+  
+  
+  @media (
+    max-width: 700px
+  ) {
+  
+    .waste-context-grid {
+      grid-template-columns: 1fr;
+    }
+  
+  }
