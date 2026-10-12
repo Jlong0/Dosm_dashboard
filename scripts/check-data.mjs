@@ -96,8 +96,8 @@ assert.equal(new Set(yoy.map(row=>`${row.State}:${row.Year}:${row.indicator}`)).
 assert.equal(new Set(yoy.filter(row=>row.part_of_sti==='True').map(row=>row.indicator)).size,6);
 assert(yoy.filter(row=>row.part_of_sti==='False').every(row=>row.higher_is_better==null));
 const johor2024=getYoyReport(yoy,'Johor',2024);
-assert.equal(johor2024.length,11);
-assert.equal(johor2024.filter(row=>!row.partOfSti).at(-1).indicator,'Scheduled Waste');
+assert.equal(johor2024.length,10);
+assert.deepEqual(johor2024.filter(row=>!row.partOfSti).map(row=>row.indicator),['Coastal Poor (%)','Municipal Waste Facility Tonnes/Day','Visitors per Resident','Scheduled Waste']);
 assert.equal(johor2024.at(-1).currentValue,644832);
 assert.equal(johor2024.at(-1).status,'Diagnostic');
 assert.equal(getYoyReport(yoy,'Johor',2025).at(-1).currentValue,null);

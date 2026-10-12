@@ -3,7 +3,7 @@ const ORDER = [
   'Labour Force Participation Rate (%)', 'Unemployment Rate (%)',
   'Non-Domestic Water Share (%)', 'Coastal Good+Excellent (%)',
   'Coastal Poor (%)', 'Municipal Waste Facility Tonnes/Day',
-  'Mangrove Area (ha)', 'Visitors per Resident', 'Scheduled Waste',
+  'Visitors per Resident', 'Scheduled Waste',
 ];
 
 const asBool = value => value === true || value === 'True';
