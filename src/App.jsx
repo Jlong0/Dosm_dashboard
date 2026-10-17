@@ -55,17 +55,29 @@ export default function App() {
     data?.state_year ?? [];
 
 
-  const allStates = [
-    ...new Set(
-      stateYearRows.map(
-        row => row.state
-      )
-    )
-  ].sort();
-
-
+  const allStates =
+    useMemo(
+      () =>
+        [
+          ...new Set(
+            stateYearRows.map(
+              row => row.state
+            )
+          )
+        ].sort(),
+      [stateYearRows]
+    );
+  
+  
   const states =
-    selection ?? allStates;
+    useMemo(
+      () =>
+        selection ?? allStates,
+      [
+        selection,
+        allStates
+      ]
+    );
 
 
   const toggle = state => {

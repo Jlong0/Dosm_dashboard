@@ -15,6 +15,10 @@ import {
     callOpenRouter
   } from './openrouter.js';
 
+import {
+   callGemini
+  } from './gemini.js';
+
 
 dotenv.config();
 
@@ -129,11 +133,10 @@ app.post(
 
 
       const modelResponse =
-        await callOpenRouter({
+        await callGemini({
             systemPrompt,
             userPrompt
         });
-
 
       const rawResult =
         modelResponse.result;

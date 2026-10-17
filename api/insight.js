@@ -10,6 +10,10 @@ import {
   import {
       callOpenRouter
     } from '../server/openrouter.js';
+
+  import {
+      callGemini
+    } from '../server/gemini.js';
   
   /*
    * Guided Decision Intelligence request
@@ -90,7 +94,7 @@ import {
   
   
         const modelResponse =
-          await callOpenRouter({
+          await callGemini({
               systemPrompt,
               userPrompt
           });

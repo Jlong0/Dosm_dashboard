@@ -7,11 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "node server/local.js",
+    "server": "node --env-file=.env server/local.js",
     "deploy": "gh-pages -d dist",
     "check:data": "node scripts/check-data.mjs"
   },
   "dependencies": {
+    "@google/genai": "^2.30.0",
     "@vitejs/plugin-react": "latest",
     "autoprefixer": "^10.6.1",
     "cors": "^2.8.6",
